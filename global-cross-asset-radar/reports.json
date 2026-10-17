@@ -1,0 +1,27 @@
+{
+  "schema_version": "radar_manifest_v1",
+  "updated_at": "2026-10-16T08:42:00+08:00",
+  "reports": [
+    {
+      "key": "2026-10-16_morning",
+      "report_date": "2026-10-16",
+      "edition": "morning",
+      "prompt_version": "radar_2026-10-12_stock_v1",
+      "generated_at": "2026-10-16T08:42:00+08:00",
+      "data_cutoff": "2026-10-16T08:38:00+08:00",
+      "md_path": "reports/2026/10/2026-10-16_morning.md",
+      "json_path": "reports/2026/10/2026-10-16_morning.json",
+      "latest_md_path": "latest/morning.md",
+      "latest_json_path": "latest/morning.json",
+      "status_path": "status/morning_latest.json",
+      "headline_summary": "全球处于“能源通胀重定价+AI举债去杠杆+避险买长债与黄金”混合状态：美9月CPI/PPI超预期但核心零售停滞，台积电/ASML暴赚难阻芯片抛售；中国PTA/长丝链与大盘价值相对优势居全球前三。",
+      "top_idea_ids": [
+        "idea_20261016_01",
+        "idea_20261016_02",
+        "idea_20261016_03",
+        "idea_20261016_04",
+        "idea_20261016_05"
+      ]
+    }
+  ]
+}
