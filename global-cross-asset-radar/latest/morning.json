@@ -2,49 +2,33 @@
   "schema_version": "radar_report_v1",
   "prompt_version": "radar_2026-10-12_stock_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
-  "report_date": "2026-10-17",
+  "report_date": "2026-10-16",
   "edition": "morning",
-  "generated_at": "2026-10-17T10:06:00+08:00",
-  "data_cutoff": "2026-10-17T10:03:00+08:00",
-  "headline_summary": "霍尔木兹油轮再起火叠加美众议院阻击俄油协议推动WTI破101美元、内盘燃油夜盘涨超4%；美股AI债务担忧令费半周挫11.8%、VIX飙至19.99，而做多TSM/MSFT空SOXX配对逆势斩获正Alpha。",
+  "generated_at": "2026-10-16T08:42:00+08:00",
+  "data_cutoff": "2026-10-16T08:38:00+08:00",
+  "headline_summary": "全球处于“能源通胀重定价+AI举债去杠杆+避险买长债与黄金”混合状态：美9月CPI/PPI超预期但核心零售停滞，台积电/ASML暴赚难阻芯片抛售；中国PTA/长丝链与大盘价值相对优势居全球前三。",
   "market_regime": {
-    "primary_regime": "oil_geopolitical_breakout_and_ai_debt_deleveraging_weekend_transition",
+    "primary_regime": "hybrid_stagflation_repricing_and_ai_deleveraging",
     "key_divergences": [
-      "WTI Nov crude surged +3.51% to settle at $101.41/bbl (late electronic $101.84) and Brent Dec jumped +3.72% to $109.86/bbl as a second tanker caught fire in the Strait of Hormuz, Eurasia Group raised Gulf escalation odds to 65%, and bipartisan US House members moved to block the Russian diesel deal.",
-      "US tech/semiconductor selloff deepened on Friday Oct 16 OPEX (Nasdaq -2.15%, QQQ -2.50%, SOXX -4.14% 1D / -11.80% 5D, VIX +21.45% to 19.99), yet our Top 1 Beta-neutral pair (Long 50% TSM + 50% MSFT / Short 100% SOXX) delivered +1.78% single-day positive Alpha as TSM/SOXX rose to 0.8363.",
-      "CXMT (688825.SH) pre-announced 9M26 net profit of 131.0B-132.5B RMB (Q3 revenue +15%-20% QoQ, Q3 net profit +1%-3% QoQ) and a 1.0B-2.0B RMB buyback on Oct 16 evening, confirming China IDM DRAM market share gains (7.67%) while downstream module maker Longsys (301308.SZ) fell another -0.96%.",
-      "China 10Y CGB yield broke below 1.65% (1.6385%) and 30Y CGB hit 2.055% despite regulatory risk management reminders to banks/brokers, while CSI 300 ETF (510300) volume jumped +141.5% to 16.09B RMB and Tongkun Group (601233.SH) closed up +5.41% at 20.26 RMB."
+      "US September headline CPI (+0.6% MoM) and PPI (+1.3% MoM) surged on energy, but real Retail Control Group fell -0.1% MoM, driving 30Y Treasury yields down 13 bps to 5.39% (bull flattening).",
+      "TSMC Q3 FCF surged +65.8% QoQ to NT$476.56B and ASML Q3 net sales hit a record €11.66B, yet SOXX fell -8.62% over 5 days as CoreWeave bond yields hit 14.9% and Kospi plunged -7.6%.",
+      "China September PPI jumped +5.0% YoY while core CPI stayed at +1.0% YoY and 30Y CGB yield broke below 2.06%; SSE 50 (-0.42% 1D, 5D RV 9.37%) vastly outperformed CSI 1000 (-3.28% 1D, 5D RV 29.83%).",
+      "A-share Q3 announcements showed sharp single-quarter QoQ divergence: Tongkun Group (+6% to +23% QoQ) and Guangku Tech (+26% to +48% QoQ) expanded, while Longsys (-35% to -49% QoQ) and Zhongjin Gold (-26% to -41% QoQ) contracted despite high YTD YoY growth."
     ],
     "china_in_global_top3": true
   },
   "prior_report_comparison": {
-    "baseline_status": "verified_single_baseline_reused",
-    "prior_global_report": "2026-10-16_morning",
-    "prior_same_edition_report": "2026-10-16_morning",
-    "prior_data_cutoff": "2026-10-16T08:38:00+08:00",
+    "baseline_status": "no_comparable_prior_report",
     "attempted_paths": [
-      "google_drive://Global-Cross-Asset-Radar/reports.json",
-      "google_drive://Global-Cross-Asset-Radar/2026-10-16_morning.md",
-      "google_drive://Global-Cross-Asset-Radar/2026-10-16_morning.json"
+      "farfromexact/Global-Cross-Asset-Radar/manifests/reports.json",
+      "google_drive://Global-Cross-Asset-Radar/manifests/reports.json"
     ],
-    "summary_of_changes": [
-      "UPGRADED idea_20261016_01 (Long TSM+MSFT / Short SOXX) from 86 to 87 after Friday Oct 16 OPEX validated +1.78% positive Alpha and TSM/SOXX broke above 0.8350 to 0.8363.",
-      "ADDED NEW idea_20261017_01 (USO Dec $162/$180 Bull Call Spread or Long FU2612 / Short L2701) at Rank 2 (Score 84) following WTI breaking $101.41/bbl and SHFE Fuel Oil surging >4% in Friday night session.",
-      "MAINTAINED idea_20261016_02 (Long IH2611 / Short IM2611) at Rank 3 (Score 82) after 2610 delivery completed and 510300/510050 ETFs saw >119%-141% volume surges.",
-      "REVISED idea_20261016_03 (Tongkun Group 601233.SH) at Rank 4 (Score 80) to pullback entry (19.60-20.00 RMB) and higher stop (18.60 RMB) after Friday's +5.41% rally to 20.26 RMB and Friday night's crude oil spike.",
-      "REVISED idea_20261016_04 (GLD Jan 2027 $385/$415 Call Spread) at Rank 5 (Score 76) with 20D correlation matrix evidence (US10Y -0.44, DFII10 -0.36, NAS100 +0.45) and negative 25-delta risk reversals.",
-      "DOWNGRADED idea_20261016_05 (Guangku Tech 300620.SZ) out of Top 5 to Watch after Friday's intraday fade from 256.20 to 236.60 RMB and US SOXX -4.14% drop."
-    ]
+    "reason": "Native GitHub connector unavailable in current environment (permission_error); Google Drive verified empty prior to this initial 2026-10-16_morning run."
   },
   "engine_inputs_audit": {
     "Global-Cross-Asset-Radar": {
-      "status": "ok",
-      "source": "google_drive://1rpQDLN2tbFz5l6dP0Tj4LNUU0CMSOnfG",
-      "files_read": [
-        "reports.json",
-        "2026-10-16_morning.md",
-        "2026-10-16_morning.json"
-      ]
+      "status": "permission_error",
+      "fallback": "Created initial archive baseline in Google Drive folder Global-Cross-Asset-Radar"
     },
     "China-Options-Engine": {
       "status": "permission_error",
@@ -52,14 +36,14 @@
         "data/radar_latest.json",
         "data/radar_history.json"
       ],
-      "fallback": "Verified CFFEX 2610 delivery notice (2026-10-16) and calculated exact 28-trading-day (1/3/5/20D) cash index returns and realized volatility through 2026-10-16 close from Google Finance."
+      "fallback": "Verified CFFEX 2610 expiration notice (2026-10-16) and calculated exact 1/3/5/20D cash index returns and realized volatility from Google Finance."
     },
     "China-Commodities-Engine": {
       "status": "permission_error",
       "attempted_files": [
         "data/report_input_latest.json"
       ],
-      "fallback": "Verified Xinhua Finance, Securities Times, Eastmoney Futures, and Xinhua NY energy settlements for 2026-10-16 day session and 2026-10-16/17 Friday night session across FU, SC, AU, AG, SI, PS, LC, BR, AO, UR, RM, L, PP, EG, EB, MA, I, JM, SF, SM, NI, AP, CJ, WTI, and Brent."
+      "fallback": "Verified public exchange/Xinhua Finance/Eastmoney/EIA settlements for FU, EG, AU, LC, PS, SN, I, WR, AP, EC, WTI, and Brent."
     },
     "China-Stock-Engine": {
       "status": "permission_error",
@@ -71,52 +55,22 @@
         "data/latest/research_inputs_latest.json",
         "config/company_commodity_exposures.json"
       ],
-      "fallback": "Verified SSE/SZSE Q3 2026 earnings pre-announcements and buyback filings disclosed through 2026-10-16 23:20 CST (including CXMT 688825.SH) and Google Finance 28-trading-day series through 2026-10-16 close."
+      "fallback": "Verified SSE/SZSE Q3 2026 earnings pre-announcements/preliminary reports disclosed through 2026-10-15 22:36 CST and Google Finance daily price/volume series."
     }
   },
   "top_opportunities": [
     {
       "rank": 1,
       "idea_id": "idea_20261016_01",
-      "title": "AI 垄断现金流 vs 高负债/存储周期分化配对（Long 50% TSM + 50% MSFT / Short 100% SOXX）",
+      "title": "AI 垄断现金流 vs 高负债/存储周期分化配对（Long TSM+MSFT / Short SOXX）",
       "asset_class": "us_equities_relative_value",
       "direction": "long_short_pair",
-      "horizon_trading_days": "10-14",
-      "stage": "upgraded_to_confirmed_candidate_pending_monday_open",
-      "instrument": "Long 50% TSM ($412.61) + 50% MSFT ($529.05) vs Short 100% SOXX ($493.39) at 1.12 : 1 notional ratio",
+      "horizon_trading_days": "5-15",
+      "stage": "trial_position_pending_open",
+      "instrument": "Long 50% TSM + 50% MSFT vs Short 100% SOXX (1.12 : 1 notional for Beta neutrality)",
       "score_breakdown": {
-        "logic_max": 25,
+        "logic": 25,
         "logic_score": 23,
-        "odds_convexity_max": 25,
-        "odds_convexity_score": 20,
-        "catalyst_max": 20,
-        "catalyst_score": 18,
-        "price_curve_vol_max": 15,
-        "price_curve_vol_score": 14,
-        "crowding_tech_max": 15,
-        "crowding_tech_score": 12
-      },
-      "score": 87,
-      "risk_budget_nav_pct": "0.50%-0.85%",
-      "max_loss_boundary": "Planned stop-loss -3.5% (or TSM/SOXX < 0.8080, ~ -0.80% NAV on confirmed size); linear pair has no contractual cap, extreme gap stress loss ~ -1.40% NAV",
-      "status_axes": {
-        "research_judgment": "strengthened_validated_by_friday_alpha",
-        "evidence_sufficiency": "sufficient",
-        "execution_status": "weekend_closed_pending_monday_us_open"
-      }
-    },
-    {
-      "rank": 2,
-      "idea_id": "idea_20261017_01",
-      "title": "霍尔木兹袭船与俄油制裁博弈下的能源凸性（USO 12月 $162/$180 Call Spread 或 多 FU2612 / 空 L2701）",
-      "asset_class": "global_energy_options_and_china_commodities_rv",
-      "direction": "long_convexity_or_crack_pair",
-      "horizon_trading_days": "10-20",
-      "stage": "new_watch_pending_monday_open_and_quote",
-      "instrument": "Primary: USO Dec 18, 2026 $162/$180 Bull Call Spread (debit <= $5.20); Alternative: Long SHFE FU2612 / Short DCE L2701 equal-notional pair (strictly avoiding expiring CLX26 and FU2611 options)",
-      "score_breakdown": {
-        "logic_max": 25,
-        "logic_score": 22,
         "odds_convexity_max": 25,
         "odds_convexity_score": 20,
         "catalyst_max": 20,
@@ -124,105 +78,115 @@
         "price_curve_vol_max": 15,
         "price_curve_vol_score": 13,
         "crowding_tech_max": 15,
-        "crowding_tech_score": 11
+        "crowding_tech_score": 12
       },
-      "score": 84,
-      "risk_budget_nav_pct": "0.45%",
-      "max_loss_boundary": "Option spread contractually capped at 100% of net premium paid (<= 0.45% NAV); domestic FU2612/L2701 pair planned stop -4.0% (-0.45% NAV), extreme weekend gap stress ~ -1.00% NAV",
+      "score": 86,
+      "risk_budget_nav_pct": "0.50%",
+      "max_loss_boundary": "Planned stop-loss -4.0% (-0.52% NAV incl. slippage); linear pair has no contractual cap, extreme gap stress loss ~ -1.10% NAV",
       "status_axes": {
         "research_judgment": "edge_to_be_verified",
-        "evidence_sufficiency": "sufficient_missing_live_us_option_chain",
-        "execution_status": "weekend_closed_pending_monday_open_and_quote"
+        "evidence_sufficiency": "sufficient",
+        "execution_status": "market_closed_pending_us_open"
+      }
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261016_02",
+      "title": "中国大盘价值 vs 小盘成长风格收敛（Long IH2611 / Short IM2611）",
+      "asset_class": "china_index_futures_rv",
+      "direction": "long_short_pair",
+      "horizon_trading_days": "10-15",
+      "stage": "watch_pending_trigger",
+      "instrument": "Long 5x CFFEX IH2611 / Short 3x CFFEX IM2611 (avoiding expiring 2610 contracts)",
+      "score_breakdown": {
+        "logic_score": 22,
+        "odds_convexity_score": 19,
+        "catalyst_score": 17,
+        "price_curve_vol_score": 13,
+        "crowding_tech_score": 12
+      },
+      "score": 83,
+      "risk_budget_nav_pct": "0.45%",
+      "max_loss_boundary": "Planned stop-loss at SSE50/CSI1000 ratio < 0.3990 (-3.5% notional / -0.45% NAV); extreme small-cap short-squeeze stress loss ~ -1.00% NAV",
+      "status_axes": {
+        "research_judgment": "edge_to_be_verified",
+        "evidence_sufficiency": "partial_missing_live_2611_basis",
+        "execution_status": "pending_trigger_and_quote"
       }
     },
     {
       "rank": 3,
-      "idea_id": "idea_20261016_02",
-      "title": "中国大盘价值 vs 小盘成长风格收敛配对（Long 5手 IH2611 / Short 3手 IM2611）",
-      "asset_class": "china_index_futures_rv",
-      "direction": "long_short_pair",
-      "horizon_trading_days": "10-15",
-      "stage": "watch_pending_monday_q3_gdp_and_basis_check",
-      "instrument": "Long 5x CFFEX IH2611 / Short 3x CFFEX IM2611 (active front month after 2610 delivery completion)",
+      "idea_id": "idea_20261016_03",
+      "title": "桐昆股份（601233.SH）三季报单季环比逆势扩张错杀修复",
+      "asset_class": "china_a_share_equity",
+      "direction": "long",
+      "horizon_trading_days": "5-15",
+      "stage": "watch_pending_trigger",
+      "instrument": "Long 601233.SH cash equity (T+1, 10% daily limit; optional short TA futures or 000703.SZ hedge)",
       "score_breakdown": {
-        "logic_max": 25,
-        "logic_score": 22,
-        "odds_convexity_max": 25,
+        "logic_score": 21,
         "odds_convexity_score": 19,
-        "catalyst_max": 20,
         "catalyst_score": 17,
-        "price_curve_vol_max": 15,
         "price_curve_vol_score": 12,
-        "crowding_tech_max": 15,
         "crowding_tech_score": 12
       },
-      "score": 82,
-      "risk_budget_nav_pct": "0.45%",
-      "max_loss_boundary": "Planned stop-loss at SSE50/CSI1000 spot ratio < 0.3990 or pair loss -3.5% notional (-0.45% NAV); extreme small-cap short-squeeze stress loss ~ -1.00% NAV",
+      "score": 81,
+      "risk_budget_nav_pct": "0.35%",
+      "max_loss_boundary": "Planned stop-loss at 18.10 RMB (-5.8% / -0.36% NAV); T+1 overnight limit-down stress loss ~ -0.72% NAV",
       "status_axes": {
         "research_judgment": "edge_to_be_verified",
-        "evidence_sufficiency": "partial_missing_live_2611_basis",
-        "execution_status": "weekend_closed_pending_monday_10am_gdp"
+        "evidence_sufficiency": "sufficient",
+        "execution_status": "market_closed_pending_cn_open"
       }
     },
     {
       "rank": 4,
-      "idea_id": "idea_20261016_03",
-      "title": "桐昆股份（601233.SH）三季报单季环比扩张回踩低吸（修订触发位与止损）",
-      "asset_class": "china_a_share_equity",
-      "direction": "long_on_pullback",
-      "horizon_trading_days": "5-15",
-      "stage": "revised_watch_pending_pullback",
-      "instrument": "Long 601233.SH cash equity on pullback to 19.60-20.00 RMB (after Friday +5.41% close at 20.26 RMB; optional short 000703.SZ hedge)",
+      "idea_id": "idea_20261016_04",
+      "title": "黄金政策信用与地缘凸性看涨价差（GLD Jan/Mar 2027 $385/$415 Call Spread）",
+      "asset_class": "global_precious_metals_options",
+      "direction": "long_volatility_convexity",
+      "horizon_trading_days": "60-100",
+      "stage": "watch_pending_quote",
+      "instrument": "GLD Jan 2027 $385 / $415 Bull Call Spread (net debit cap <= $8.50)",
       "score_breakdown": {
-        "logic_max": 25,
-        "logic_score": 21,
-        "odds_convexity_max": 25,
-        "odds_convexity_score": 18,
-        "catalyst_max": 20,
-        "catalyst_score": 17,
-        "price_curve_vol_max": 15,
+        "logic_score": 20,
+        "odds_convexity_score": 20,
+        "catalyst_score": 15,
         "price_curve_vol_score": 12,
-        "crowding_tech_max": 15,
-        "crowding_tech_score": 12
+        "crowding_tech_score": 11
       },
-      "score": 80,
-      "risk_budget_nav_pct": "0.35%",
-      "max_loss_boundary": "Revised stop-loss at 18.60 RMB (-6.1% from 19.80 RMB entry / -0.35% NAV); T+1 overnight limit-down stress loss ~ -0.65% NAV",
+      "score": 78,
+      "risk_budget_nav_pct": "0.50%",
+      "max_loss_boundary": "Contractually capped at 100% of net option premium paid (<= 0.50% NAV)",
       "status_axes": {
-        "research_judgment": "strengthened_but_awaiting_pullback",
-        "evidence_sufficiency": "sufficient",
-        "execution_status": "weekend_closed_pending_monday_pullback"
+        "research_judgment": "edge_to_be_verified",
+        "evidence_sufficiency": "partial_missing_live_option_chain",
+        "execution_status": "pending_quote_or_params"
       }
     },
     {
       "rank": 5,
-      "idea_id": "idea_20261016_04",
-      "title": "黄金政策信用与滞胀尾部看涨价差（GLD Jan 2027 $385/$415 Call Spread）",
-      "asset_class": "global_precious_metals_options",
-      "direction": "long_volatility_convexity",
-      "horizon_trading_days": "60-90",
-      "stage": "revised_watch_pending_quote",
-      "instrument": "GLD Jan 15, 2027 $385 / $415 Bull Call Spread (net debit cap <= $8.30)",
+      "idea_id": "idea_20261016_05",
+      "title": "光库科技（300620.SZ）Q3单季环比高增 vs 算力硬件错杀博弈",
+      "asset_class": "china_a_share_equity",
+      "direction": "long",
+      "horizon_trading_days": "5-10",
+      "stage": "watch_pending_trigger",
+      "instrument": "Long 300620.SZ cash equity (ChiNext T+1, 20% daily limit)",
       "score_breakdown": {
-        "logic_max": 25,
-        "logic_score": 19,
-        "odds_convexity_max": 25,
-        "odds_convexity_score": 20,
-        "catalyst_max": 20,
-        "catalyst_score": 15,
-        "price_curve_vol_max": 15,
+        "logic_score": 18,
+        "odds_convexity_score": 17,
+        "catalyst_score": 16,
         "price_curve_vol_score": 11,
-        "crowding_tech_max": 15,
         "crowding_tech_score": 11
       },
-      "score": 76,
-      "risk_budget_nav_pct": "0.40%",
-      "max_loss_boundary": "Contractually capped at 100% of net option premium paid (<= 0.40% NAV)",
+      "score": 73,
+      "risk_budget_nav_pct": "0.25%",
+      "max_loss_boundary": "Planned stop-loss at 215.00 RMB (-7.1% / -0.25% NAV); ChiNext 20% limit-down stress loss ~ -0.70% NAV",
       "status_axes": {
         "research_judgment": "edge_to_be_verified",
-        "evidence_sufficiency": "partial_missing_live_option_chain",
-        "execution_status": "weekend_closed_pending_quote_or_params"
+        "evidence_sufficiency": "partial_high_valuation_risk",
+        "execution_status": "market_closed_pending_cn_open"
       }
     }
   ],
@@ -230,174 +194,222 @@
     {
       "idea_id": "idea_20261016_01",
       "rank": 1,
-      "instrument": "Long 50% TSM ($412.61) + 50% MSFT ($529.05) / Short 100% SOXX ($493.39) at 1.12:1 notional ratio",
-      "entry_trigger": "Monday 2026-10-19 21:30-22:30 CST (09:30-10:30 EDT) with TSM/SOXX ratio holding 0.8250-0.8360+ and TSM >= $410.58",
-      "invalidation_stop": "Pair drawdown -3.5% from entry, TSM/SOXX ratio < 0.8080, or TSM < $405.00",
+      "instrument": "Long 50% TSM ($422.25) + 50% MSFT ($539.44) / Short 100% SOXX ($514.71) at 1.12:1 notional ratio",
+      "entry_trigger": "US market open 2026-10-16 09:30-10:30 EDT with TSM >= $415.00 and TSM/SOXX ratio >= 0.815",
+      "invalidation_stop": "Pair drawdown -4.0% or TSM breaks below $407.13 (Oct 15 post-earnings low)",
       "targets": {
-        "tp1": "+4.5% (or TSM/SOXX 0.8650)",
-        "tp2": "+8.0% (or TSM/SOXX 0.8900)",
-        "time_stop_days": 14
-      },
-      "scenarios_net_r": {
-        "good": "+2.10R (+7.35% net)",
-        "base": "+0.96R (+3.35% net)",
-        "bad": "-1.04R (-3.65% net); extreme gap stress -1.80R"
-      }
-    },
-    {
-      "idea_id": "idea_20261017_01",
-      "rank": 2,
-      "instrument": "Primary: USO Dec 18, 2026 $162/$180 Bull Call Spread (debit <= $5.20); Alternative: Long SHFE FU2612 / Short DCE L2701 equal-notional pair",
-      "entry_trigger": "Monday 2026-10-19 09:00-09:30 CST for FU2612/L2701 (if FU2612 opening gap <= +3.5% and no US-Iran ceasefire); Monday 21:30-22:30 CST for USO Dec $162/$180 Call Spread at net debit <= $5.20",
-      "invalidation_stop": "USO Call Spread capped at premium (early exit if WTI < $95.50 or Brent < $103.50); FU2612/L2701 pair stop at -4.0% ratio drawdown",
-      "targets": {
-        "tp1": "Brent $115/bbl or pair +5.5%",
-        "tp2": "Brent $120/bbl (USO $178) or pair +10.0%",
+        "tp1": "+4.5%",
+        "tp2": "+8.0%",
         "time_stop_days": 15
       },
       "scenarios_net_r": {
-        "good": "+2.02R to +2.12R (+202% on option spread / +8.5% net on FU/L pair)",
-        "base": "+0.85R to +1.10R",
-        "bad": "-1.00R capped on option spread (-0.55R on early stop); -1.05R on FU/L pair"
+        "good": "+1.96R (+7.85% net)",
+        "base": "+0.84R (+3.35% net)",
+        "bad": "-1.04R (-4.15% net); extreme gap stress -2.20R"
       }
     },
     {
       "idea_id": "idea_20261016_02",
-      "rank": 3,
+      "rank": 2,
       "instrument": "Long 5x CFFEX IH2611 / Short 3x CFFEX IM2611",
-      "entry_trigger": "Monday 2026-10-19 09:30-10:15 CST after China Q3 GDP & Sep macro release (10:00 CST), verifying IM2611 annualized discount spread vs IH2611 <= 8.0% and SSE50/CSI1000 spot ratio >= 0.4110",
+      "entry_trigger": "2026-10-16 09:30-15:00 CST after verifying IM2611 annualized discount spread vs IH2611 <= 8.0% and SSE50/CSI1000 spot ratio >= 0.4100",
       "invalidation_stop": "SSE50/CSI1000 ratio < 0.3990 or pair loss reaches -3.5% notional",
       "targets": {
         "tp1": "Ratio 0.4320 (+4.3%)",
-        "tp2": "Ratio 0.4450 (+7.4%)",
+        "tp2": "Ratio 0.4450 (+7.5%)",
         "time_stop_days": 15
       },
       "scenarios_net_r": {
-        "good": "+1.89R (+6.60% net)",
-        "base": "+0.91R (+3.19% net)",
-        "bad": "-1.03R (-3.60% net); extreme short-squeeze stress -2.20R"
+        "good": "+1.88R (+6.58% net)",
+        "base": "+0.79R (+2.78% net)",
+        "bad": "-1.09R to -1.29R (-3.8% to -4.5% net); extreme short-squeeze stress -2.20R"
+      }
+    },
+    {
+      "idea_id": "idea_20261016_03",
+      "rank": 3,
+      "instrument": "Long Tongkun Group (601233.SH, latest close 19.22 RMB)",
+      "entry_trigger": "2026-10-16 09:30-10:00 CST opening gap between +1.0% and +4.5% (19.40-20.08 RMB) holding above 19.22 RMB support",
+      "invalidation_stop": "Break below 18.10 RMB (-5.8%)",
+      "targets": {
+        "tp1": "21.10 RMB (+9.8%)",
+        "tp2": "22.50 RMB (+17.1%)",
+        "time_stop_days": 15
+      },
+      "scenarios_net_r": {
+        "good": "+2.28R (+13.2% net)",
+        "base": "+1.21R (+7.0% net)",
+        "bad": "-1.03R (-6.0% net); T+1 limit-down stress -2.07R"
       }
     }
   ],
   "action_summary": {
-    "A_immediate_execution": "无（当前为北京时间周六 2026-10-17 10:03 CST，全球股票、债券、中金所期指期权及国内外商品期货均处于周末休市状态，无当前盘口可立即市价成交的仓位）。",
-    "B_conditional_orders": "idea_20261016_01 多 50% TSM + 50% MSFT / 空 100% SOXX（下周一 2026-10-19 21:30 CST 美股重开后若 TSM/SOXX 稳守 0.8300–0.8360 且 TSM >= $410.58，按 1.12:1 Beta中性配比建仓/确认升级，止损 -3.5%）；idea_20261016_02 多 5手 IH2611 / 空 3手 IM2611（下周一 10:00 CST 中国 Q3 GDP 公布后若 50/1000 现货比价守住 0.4110 且 IM2611 年化贴水差 <=8% 时挂单，止损 -3.5%）；idea_20261017_01 内盘多 FU2612 / 空 L2701（下周一 09:00 CST 商品开盘若 FU2612 高开 <=+3.5% 且中东无停火协议时等名义试仓，止损 -4.0%）及 idea_20261016_03 桐昆股份（601233.SH，下周一 09:30 CST 仅在回踩 19.60–20.00元 支撑区不破时分批低吸，止损上移至 18.60元）。",
-    "C_continue_watching": "idea_20261017_01 海外期权腿 USO 2026年12月 $162/$180 Bull Call Spread（待下周一美股开盘询价净权利金 <=$5.20）；idea_20261016_04 GLD 2027年1月 $385/$415 Bull Call Spread（待下周一询价净权利金 <=$8.30）；长鑫科技（688825.SH）1,310–1,325亿元三季报预增与10–20亿元回购在下周一科创板的开盘承接及对海外存储芯片的映射；光库科技（300620.SZ，降级移出Top 5后观察 225–230元 支撑）。",
-    "D_avoid_or_conditional_exit": "严禁交易下周一（10月19日）到期的上期所 FU2611 期权及下周二（10月20日）到期的 NYMEX WTI 11月期货（CLX26）；严禁在中证1000 3D RV 高达 34.29% 环境下裸卖 MO2611 期权或在监管点名提示债市风险后盲目追高 30 年期国债期货；继续回避 Q3 单季盈利环比大降的存储模组与周期股（江波龙 301308.SZ、恒逸石化 000703.SZ）、高位放量杀跌的 AI PCB 概念（威尔高 301251.SZ 等）及高负债二线算力云信用敞口。"
+    "A_immediate_execution": "无（当前 08:38 CST A 股与国内期指期权尚未开盘、美股处于盘后休市，且中金所与美股今日均迎月度交割，无可在当前秒级盘口立即无条件市价成交的仓位）。",
+    "B_conditional_orders": "idea_20261016_03 桐昆股份（601233.SH，今日 09:30 CST 开盘高开 +1%~+4.5% 且回踩不破 19.22元 分批试仓，止损 18.10元）；idea_20261016_02 多 IH2611 / 空 IM2611（今日 09:30 开盘及 15:00 交割后核实 IM2611 年化贴水差 <=8% 且 50/1000 比价守住 0.4100 时挂单）；idea_20261016_01 多 50% TSM + 50% MSFT / 空 SOXX（今晚 21:30 CST 美股开盘 TSM >= $415 且 TSM/SOXX >= 0.815 时按 1.12:1 名义配比试仓）。",
+    "C_continue_watching": "idea_20261016_04 GLD 2027年1月/3月 $385/$415 牛市看涨价差（待美股开盘核实期权隐波与净权利金 <=$8.50 报价）；idea_20261016_05 光库科技（300620.SZ，观察 225–230元 区间企稳信号）；内盘燃料油（FU）/乙二醇（EG）与上期所黄金期货的跨周库存与地缘溢价持续性。",
+    "D_avoid_or_conditional_exit": "严禁在今日到期的中金所 2610 期指/期权合约（IH2610/IF2610/IC2610/IM2610/HO2610/IO2610/MO2610）上新开仓或裸卖 MO 期权；回避三季报单季环比大幅下滑的存储芯片与周期股（如江波龙 301308.SZ Q3环比 -35%~-49%、复旦微电 688385.SH Q3环比 -57%~-85%、五矿新能 688779.SH Q3环比 -71%）；回避用中金黄金（600489.SH，Q3环比 -26%~-41%）替代黄金衍生品的多头表达及高杠杆 AI 二线算力租赁信用敞口。"
   },
   "sources": [
     {
-      "title": "Federal Reserve Board - H.15 Selected Interest Rates (Daily) - October 16, 2026",
-      "url": "https://www.federalreserve.gov/releases/h15/",
-      "published_date": "2026-10-16",
+      "title": "Consumer Price Index Summary - September 2026 Results (U.S. Bureau of Labor Statistics)",
+      "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "published_date": "2026-10-14",
+      "source_type": "official_statistics",
+      "supported_claims": [
+        "US September 2026 CPI-U rose 0.6% MoM SA and 3.7% YoY NSA (up from 3.4% in August).",
+        "Gasoline rose 9.1% MoM (34.2% YoY) and energy rose 5.2% MoM (20.4% YoY), accounting for over half of the monthly headline increase.",
+        "Core CPI (all items less food and energy) rose 0.3% MoM SA and 2.6% YoY, with shelter up 0.4% MoM (3.2% YoY)."
+      ]
+    },
+    {
+      "title": "Retail Sales, September 2026: The Pump Did the Work (U.S. Census Bureau / Piedmont Crescent Capital)",
+      "url": "https://piedmontcrescentcapital.com/september-retail-sales-2026-the-pump-did-the-work/",
+      "published_date": "2026-10-15",
+      "source_type": "macro_research_and_census_data",
+      "supported_claims": [
+        "US September 2026 headline retail and food services sales rose 0.8% MoM to $745.0B (+6.3% YoY), beating the 0.3% consensus.",
+        "Gasoline stations (+6.4% MoM) contributed 0.55 percentage points (~70%) of the headline gain.",
+        "Retail control group rose only 0.1% MoM (vs 0.3% consensus), and real core retail spending fell 0.1% MoM when deflated by core goods CPI (+0.3% MoM)."
+      ]
+    },
+    {
+      "title": "Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity (DGS10) - FRED",
+      "url": "https://fred.stlouisfed.org/series/dgs10",
+      "published_date": "2026-10-15",
       "source_type": "official_central_bank",
       "supported_claims": [
-        "Official H.15 constant maturity Treasury yields on 2026-10-15 were: 2Y 4.77% (vs 4.82% on 10-14), 5Y 4.91% (vs 5.00%), 10Y 5.10% (vs 5.19%), 20Y 5.48% (vs 5.57%), and 30Y 5.43% (vs 5.52%).",
-        "Official H.15 TIPS real yields on 2026-10-15 were: 5Y TIPS 2.58%, 10Y TIPS 2.78% (vs 2.84% on 10-14 and 2.91% on 10-09), and 30Y TIPS 3.18%, implying a 10Y breakeven inflation rate of 2.32%."
+        "Official H.15 10-Year Treasury constant maturity yield was 5.19% on 2026-10-14, 5.21% on 2026-10-13, and 5.22% on 2026-10-08."
       ]
     },
     {
-      "title": "Federal Reserve Board - G.17 Industrial Production and Capacity Utilization (September 2026)",
-      "url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
-      "published_date": "2026-10-16",
+      "title": "Market Yield on U.S. Treasury Securities at 2-Year, 5-Year, and 30-Year Constant Maturity & 10Y Breakeven - FRED",
+      "url": "https://fred.stlouisfed.org/series/dgs2",
+      "published_date": "2026-10-15",
       "source_type": "official_central_bank",
       "supported_claims": [
-        "US industrial production rose 0.7% MoM in September 2026 (+2.2% YoY to 104.0, 2017=100) and 2.8% SAAR in Q3 2026, with manufacturing up 0.3% MoM and capacity utilization rising to 76.9%.",
-        "Q3 2026 durable manufacturing output rose 3.8% SAAR, driven by a 28.4% annualized surge in semiconductors and related electronic components."
+        "Official H.15 2Y yield was 4.82% (10-14), 5Y yield was 5.00% (10-14), 30Y yield was 5.52% (10-14), and 10Y Breakeven Inflation Rate (T10YIE) was 2.35% (10-14)."
       ]
     },
     {
-      "title": "Implementing the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026 – The White House",
-      "url": "https://www.whitehouse.gov/presidential-actions/2026/10/implementing-the-lindsey-o-graham-sanctioning-russia-and-iran-act-of-2026/",
-      "published_date": "2026-10-16",
-      "source_type": "official_government_executive_order",
+      "title": "ICE BofA US High Yield Index Option-Adjusted Spread (BAMLH0A0HYM2) - FRED",
+      "url": "https://fred.stlouisfed.org/series/bamlh0a0hym2",
+      "published_date": "2026-10-15",
+      "source_type": "official_central_bank",
       "supported_claims": [
-        "President Trump signed an Executive Order on October 16, 2026 implementing the Graham Act, establishing a 500% tariff framework on Russian goods and 100% secondary duty monitoring on the top 5 importers/facilitators of Russian crude oil and natural gas starting October 18, 2026, alongside conditional national-interest waivers."
+        "US High Yield OAS widened to 3.25% (325 bps) on 2026-10-14, up from 3.16% on 2026-10-13 and 3.11% on 2026-10-12."
       ]
     },
     {
-      "title": "地缘冲突消息刺激国际油价16日显著上涨 (人民网 / 新华社)",
-      "url": "http://world.people.com.cn/n1/2026/1017/c1002-40816396.html",
-      "published_date": "2026-10-17",
-      "source_type": "official_state_media",
-      "supported_claims": [
-        "On October 16, 2026, NYMEX November WTI crude rose $3.44 (+3.51%) to settle at $101.41/bbl and December Brent crude rose $3.94 (+3.72%) to settle at $109.86/bbl.",
-        "Iran's Navy reported a second burning tanker in the eastern Strait of Hormuz on Oct 16, Eurasia Group raised Persian Gulf conflict escalation probability from 35% to 65%, and bipartisan US House members introduced legislation on Oct 16 to block the administration's Russian oil/diesel deal."
-      ]
-    },
-    {
-      "title": "Markets today: U.S. stocks weighed down by extended tech sell-off (BNN Bloomberg / AP)",
-      "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/10/16/us-markets-weighed-down-by-extended-sell-off-in-the-tech-sector/",
-      "published_date": "2026-10-16",
-      "source_type": "financial_media",
-      "supported_claims": [
-        "On Friday, October 16, 2026, the S&P 500 fell 1.1% (-84.62 pts to 7,659.44) and the Nasdaq Composite sank 2.1% (-572.99 pts to 26,140.03), with 68 of 75 S&P 500 tech stocks falling (AMD -6%, INTC -5.8%, MU -5.6%, AVGO -4.5%, META -3.7%, GOOGL -2.5%).",
-        "CME Group data showed market-implied odds of a December 2026 Fed rate hike jumped to 74.3% from 50.2% a month ago."
-      ]
-    },
-    {
-      "title": "Chartstopper: October 16, 2026 (Nasdaq Economic Institute)",
-      "url": "https://www.nasdaq.com/economic-institute/chartstopper-101626",
-      "published_date": "2026-10-16",
-      "source_type": "exchange_research",
-      "supported_claims": [
-        "US oil climbed $10 on the week to over $100/bbl as Houthis attacked Saudi Aramco's nerve center, Iran ramped up Strait of Hormuz ship attacks, and the Russia-Ukraine energy ceasefire ended.",
-        "Broadcom (AVGO) CEO warned that 'a lot' of AI investors have 'no clue what they are investing in,' likening it to gambling, while a top Chinese memory chip producer neared cutting-edge production."
-      ]
-    },
-    {
-      "title": "高利率环境下黄金走势的影响因素分析 (财联社 / 嘉盛集团)",
-      "url": "https://www.cls.cn/detail/2506872",
-      "published_date": "2026-10-16",
+      "title": "Why Is iShares 20+ Year Treasury Bond (TLT) ETF Up +1.47% Today? (Tickeron)",
+      "url": "https://tickeron.com/blogs/why-is-ishares-20-year-treasury-bond-tlt-etf-up-1-47-today-19448/",
+      "published_date": "2026-10-15",
       "source_type": "market_data_analysis",
       "supported_claims": [
-        "Over the past 20 trading days, gold's correlation was -0.44 with US10Y, -0.36 with 10Y TIPS real yield (DFII10), -0.31 with USD, and +0.45 with Nasdaq-100 (NAS100), while US10Y and DFII10 had a +0.94 correlation.",
-        "Global central banks bought a net 63 tons of gold in September 2026 (2-year monthly high, with PBOC adding for a 23rd consecutive month) and Q3 global gold ETF inflows hit a record $31B, but 1W/1M/3M gold option risk reversals are negative."
+        "On October 15, 2026, long-end Treasury yields fell sharply on flight-to-safety amid the AI equity selloff despite a +1.3% MoM September PPI print, with 30Y yield dropping ~13 bps to ~5.39%, 10Y down ~11-12 bps to ~5.06-5.08%, and 2Y easing ~5 bps to ~4.75-4.76%."
       ]
     },
     {
-      "title": "债市收盘| 午后再度走强，10年国债收益率下破1.65% (财联社)",
-      "url": "https://www.cls.cn/detail/2506945",
-      "published_date": "2026-10-16",
+      "title": "TSMC Q3 2026 Form 6-K Report of Foreign Private Issuer (SEC EDGAR / StockTitan)",
+      "url": "https://www.stocktitan.net/sec-filings/TSM/6-k-taiwan-semiconductor-manufacturing-co-ltd-current-report-foreign--e503d3f14bce.html",
+      "published_date": "2026-10-15",
+      "source_type": "company_sec_filing",
+      "supported_claims": [
+        "TSMC Q3 2026 revenue reached NT$1,494.24B (+50.9% YoY, +17.6% QoQ) or US$46.72B (beating guidance of US$44.6B-45.8B), net income NT$763.06B (+68.7% YoY), gross margin 66.4%, operating margin 58.7%.",
+        "TSMC Q3 2026 operating cash flow was NT$919.77B, capital expenditures NT$443.21B, and free cash flow reached NT$476.56B (up from NT$287.36B in Q2 2026).",
+        "TSMC guided Q4 2026 revenue to US$52.3B-54.3B, gross margin 65%-67%, and full-year 2026 USD revenue growth to ~44%, with 2nm accounting for 8% of Q3 wafer revenue."
+      ]
+    },
+    {
+      "title": "ASML Q3 2026 Results: Record €11.7bn Sales, Supply Short to 2028 (Global Brands Magazine / Form 6-K)",
+      "url": "https://www.globalbrandsmagazine.com/asml-q3-2026-results-analysis/",
+      "published_date": "2026-10-15",
+      "source_type": "company_filing_analysis",
+      "supported_claims": [
+        "ASML Q3 2026 net sales reached a record €11,662m (+25% QoQ), net income €4,960m (+70% QoQ), gross margin 57.5%, Q4 net sales guidance €14.2B-15.2B, and full-year 2026 guidance €44B-45B.",
+        "CEO Christophe Fouquet stated that planned supply for 2027 and 2028 will not fully meet customer demand, with customers requesting 2029-2030 orders."
+      ]
+    },
+    {
+      "title": "Chip Stock Selloff Deepens in Asia, Extends to Europe and US (Morningstar)",
+      "url": "https://global.morningstar.com/en-ca/stocks/chip-stock-selloff-deepens-asia-extends-europe-us",
+      "published_date": "2026-10-15",
       "source_type": "financial_media",
       "supported_claims": [
-        "On October 16, 2026, China 10Y CGB active yield (260016) fell 1.15 bps to 1.6385%, 30Y CGB (2600004) fell 1.75 bps to 2.055%, Shibor O/N fell 0.2 bp to 1.264%, and PBOC conducted 60B RMB 7D reverse repo (net injection 58B RMB).",
-        "Regulators verbally reminded several securities firms and banks on Oct 15 to strengthen bond investment risk management."
+        "South Korea's Kospi plunged 7.6% on October 15, triggering a circuit breaker, led by SK Hynix (-11%) and Samsung Electronics (-9.5%) amid AI debt financing worries and CXMT memory architecture competition concerns."
       ]
     },
     {
-      "title": "【每日收评】创业板指高开低走小幅收跌，全市场超3300股上涨，低空经济概念股集体爆发 (东方财富 / 财联社)",
-      "url": "https://finance.eastmoney.com/a/202610163898421544.html",
-      "published_date": "2026-10-16",
+      "title": "Brent Crude Slips as U.S. Considers Easing Russian Tanker Sanctions Amid Middle East Supply Threats (EnergyNow / Reuters)",
+      "url": "https://energynow.com/2026/10/brent-crude-slips-as-u-s-considers-easing-russian-tanker-sanctions-amid-middle-east-supply-threats/",
+      "published_date": "2026-10-15",
+      "source_type": "energy_market_report",
+      "supported_claims": [
+        "WTI November 2026 contract (expiring Oct 20) settled at $95.09/bbl on Oct 14 and traded near $95.23-$97.56/bbl on Oct 15, while December Brent traded near $104.70/bbl (vs $106.06/bbl Oct 14 settlement), as US consideration of easing Russian shadow fleet tanker sanctions competed with two commercial vessels sinking near the Strait of Hormuz and Ukrainian strikes on Russia's Ryazan refinery."
+      ]
+    },
+    {
+      "title": "9月CPI同比涨幅微升、PPI超预期高增5% 上下游价格分化加剧 (财新网 / 国家统计局)",
+      "url": "https://economy.caixin.com/2026-10-14/102493224.html",
+      "published_date": "2026-10-14",
+      "source_type": "official_statistics_and_media",
+      "supported_claims": [
+        "China September 2026 CPI rose 0.9% YoY (+0.2% MoM) and core CPI was 1.0% YoY (0.0% MoM), while PPI surged 5.0% YoY (+1.2% MoM, highest since July 2022) on upstream energy and non-ferrous metals, with consumer goods PPI near 0%."
+      ]
+    },
+    {
+      "title": "债市早参10月15日：9月新增社融3.55万亿 30年国债收益率下破2.06%创年内新低 (财联社 / 中国人民银行)",
+      "url": "https://www.cls.cn/detail/2505167",
+      "published_date": "2026-10-15",
+      "source_type": "official_central_bank_and_media",
+      "supported_claims": [
+        "China September 2026 new TSF reached 3.55 trillion RMB (+19.2B RMB YoY), 9M26 TSF reached 27.46 trillion RMB, and PBOC announced 700B RMB 6-month outright reverse repo on Oct 15 (net injection 200B RMB).",
+        "China 10Y CGB active yield (260016) fell 1.1 bps to 1.646%, 30Y CGB active yield (2600004) broke below 2.06% (2.064%), and DR007 was 1.3474%.",
+        "CoreWeave stock plunged 15.5% and its 2031/2032 senior notes yields surged to 14.8%-14.9% amid AI debt financing concerns."
+      ]
+    },
+    {
+      "title": "大盘分析：10月15日A股收盘沪指跌1.59%险守3700点 宽基ETF尾盘大幅放量 (东方财富网)",
+      "url": "https://stock.eastmoney.com/a/cdpfx.html",
+      "published_date": "2026-10-15",
       "source_type": "market_data_and_media",
       "supported_claims": [
-        "On October 16, 2026, Shanghai Composite rose 0.24% to 3,716.28, Shenzhen Component fell 0.12%, ChiNext fell 0.39%, total turnover was 1.56 trillion RMB (-77.6B RMB), and over 3,300 stocks rose.",
-        "Huatai-PineBridge CSI 300 ETF (510300) turnover surged 141.46% to 16.093B RMB and ChinaAMC SSE 50 ETF (510050) turnover rose 119.06% to 5.401B RMB."
+        "On October 15, 2026, Shanghai Composite closed at 3,707.48 (-1.59%), Shenzhen Component at 11,816.79 (-2.43%), ChiNext at 2,783.17 (-2.92%), total turnover 1.633 trillion RMB (+218.6B RMB), with over 5,100 stocks falling.",
+        "E Fund CSI 300 ETF (510310) turnover exceeded 19B RMB (highest since Jan 28, 2026) as big-5 state banks defended 3,700; ICBC and ABC will distribute 99.25B RMB interim cash dividends next Wednesday (Oct 21, 2026)."
       ]
     },
     {
-      "title": "商品日报（10月16日）：贵金属集体反弹碳酸锂持续走低 & 国内商品期货夜盘收盘燃油涨超4% (新华财经 / 证券时报)",
-      "url": "https://www.cnfin.com/yw-lb/detail/20261016/4482153_1.html",
-      "published_date": "2026-10-16",
+      "title": "关于股指期货、股指期权2610合约到期的通知 (道通期货 / 中金所)",
+      "url": "https://www.doto-futures.com/gsgg/24763.html",
+      "published_date": "2026-10-08",
+      "source_type": "exchange_and_broker_notice",
+      "supported_claims": [
+        "CFFEX 2610 series equity index futures (IF2610/IH2610/IC2610/IM2610) and index options (IO2610/MO2610/HO2610) expire and settle on Friday, October 16, 2026."
+      ]
+    },
+    {
+      "title": "商品日报（10月14日）：燃料油刷新历史新高 苹果重挫近7% (新华财经)",
+      "url": "https://www.cnfin.com/dz-lb/detail/20261014/4480741_1.html",
+      "published_date": "2026-10-14",
       "source_type": "commodity_market_report",
       "supported_claims": [
-        "In the Oct 16 day session, SHFE Silver rose 2.49%, Industrial Silicon and BR Rubber rose >2%, while Lithium Carbonate (LC) fell 4.20% to 96,320 RMB/ton and CZCE Apple fell 3.32% to 5,998 RMB/ton.",
-        "In the Oct 16/17 Friday night session, SHFE Fuel Oil surged >4%, INE SC Crude rose 2.32% to 739.8 RMB/bbl, and SHFE Gold settled at 899 RMB/g."
+        "SHFE Fuel Oil (FU) hit an all-time high of 5,593 RMB/ton (+3.31%) on tight Singapore/Zhoushan bunker supply and Strait of Hormuz bottlenecks; Ethylene Glycol (EG) rose 3.30% as East China port inventory fell to 86k tons; Lithium Carbonate (LC) and SHFE Tin (SN) fell over 4%, and CZCE Apple plunged nearly 7%."
       ]
     },
     {
-      "title": "净利超1300亿元+回购超10亿元！长鑫科技释放出什么信号？ (财联社 / 科创板日报)",
-      "url": "https://www.cls.cn/detail/2507294",
-      "published_date": "2026-10-16",
-      "source_type": "company_earnings_and_buyback_announcement",
+      "title": "A股业绩预增再刷屏！江波龙、恒逸石化等前三季度业绩预增超10倍 (财联社)",
+      "url": "https://www.cls.cn/detail/2505776",
+      "published_date": "2026-10-15",
+      "source_type": "company_earnings_announcements",
       "supported_claims": [
-        "On October 16, 2026 evening, CXMT (688825.SH) guided 9M26 revenue to 265.0B-270.0B RMB and归母 net profit to 131.0B-132.5B RMB, implying Q3 single-quarter revenue of 114.7B-119.7B RMB (+15%-20% QoQ) and Q3 net profit of 53.395B-54.895B RMB (+1%-3% QoQ vs Q2 52.843B RMB).",
-        "CXMT Chairman Zhu Yiming proposed a 1.0B-2.0B RMB A-share buyback (~1% of its 6.63% free float), while Sigmaintell noted Q3 memory price QoQ gains narrowed to under 10%."
+        "Tongkun Group (601233.SH) guided 9M26 net profit to 6.70B-7.10B RMB (+333%-358% YoY), with Q3 single-quarter net profit of 2.478B-2.878B RMB (+6.6% to +23.8% QoQ vs Q2 2.324B RMB).",
+        "Advanced Fiber Resources / Guangku Tech (300620.SZ) guided 9M26 net profit to 279M-302M RMB (+142%-162% YoY), with Q3 single-quarter net profit of 131M-154M RMB (+26% to +48% QoQ vs Q2 104M RMB).",
+        "Longsys / Jiangbolong (301308.SZ) guided 9M26 net profit to 14.0B-14.9B RMB (+1865%-1991% YoY), but Q3 single-quarter net profit (3.423B-4.323B RMB) fell 35%-49% QoQ vs Q2 (6.715B RMB).",
+        "Zhongjin Gold (600489.SH) guided 9M26 net profit to 5.52B-5.80B RMB (+50.05%-57.66% YoY), but Q3 single-quarter net profit (1.163B-1.443B RMB) fell 26%-41% QoQ vs Q2 (1.976B RMB)."
       ]
     }
   ],
   "archive_verification": {
-    "target": "google_drive://Global-Cross-Asset-Radar (1rpQDLN2tbFz5l6dP0Tj4LNUU0CMSOnfG)",
+    "target": "google_drive://Global-Cross-Asset-Radar",
     "github_connector_status": "permission_error_not_available_in_runtime",
     "ci_status": "pending_or_unverified"
   }
