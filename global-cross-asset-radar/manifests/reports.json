@@ -1,28 +1,7 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-17T10:06:00+08:00",
+  "updated_at": "2026-10-16T08:42:00+08:00",
   "reports": [
-    {
-      "key": "2026-10-17_morning",
-      "report_date": "2026-10-17",
-      "edition": "morning",
-      "prompt_version": "radar_2026-10-12_stock_v1",
-      "generated_at": "2026-10-17T10:06:00+08:00",
-      "data_cutoff": "2026-10-17T10:03:00+08:00",
-      "md_path": "reports/2026/10/2026-10-17_morning.md",
-      "json_path": "reports/2026/10/2026-10-17_morning.json",
-      "latest_md_path": "latest/morning.md",
-      "latest_json_path": "latest/morning.json",
-      "status_path": "status/morning_latest.json",
-      "headline_summary": "霍尔木兹油轮再起火叠加美众议院阻击俄油协议推动WTI破101美元、内盘燃油夜盘涨超4%；美股AI债务担忧令费半周挫11.8%、VIX飙至19.99，而做多TSM/MSFT空SOXX配对逆势斩获正Alpha。",
-      "top_idea_ids": [
-        "idea_20261016_01",
-        "idea_20261017_01",
-        "idea_20261016_02",
-        "idea_20261016_03",
-        "idea_20261016_04"
-      ]
-    },
     {
       "key": "2026-10-16_morning",
       "report_date": "2026-10-16",
