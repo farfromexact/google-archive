@@ -1,24 +1,24 @@
 {
   "schema_version": "radar_status_v1",
   "prompt_version": "radar_2026-10-12_stock_v1",
-  "report_date": "2026-10-17",
+  "report_date": "2026-10-16",
   "edition": "morning",
-  "generated_at": "2026-10-17T10:06:00+08:00",
-  "data_cutoff": "2026-10-17T10:03:00+08:00",
+  "generated_at": "2026-10-16T08:42:00+08:00",
+  "data_cutoff": "2026-10-16T08:38:00+08:00",
   "run_status": "success",
   "archive_target": "google_drive",
   "archive_status": "success",
   "ci_status": "pending_or_unverified",
   "files_written": [
-    "reports/2026/10/2026-10-17_morning.md",
-    "reports/2026/10/2026-10-17_morning.json",
+    "reports/2026/10/2026-10-16_morning.md",
+    "reports/2026/10/2026-10-16_morning.json",
     "latest/morning.md",
     "latest/morning.json",
     "status/morning_latest.json",
     "manifests/reports.json"
   ],
   "engine_read_status": {
-    "Global-Cross-Asset-Radar": "ok_via_google_drive",
+    "Global-Cross-Asset-Radar": "permission_error",
     "China-Options-Engine": "permission_error",
     "China-Commodities-Engine": "permission_error",
     "China-Stock-Engine": "permission_error"
@@ -26,6 +26,6 @@
   "top_ideas_count": 5,
   "detailed_cards_count": 3,
   "errors": [
-    "Native GitHub connector unavailable in current runtime; read prior 2026-10-16_morning baseline from Google Drive folder Global-Cross-Asset-Radar and archived all 6 files for 2026-10-17_morning."
+    "Native GitHub connector unavailable in current runtime; archived all 6 files to Google Drive folder Global-Cross-Asset-Radar and verified readback."
   ]
 }
