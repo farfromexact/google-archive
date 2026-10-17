@@ -6,7 +6,12 @@ Gemini output folder.
 The synchronizer is a standalone Google Apps Script in
 [`apps-script/Code.gs`](apps-script/Code.gs). It:
 
-- reads `.json` and `.md` files directly inside the configured Drive folder;
+- reads `.json` and `.md` files in the configured Drive folder and its managed
+  `reports/`, `latest/`, `status/`, and `manifests/` subfolders;
+- ignores `archive/duplicates/` so preserved historical duplicates are not
+  uploaded over canonical files;
+- selects the most recently updated file when Drive temporarily contains
+  duplicate names during an automation transition;
 - routes files using the paths declared by `reports.json`;
 - updates an existing GitHub file only when its content changed;
 - keeps old GitHub files when they disappear from Drive, because this is an
@@ -62,7 +67,10 @@ those declarations automatically.
 ## Operational notes
 
 - Drive is the source of truth; this is intentionally one-way.
-- Only direct children of the specified Drive folder are processed.
+- The root folder and the four managed subfolder trees are processed. Other
+  unrelated Drive subfolders and `archive/duplicates/` are ignored.
+- Drive files are never deleted or moved by the synchronizer. Duplicate names
+  are handled by selecting the most recently updated copy for synchronization.
 - Files with other extensions are ignored.
 - Existing GitHub content is never deleted automatically by the timer. The
   initial flat-layout files should be moved once when adopting the organized

@@ -17,6 +17,7 @@ var DEFAULTS = {
 
 var GITHUB_API = 'https://api.github.com';
 var GITHUB_API_VERSION = '2022-11-28';
+var SYNC_SUBFOLDERS = ['reports', 'latest', 'status', 'manifests'];
 
 /** Checks Drive access, GitHub access, and the configured target repository. */
 function validateConfiguration() {
@@ -57,7 +58,8 @@ function installTrigger() {
 }
 
 /**
- * Synchronizes all .json and .md files directly inside the Drive folder.
+ * Synchronizes .json and .md files in the Drive folder and its managed
+ * subfolders. The archive/duplicates tree is intentionally excluded.
  * The reports.json manifest declares the archive paths. Existing GitHub files
  * are updated; files removed from Drive are intentionally not deleted from
  * GitHub because this repository is an archive.
@@ -71,15 +73,9 @@ function syncDriveToGitHub() {
   try {
     var config = getConfig_();
     var folder = DriveApp.getFolderById(config.driveFolderId);
-    var files = [];
-    var iterator = folder.getFiles();
-
-    while (iterator.hasNext()) {
-      var file = iterator.next();
-      if (/\.(json|md)$/i.test(file.getName())) {
-        files.push(file);
-      }
-    }
+    var discoveredFiles = collectSyncFiles_(folder);
+    var selection = selectLatestDriveFiles_(discoveredFiles);
+    var files = selection.files;
 
     files.sort(function(left, right) {
       return left.getName().localeCompare(right.getName());
@@ -89,7 +85,9 @@ function syncDriveToGitHub() {
 
     var summary = {
       folder: folder.getName(),
-      discovered: files.length,
+      discovered: discoveredFiles.length,
+      selected: files.length,
+      duplicatesIgnored: selection.duplicatesIgnored,
       synced: 0,
       unchanged: 0,
       failed: []
@@ -135,6 +133,88 @@ function syncDriveToGitHub() {
   } finally {
     lock.releaseLock();
   }
+}
+
+/** Collects root files and files below the four managed archive directories. */
+function collectSyncFiles_(rootFolder) {
+  var candidates = [];
+  collectSyncFilesInFolder_(rootFolder, '', candidates);
+  return candidates;
+}
+
+function collectSyncFilesInFolder_(folder, relativeDirectory, candidates) {
+  var fileIterator = folder.getFiles();
+  while (fileIterator.hasNext()) {
+    var file = fileIterator.next();
+    if (/\.(json|md)$/i.test(file.getName())) {
+      candidates.push({
+        file: file,
+        relativePath: relativeDirectory + file.getName()
+      });
+    }
+  }
+
+  var folderIterator = folder.getFolders();
+  while (folderIterator.hasNext()) {
+    var child = folderIterator.next();
+    var childDirectory = relativeDirectory + child.getName() + '/';
+    if (isManagedSyncDirectory_(childDirectory)) {
+      collectSyncFilesInFolder_(child, childDirectory, candidates);
+    }
+  }
+}
+
+function isManagedSyncDirectory_(relativeDirectory) {
+  var parts = relativeDirectory.split('/').filter(function(part) {
+    return part !== '';
+  });
+  if (!parts.length) {
+    return false;
+  }
+
+  for (var index = 0; index < parts.length; index += 1) {
+    var part = parts[index].toLowerCase();
+    if (part === 'archive' || part === 'duplicates') {
+      return false;
+    }
+  }
+
+  return SYNC_SUBFOLDERS.indexOf(parts[0].toLowerCase()) !== -1;
+}
+
+/**
+ * Drive permits duplicate names. During the transition from a flat folder,
+ * choose the newest file for each name so an old root copy cannot overwrite
+ * a newer organized copy. No Drive files are deleted or moved here.
+ */
+function selectLatestDriveFiles_(candidates) {
+  var selectedByName = {};
+  var duplicatesIgnored = 0;
+
+  candidates.forEach(function(candidate) {
+    var key = candidate.file.getName().toLowerCase();
+    var current = selectedByName[key];
+    if (!current) {
+      selectedByName[key] = candidate;
+      return;
+    }
+
+    duplicatesIgnored += 1;
+    var candidateTime = candidate.file.getLastUpdated().getTime();
+    var currentTime = current.file.getLastUpdated().getTime();
+    if (candidateTime > currentTime ||
+        (candidateTime === currentTime &&
+         candidate.relativePath.localeCompare(current.relativePath) > 0)) {
+      selectedByName[key] = candidate;
+    }
+  });
+
+  return {
+    files: Object.keys(selectedByName).map(function(key) {
+      return selectedByName[key].file;
+    }),
+    duplicatesIgnored: duplicatesIgnored
+  };
 }
 
 function getConfig_() {
