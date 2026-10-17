@@ -7,7 +7,7 @@ The synchronizer is a standalone Google Apps Script in
 [`apps-script/Code.gs`](apps-script/Code.gs). It:
 
 - reads `.json` and `.md` files directly inside the configured Drive folder;
-- preserves the source file names under `global-cross-asset-radar/`;
+- routes files using the paths declared by `reports.json`;
 - updates an existing GitHub file only when its content changed;
 - keeps old GitHub files when they disappear from Drive, because this is an
   archive rather than a mirror;
@@ -46,18 +46,27 @@ The synchronizer is a standalone Google Apps Script in
 The target paths will look like:
 
 ```text
-global-cross-asset-radar/2026-10-16_morning.json
-global-cross-asset-radar/2026-10-16_morning.md
-global-cross-asset-radar/morning_latest.json
-global-cross-asset-radar/morning_latest.md
+global-cross-asset-radar/reports/2026/10/2026-10-16_morning.json
+global-cross-asset-radar/reports/2026/10/2026-10-16_morning.md
+global-cross-asset-radar/latest/morning.json
+global-cross-asset-radar/latest/morning.md
+global-cross-asset-radar/status/morning_latest.json
+global-cross-asset-radar/manifests/reports.json
 ```
+
+The date snapshots remain in `reports/YYYY/MM/`, while the stable files in
+`latest/`, `status/`, and `manifests/` are updated in place each day. If a
+future `reports.json` declares new editions or paths, the synchronizer uses
+those declarations automatically.
 
 ## Operational notes
 
 - Drive is the source of truth; this is intentionally one-way.
 - Only direct children of the specified Drive folder are processed.
 - Files with other extensions are ignored.
-- Existing GitHub content is never deleted automatically.
+- Existing GitHub content is never deleted automatically by the timer. The
+  initial flat-layout files should be moved once when adopting the organized
+  layout.
 - A separate GitHub commit is created for each changed file. This keeps the
   implementation simple and makes each source-file update independently
   traceable.

@@ -58,8 +58,9 @@ function installTrigger() {
 
 /**
  * Synchronizes all .json and .md files directly inside the Drive folder.
- * Existing GitHub files are updated; files removed from Drive are intentionally
- * not deleted from GitHub because this repository is an archive.
+ * The reports.json manifest declares the archive paths. Existing GitHub files
+ * are updated; files removed from Drive are intentionally not deleted from
+ * GitHub because this repository is an archive.
  */
 function syncDriveToGitHub() {
   var lock = LockService.getScriptLock();
@@ -84,6 +85,8 @@ function syncDriveToGitHub() {
       return left.getName().localeCompare(right.getName());
     });
 
+    var repositoryPaths = buildRepositoryPathMap_(config, files);
+
     var summary = {
       folder: folder.getName(),
       discovered: files.length,
@@ -95,7 +98,8 @@ function syncDriveToGitHub() {
     files.forEach(function(file) {
       try {
         var content = readTextFile_(file);
-        var repoPath = buildRepositoryPath_(config, file.getName());
+        var repoPath = repositoryPaths[file.getName()] ||
+          buildRepositoryPath_(config, file.getName());
         var remote = getRemoteFile_(config, repoPath);
 
         if (remote && remote.content) {
@@ -195,7 +199,74 @@ function buildRepositoryPath_(config, fileName) {
     throw new Error('Unsupported file extension: ' + fileName);
   }
 
-  return [config.githubBasePath, safeName]
+  var datedFile = safeName.match(/^(\d{4})-(\d{2})-(\d{2})_.+\.(json|md)$/i);
+  if (datedFile) {
+    return joinRepositoryPath_(config,
+      'reports/' + datedFile[1] + '/' + datedFile[2] + '/' + safeName);
+  }
+
+  if (safeName.toLowerCase() === 'reports.json') {
+    return joinRepositoryPath_(config, 'manifests/reports.json');
+  }
+
+  if (/_latest\.json$/i.test(safeName)) {
+    return joinRepositoryPath_(config, 'status/' + safeName);
+  }
+
+  return joinRepositoryPath_(config, 'latest/' + safeName);
+}
+
+/**
+ * Uses the report manifest when available so new editions can declare their
+ * own archive, latest, and status paths without another code change.
+ */
+function buildRepositoryPathMap_(config, files) {
+  var pathMap = {};
+  files.forEach(function(file) {
+    pathMap[file.getName()] = buildRepositoryPath_(config, file.getName());
+  });
+
+  var manifestFile = files.find(function(file) {
+    return file.getName().toLowerCase() === 'reports.json';
+  });
+  if (!manifestFile) {
+    return pathMap;
+  }
+
+  try {
+    var manifest = JSON.parse(readTextFile_(manifestFile));
+    if (manifest && Array.isArray(manifest.reports)) {
+      manifest.reports.forEach(function(report) {
+        addManifestPath_(config, pathMap, report.md_path);
+        addManifestPath_(config, pathMap, report.json_path);
+        addManifestPath_(config, pathMap, report.latest_md_path);
+        addManifestPath_(config, pathMap, report.latest_json_path);
+        addManifestPath_(config, pathMap, report.status_path);
+      });
+    }
+    pathMap[manifestFile.getName()] = joinRepositoryPath_(config,
+      'manifests/reports.json');
+  } catch (error) {
+    Logger.log('Manifest path mapping unavailable; using filename rules: ' +
+      String(error && error.message ? error.message : error));
+  }
+
+  return pathMap;
+}
+
+function addManifestPath_(config, pathMap, relativePath) {
+  if (!relativePath) {
+    return;
+  }
+  var normalized = String(relativePath).replace(/\\/g, '/').replace(/^\/+/, '');
+  var fileName = normalized.split('/').pop();
+  if (fileName) {
+    pathMap[fileName] = joinRepositoryPath_(config, normalized);
+  }
+}
+
+function joinRepositoryPath_(config, relativePath) {
+  return [config.githubBasePath, String(relativePath).replace(/^\/+/, '')]
     .filter(function(part) { return part !== ''; })
     .join('/');
 }
