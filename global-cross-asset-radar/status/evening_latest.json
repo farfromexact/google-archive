@@ -1,24 +1,25 @@
 {
-  "report_date": "2026-10-17",
-  "edition": "evening",
-  "generated_at": "2026-10-17T20:35:00+08:00",
-  "data_cutoff": "2026-10-17T20:30:00+08:00",
   "run_status": "success",
-  "archive_status": "completed",
-  "ci_status": "passing",
+  "report_date": "2026-10-18",
+  "edition": "evening",
+  "generated_at": "2026-10-18T20:35:00+08:00",
+  "archive_status": "archived",
+  "ci_status": "passed",
   "files_written": [
-    "reports/2026/10/2026-10-17_evening.md",
-    "reports/2026/10/2026-10-17_evening.json",
+    "reports/2026/10/2026-10-18_evening.md",
+    "reports/2026/10/2026-10-18_evening.json",
     "latest/evening.md",
     "latest/evening.json",
     "status/evening_latest.json",
     "manifests/reports.json"
   ],
   "engine_read_status": {
-    "China-Stock-Engine": "permission_error (fallback to public disclosures)",
-    "China-Options-Engine": "permission_error (fallback to public rules & RV)",
-    "China-Commodities-Engine": "permission_error (fallback to public settlements)",
-    "Global-Cross-Asset-Radar": "ok (read via Google Drive hierarchy)"
+    "Global-Cross-Asset-Radar": "ok",
+    "China-Options-Engine": "permission_error",
+    "China-Commodities-Engine": "permission_error",
+    "China-Stock-Engine": "permission_error"
   },
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
   "errors": []
 }
