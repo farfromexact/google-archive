@@ -1,7 +1,26 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-19T08:35:00+08:00",
+  "updated_at": "2026-10-19T20:35:00+08:00",
   "reports": [
+    {
+      "key": "2026-10-19_evening",
+      "report_date": "2026-10-19",
+      "edition": "evening",
+      "file_path_md": "reports/2026/10/2026-10-19_evening.md",
+      "file_path_json": "reports/2026/10/2026-10-19_evening.json",
+      "generated_at": "2026-10-19T20:35:00+08:00",
+      "prompt_version": "radar_2026-10-12_stock_v1",
+      "stock_integration_version": "stock_integration_2026-10-12_v1",
+      "commodity_consumer_version": "core_2026-10-17_v1",
+      "headline_summary": "中国 Q3 GDP 增速回升至 4.5% 且央行出台互换便利落地，大盘蓝筹护盘强化；霍尔木兹断供与法国骚乱推升黄金创历史新高；原油看涨价差与做多大盘价值稳居前三。",
+      "top_ideas": [
+        "idea_20261017_01",
+        "idea_20261016_01",
+        "idea_20261016_02",
+        "idea_20261016_03",
+        "idea_20261016_04"
+      ]
+    },
     {
       "key": "2026-10-19_morning",
       "report_date": "2026-10-19",
@@ -121,7 +140,7 @@
       ]
     }
   ],
-  "total_reports": 6,
+  "total_reports": 7,
   "latest_morning": "2026-10-19",
-  "latest_evening": "2026-10-18"
+  "latest_evening": "2026-10-19"
 }
