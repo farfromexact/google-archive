@@ -1,21 +1,25 @@
 {
-  "report_date": "2026-10-18",
-  "edition": "morning",
   "run_status": "success",
-  "archive_status": "success",
-  "ci_status": "completed",
+  "report_date": "2026-10-19",
+  "edition": "morning",
+  "generated_at": "2026-10-19T08:35:00+08:00",
+  "archive_status": "archived",
+  "ci_status": "passed",
   "files_written": [
-    "reports/2026/10/2026-10-18_morning.md",
-    "reports/2026/10/2026-10-18_morning.json",
+    "reports/2026/10/2026-10-19_morning.md",
+    "reports/2026/10/2026-10-19_morning.json",
     "latest/morning.md",
     "latest/morning.json",
     "status/morning_latest.json",
     "manifests/reports.json"
   ],
   "engine_read_status": {
-    "china_commodities_engine": "permission_error_fallback_verified",
-    "china_options_engine": "permission_error_fallback_verified",
-    "china_stock_engine": "permission_error_fallback_verified"
+    "Global-Cross-Asset-Radar": "ok",
+    "China-Options-Engine": "permission_error",
+    "China-Commodities-Engine": "permission_error",
+    "China-Stock-Engine": "permission_error"
   },
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
   "errors": []
 }
