@@ -1,7 +1,26 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-18T20:35:00+08:00",
+  "updated_at": "2026-10-19T08:35:00+08:00",
   "reports": [
+    {
+      "key": "2026-10-19_morning",
+      "report_date": "2026-10-19",
+      "edition": "morning",
+      "file_path_md": "reports/2026/10/2026-10-19_morning.md",
+      "file_path_json": "reports/2026/10/2026-10-19_morning.json",
+      "generated_at": "2026-10-19T08:35:00+08:00",
+      "prompt_version": "radar_2026-10-12_stock_v1",
+      "stock_integration_version": "stock_integration_2026-10-12_v1",
+      "commodity_consumer_version": "core_2026-10-17_v1",
+      "headline_summary": "亚洲盘初霍尔木兹断供持续推升原油破百，能源看涨凸性稳居 Top 1；美股芯片七连跌与负 Gamma 凸显 AI 现金流垄断配对优势；中国今日 10:00 迎 Q3 GDP 大考与千亿分红护航，大盘价值换月配置居前三。",
+      "top_ideas": [
+        "idea_20261017_01",
+        "idea_20261016_01",
+        "idea_20261016_02",
+        "idea_20261016_03",
+        "idea_20261016_04"
+      ]
+    },
     {
       "key": "2026-10-18_evening",
       "report_date": "2026-10-18",
@@ -102,7 +121,7 @@
       ]
     }
   ],
-  "total_reports": 5,
-  "latest_morning": "2026-10-18",
+  "total_reports": 6,
+  "latest_morning": "2026-10-19",
   "latest_evening": "2026-10-18"
 }
