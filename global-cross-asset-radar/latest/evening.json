@@ -1,39 +1,139 @@
 {
-  "schema_version": "radar_report_v1",
-  "report_date": "2026-10-18",
+  "report_date": "2026-10-19",
   "edition": "evening",
-  "generated_at": "2026-10-18T20:35:00+08:00",
-  "data_cutoff": "2026-10-18T20:30:00+08:00",
   "prompt_version": "radar_2026-10-12_stock_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
   "commodity_consumer_version": "core_2026-10-17_v1",
-  "prior_baselines": {
-    "recent_global_report": "reports/2026/10/2026-10-18_morning.md",
-    "recent_same_edition_report": "reports/2026/10/2026-10-17_evening.md",
-    "baseline_read_status": "ok"
+  "generated_at": "2026-10-19T20:35:00+08:00",
+  "data_cutoff": "2026-10-19T20:25:00+08:00",
+  "headline_summary": "中国 Q3 GDP 增速回升至 4.5% 且央行出台互换便利落地，大盘蓝筹护盘强化；霍尔木兹断供与法国骚乱推升黄金创历史新高；原油看涨价差与做多大盘价值稳居前三。",
+  "prior_benchmarks": {
+    "morning_benchmark": "2026-10-19_morning",
+    "evening_benchmark": "2026-10-18_evening",
+    "status": "ok"
   },
-  "headline_summary": "霍尔木兹海峡油轮触雷断供发酵引航运绕道与战争险暴涨，原油破百看涨凸性稳居 Top 1；美股 OPEX 后负 Gamma 放大波动，AI 垄断现金流对冲居次；中国周一 10:00 迎 Q3 GDP 与工农行千亿分红，大盘价值换月配置居前三。",
+  "macro_dashboard": {
+    "us_2y_yield": {
+      "value": 4.79,
+      "unit": "%",
+      "1d_change_bps": 3
+    },
+    "us_5y_yield": {
+      "value": 4.98,
+      "unit": "%",
+      "1d_change_bps": -2
+    },
+    "us_10y_yield": {
+      "value": 5.1,
+      "unit": "%",
+      "1d_change_bps": 1.7
+    },
+    "us_30y_yield": {
+      "value": 5.39,
+      "unit": "%",
+      "1d_change_bps": 0
+    },
+    "us_10y_real_yield": {
+      "value": 2.84,
+      "unit": "%",
+      "1d_change_bps": 0
+    },
+    "us_10y_bei": {
+      "value": 2.35,
+      "unit": "%",
+      "1d_change_bps": 0
+    },
+    "dxy": {
+      "value": 101.78,
+      "1d_change_pct": -0.39
+    },
+    "usd_cnh": {
+      "value": 6.6865,
+      "1d_change_pct": -0.07
+    },
+    "soxx": {
+      "value": 512.18,
+      "unit": "USD",
+      "1w_change_pct": -8.62
+    },
+    "tsm_premarket": {
+      "value": 421.5,
+      "unit": "USD",
+      "change_pct": 0.4
+    },
+    "wti_crude": {
+      "value": 100.88,
+      "unit": "USD/bbl",
+      "1d_change_pct": -0.52
+    },
+    "brent_crude": {
+      "value": 108.63,
+      "unit": "USD/bbl",
+      "1d_change_pct": -1.12
+    },
+    "gold_spot": {
+      "value": 4180.69,
+      "unit": "USD/oz",
+      "1d_change_pct": 0.34,
+      "signal": "All-time High"
+    },
+    "vix": {
+      "value": 19.99,
+      "1w_change_pct": 29.7
+    },
+    "ovx": {
+      "value": 51.2,
+      "signal": "Elevated Volatility"
+    },
+    "shanghai_50": {
+      "value": 2776.85,
+      "1d_change_pct": 0.42
+    },
+    "csi_300": {
+      "value": 4182.2,
+      "1d_change_pct": 0.39
+    },
+    "csi_1000": {
+      "value": 6636.5,
+      "1d_change_pct": -0.63
+    },
+    "china_q3_gdp_yoy": {
+      "value": 4.5,
+      "unit": "%",
+      "qoq_pct": 1.2
+    },
+    "china_30y_bond_yield": {
+      "value": 2.062,
+      "unit": "%"
+    }
+  },
+  "key_structural_changes": [
+    "中国 Q3 GDP 增速回升至 4.5%（环比 +1.2%），前三季度累计增长 4.6%，基本面支撑大盘价值",
+    "央行行长金融街论坛表态，5000 亿元证券基金保险互换便利（SFISF）正式落地开通申请",
+    "霍尔木兹断供与法国反紧缩罢工骚乱推升避险买盘，现货黄金盘中突破 $4,180/oz 创历史新高",
+    "三星电子确认下一代 HBM4 基础晶圆采用台积电 3nm 代工，确立台积电垄断定价权"
+  ],
   "top_ideas": [
     {
       "rank": 1,
       "idea_id": "idea_20261017_01",
       "name": "霍尔木兹油轮触雷与能源裂解凸性交易",
       "asset_class": "全球能源期权 / 内盘裂解",
-      "expression": "多 USO Dec 2026 $162/$180 Bull Call Spread（或多 FU2612 / 空 L2701）",
+      "expression": "多 USO Dec 2026 $162/$180 Call Spread（或多 FU2612 / 空 L2701）",
       "scores": {
         "logic": 24,
         "payoff_convexity": 23,
-        "catalyst_timing": 19,
+        "catalyst_timing": 20,
         "price_location": 13,
         "crowding_structure": 13,
-        "total": 92
+        "total": 93
       },
-      "stage": "确认交易 (待周一开盘)",
-      "max_loss_boundary": "期权净权利金严格封顶，上限 NAV 0.50%（WTI 破 $96 或权利金亏 -50% 计划止损）",
+      "stage": "确认交易 (电子盘已验证，待美股挂单)",
+      "max_loss_boundary": "期权净权利金严格封顶，上限 NAV 0.50%（WTI 破 $96 或亏 50% 止损）",
       "tri_axial_status": {
         "judgment": "逻辑增强",
         "evidence": "充分",
-        "execution": "休市 (待周一 06:00 开市触发)"
+        "execution": "电子盘已开 (待美股 21:30 挂单)"
       }
     },
     {
@@ -41,43 +141,43 @@
       "idea_id": "idea_20261016_01",
       "name": "AI 垄断现金流 vs 债务/存储周期分化配对",
       "asset_class": "美股半导体相对价值",
-      "expression": "多 50% TSM + 50% MSFT / 空 100% SOXX（1.12:1 名义实现 Beta 中性）",
+      "expression": "多（50% TSM + 50% MSFT）/ 空 100% SOXX（1.12:1 Beta中性）",
       "scores": {
         "logic": 23,
         "payoff_convexity": 21,
-        "catalyst_timing": 18,
+        "catalyst_timing": 19,
         "price_location": 13,
         "crowding_structure": 13,
-        "total": 88
+        "total": 89
       },
-      "stage": "试仓 (待周一美股)",
-      "max_loss_boundary": "计划止损 -4.0% (NAV 0.50%)，线性结构无合同封顶，极端地缘跳空压力损失约 NAV 1.10%",
+      "stage": "试仓候选 (待今晚美股开盘)",
+      "max_loss_boundary": "计划止损 -4.0% (NAV 0.50%)，线性结构无封顶，极端跳空压力 NAV 1.1%",
       "tri_axial_status": {
         "judgment": "待验证优势",
         "evidence": "充分",
-        "execution": "休市 (待周一 21:30 美股触发)"
+        "execution": "休市 (待今晚 21:30 美股触发)"
       }
     },
     {
       "rank": 3,
       "idea_id": "idea_20261016_02",
-      "name": "中国大盘价值 vs 小盘成长风格收敛交易",
+      "name": "中国股指大盘价值 vs 小盘成长风格收敛交易",
       "asset_class": "中金所跨品种期指 RV",
-      "expression": "多 IH2611 / 空 IM2611（5手:3手等名义价值配对，避开已交割2610）",
+      "expression": "多 IH2611 / 空 IM2611（5手:3手等名义价值配对）",
       "scores": {
-        "logic": 22,
-        "payoff_convexity": 20,
-        "catalyst_timing": 17,
+        "logic": 23,
+        "payoff_convexity": 21,
+        "catalyst_timing": 18,
         "price_location": 13,
         "crowding_structure": 12,
-        "total": 84
+        "total": 87
       },
-      "stage": "观察 / 等触发 (待周一09:30)",
-      "max_loss_boundary": "计划止损 -3.5% (NAV 0.45%)，极端小盘逼空压力损失约 NAV 1.00%",
+      "stage": "确认交易 / 持有 (日间已建仓，比价走阔)",
+      "max_loss_boundary": "计划止损 -3.5% (NAV 0.45%)，极端小盘逼空压力损失约 NAV 1.0%",
       "tri_axial_status": {
         "judgment": "待验证优势",
-        "evidence": "部分 (缺2611实时基差)",
-        "execution": "休市 (待周一 09:30 开盘核实)"
+        "evidence": "充分",
+        "execution": "可执行 (已入场持有)"
       }
     },
     {
@@ -85,38 +185,38 @@
       "idea_id": "idea_20261016_03",
       "name": "桐昆股份（601233.SH）三季报单季环比扩张错杀修复",
       "asset_class": "中国 A 股 + 化工跨资产对冲",
-      "expression": "多 601233.SH 现货（可选配轻仓空 TA 期货锁加工差）",
+      "expression": "多 601233.SH 现货（今日收盘 20.26元，稳守 19.22元）",
       "scores": {
         "logic": 21,
         "payoff_convexity": 19,
-        "catalyst_timing": 16,
+        "catalyst_timing": 18,
         "price_location": 12,
         "crowding_structure": 12,
-        "total": 80
+        "total": 82
       },
-      "stage": "观察 / 等触发 (待周一09:30)",
+      "stage": "试仓持有 / 观察 (日间已低吸建仓)",
       "max_loss_boundary": "计划止损 18.10元 (-5.8%, NAV 0.35%)，主板 T+1 交收，极端跌停压力 NAV 0.60%",
       "tri_axial_status": {
         "judgment": "待验证优势",
         "evidence": "充分",
-        "execution": "休市 (待周一 09:30 触发)"
+        "execution": "休市 (待明日 09:30 CST 跟踪)"
       }
     },
     {
       "rank": 5,
       "idea_id": "idea_20261016_04",
-      "name": "黄金政策信用与滞胀尾部看涨价差",
+      "name": "黄金政策信用与地缘滞胀价差",
       "asset_class": "全球贵金属期权",
       "expression": "多 GLD 2027年1月 $385/$415 Call Spread",
       "scores": {
         "logic": 20,
         "payoff_convexity": 21,
-        "catalyst_timing": 15,
+        "catalyst_timing": 16,
         "price_location": 12,
         "crowding_structure": 11,
-        "total": 79
+        "total": 80
       },
-      "stage": "观察 / 待询价",
+      "stage": "重点观察 / 待询价 (现货突破 $4,180)",
       "max_loss_boundary": "期权净权利金严格封顶，上限 NAV 0.50%（净权利金 ≤ $8.50/股）",
       "tri_axial_status": {
         "judgment": "待验证优势",
@@ -126,9 +226,9 @@
     }
   ],
   "action_conclusions": {
-    "A": "无（当前为周日晚间 20:30 CST，全球常规股票、债券、期货与期权交易所均处于周末休市状态，无可在当前秒级盘口立即市价成交的品种）。",
-    "B": "idea_20261017_01 原油看涨价差（周一 06:00 CST 电子盘 WTI 守住 $100.50/bbl，美股开盘挂单买入 USO Dec 2026 $162/$180 Call Spread，净权利金 ≤ $6.50，止损权利金亏 -50% 或 WTI < $96）；idea_20261016_01 多 50% TSM + 50% MSFT / 空 SOXX（周一美股开盘 TSM ≥ $412 且比价 ≥ 0.815 时按 1.12:1 名义配比试仓，止损 -4.0%）；idea_20261016_02 多 IH2611 / 空 IM2611（周一 09:30 开盘核实 IM2611 年化贴水差 ≤ 8% 且 50/1000 比价守住 0.4100 时挂单）；idea_20261016_03 桐昆股份（601233.SH，周一 09:30 高开 +1%~+4.5% 回踩不破 19.22 元时分批试仓，止损 18.10 元）。",
-    "C": "idea_20261016_04 GLD 2027年1月 $385/$415 Call Spread（待周一美股开盘核实实时隐波与净权利金 ≤ $8.50 报价）；内盘高硫燃料油（FU2612）与乙二醇（EG）周一开盘对霍尔木兹油轮触雷事件的溢价持续性；周一 10:00 CST 国家统计局公布的中国三季度 GDP 与 9 月工业/社零数据对内盘风险偏好的冲击。",
-    "D": "严禁在已交割退市的中金所 2610 合约上尝试任何下单或套利；严禁在周一开盘追高单边高杠杆裸期货（WTI/Brent 或内盘原油），防范地缘突发降温引发的高波踩踏；回避三季报单季环比大幅滑坡的周期与存储半导体个股（如江波龙 301308.SZ Q3 环比 -35%~-49%）；回避通过 A 股黄金矿企（如中金黄金 Q3 环比 -26%~-41%）替代黄金期权/期货的多头表达。"
+    "A": "无（当前为周一晚间 20:25 CST，A 股与中金所已收盘，美股尚未开盘，商品夜盘尚未开市，无秒级可执行品种；日间触发入场的 IH2611 vs IM2611 与桐昆股份 601233.SH 继续持有）。",
+    "B": "idea_20261017_01 原油看涨价差（今晚 21:30 美股开市挂单买入 USO Dec 2026 $162/$180 Call Spread，净权利金 ≤ $6.50，止损权利金亏 -50% 或 WTI < $96）；idea_20261016_01 多 50% TSM + 50% MSFT / 空 SOXX（今晚 21:30 美股开市 TSM ≥ $415 且比价 ≥ 0.815 时按 1.12:1 名义配比挂单试仓，止损 -4.0%）；idea_20261016_02 多 IH2611 / 空 IM2611（若明日开盘比价回踩 0.4150 企稳可继续加仓至确认交易）。",
+    "C": "idea_20261016_04 GLD 2027年1月 $385/$415 Call Spread（现货金突破 $4,180 创历史新高，待今晚美股开盘核实实时隐波与净权利金 ≤ $8.50 报价）；今日 21:00 开市的内盘商品夜盘（SC、FU2612）对霍尔木兹断供溢价的承接力；周二 09:00 中国 10 月 LPR 报价对银行净息差的确认。",
+    "D": "严禁在明日（10-20）到期交割的 NYMEX WTI 11 月合约（CLX26）上新开仓或留仓隔夜；严禁在原油突破 100 美元后追高单边高杠杆裸期货，防范地缘突发降温引发的高波踩踏；回避三季报单季环比大幅滑坡的周期与存储半导体个股（如江波龙 301308.SZ Q3 环比 -35%~-49%）；回避通过 A 股黄金矿企（如中金黄金 Q3 环比 -26%~-41%）替代黄金期权/期货的多头表达。"
   }
 }
