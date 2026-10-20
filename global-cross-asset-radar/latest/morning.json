@@ -2,7 +2,7 @@
   "schema_version": "radar_report_v1",
   "report_date": "2026-10-20",
   "edition": "morning",
-  "generated_at": "2026-10-20T08:51:00+08:00",
+  "generated_at": "2026-10-20T20:06:00+08:00",
   "data_cutoff": "2026-10-20T08:48:00+08:00",
   "prompt_version": "radar_2026-10-12_stock_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
@@ -98,9 +98,9 @@
     }
   },
   "key_structural_changes": [
-    "美股科技超跌反弹，TSM收涨+1.84%报$420.22、MSFT涨+0.84%报$533.52，TSM/SOXX比价达0.8372正式触发idea_20261016_01试仓入场并升至全球Top 1（90分）",
-    "原油经历跨时区巨震：伊拉克10月出口回升至340万桶/日与CLX26交割前平仓令美盘WTI收跌-0.79%至$98.24（成功规避追高），但午夜以总理下令推翻伊朗政权+沙特推迟FII峰会推升内盘SC夜盘大涨+2.34%至735.60元/桶，idea_20261017_01下调至86分（Top 3）并下移USO看涨价差至160/178",
-    "美债全曲线熊陡上行（2Y +6.78bp至4.774%、10Y +6.48bp至5.140%、30Y +4.75bp至5.470%），压制现货黄金自$4,183.50新高回落至$4,140.52（今晨亚盘$4,135.69），GLD 2027年1月看涨价差顺势下移至380/410（78分，Top 5）",
+    "美股科技超跌反弹，TSM收涨+1.84%报20.22、MSFT涨+0.84%报33.52，TSM/SOXX比价达0.8372正式触发idea_20261016_01试仓入场并升至全球Top 1（90分）",
+    "原油经历跨时区巨震：伊拉克10月出口回升至340万桶/日与CLX26交割前平仓令美盘WTI收跌-0.79%至8.24（成功规避追高），但午夜以总理下令推翻伊朗政权+沙特推迟FII峰会推升内盘SC夜盘大涨+2.34%至735.60元/桶，idea_20261017_01下调至86分（Top 3）并下移USO看涨价差至160/178",
+    "美债全曲线熊陡上行（2Y +6.78bp至4.774%、10Y +6.48bp至5.140%、30Y +4.75bp至5.470%），压制现货黄金自,183.50新高回落至,140.52（今晨亚盘,135.69），GLD 2027年1月看涨价差顺势下移至380/410（78分，Top 5）",
     "2026金融街论坛释放重磅制度红利：央行潘功胜宣布推出非银机构大额赎回流动性支持工具并推进隔夜利率转型，证监会吴清批复首批18只主动ETF注册，巩固多IH2611/空IM2611（88分，升至Top 2）",
     "深市三季报密集披露与商品分化：盛达资源（000603.SZ）前三季度预增104.57%~116.96%但贵金属股昨日跌超5%，继续持有Q3单季环比扩张的桐昆股份（601233.SH，82分，Top 4）；内盘焦煤创逾两月新低而纯碱周度库存降5.48%、青岛天胶保税库存七连降至五年新低"
   ],
@@ -121,7 +121,7 @@
         "crowding_structure": 13,
         "total": 90
       },
-      "stage": "试仓持有 (隔夜 TSM 收 $420.22、比价 0.8372 已触发条件)",
+      "stage": "试仓持有 (隔夜 TSM 收 20.22、比价 0.8372 已触发条件)",
       "max_loss_boundary": "计划止损 -4.0% (NAV 0.50%)，线性结构无合同封顶，极端跳空压力损失约 NAV 1.10%",
       "tri_axial_status": {
         "judgment": "逻辑增强",
@@ -158,7 +158,7 @@
       "idea_id": "idea_20261017_01",
       "name": "中东地缘升级与能源裂解凸性交易",
       "asset_class": "全球能源期权 / 内盘裂解",
-      "expression": "多 USO Dec 2026 $160/$178 Bull Call Spread（内盘备选：多 FU2612 / 空 L2701）",
+      "expression": "多 USO Dec 2026 60/78 Bull Call Spread（内盘备选：多 FU2612 / 空 L2701）",
       "direction": "long_volatility_and_upside_convexity",
       "horizon": "30_to_60_days",
       "scores": {
@@ -169,8 +169,8 @@
         "crowding_structure": 12,
         "total": 86
       },
-      "stage": "条件挂单 / 观察 (美盘WTI回落至$98.24规避追高，午夜以伊升级推升内盘SC夜盘+2.34%至735.6元)",
-      "max_loss_boundary": "期权净权利金严格封顶，上限 ≤ $5.80/股 (NAV 0.50%)；WTI CLZ26 < $95 或权利金亏 -50% 计划止损",
+      "stage": "条件挂单 / 观察 (美盘WTI回落至8.24规避追高，午夜以伊升级推升内盘SC夜盘+2.34%至735.6元)",
+      "max_loss_boundary": "期权净权利金严格封顶，上限 ≤ .80/股 (NAV 0.50%)；WTI CLZ26 < 5 或权利金亏 -50% 计划止损",
       "tri_axial_status": {
         "judgment": "待验证优势",
         "evidence": "充分 (商品五层齐备，期权仅局部ATM/skew就绪)",
@@ -206,7 +206,7 @@
       "idea_id": "idea_20261016_04",
       "name": "黄金政策信用与地缘滞胀尾部看涨价差",
       "asset_class": "全球贵金属期权",
-      "expression": "多 GLD 2027年1月 $380/$410 Call Spread",
+      "expression": "多 GLD 2027年1月 80/10 Call Spread",
       "direction": "long_call_spread",
       "horizon": "3_months",
       "scores": {
@@ -217,8 +217,8 @@
         "crowding_structure": 11,
         "total": 78
       },
-      "stage": "重点观察 / 待询价 (10Y美债升至5.14%令现货金回落至$4,140、GLD回踩$379.69，顺势下移执行价)",
-      "max_loss_boundary": "期权净权利金严格封顶，上限 NAV 0.50%（要求净权利金 ≤ $8.00/股）",
+      "stage": "重点观察 / 待询价 (10Y美债升至5.14%令现货金回落至,140、GLD回踩79.69，顺势下移执行价)",
+      "max_loss_boundary": "期权净权利金严格封顶，上限 NAV 0.50%（要求净权利金 ≤ .00/股）",
       "tri_axial_status": {
         "judgment": "待验证优势",
         "evidence": "部分 (缺场内期权实时隐波)",
@@ -275,16 +275,16 @@
   ],
   "supported_claims": [
     "US Treasury yields bear-steepened on Oct 19, 2026: 2Y rose 6.78 bps to 4.774%, 5Y rose 6.98 bps to 4.938%, 10Y rose 6.48 bps to 5.140% (15:00 EDT print 5.135%), and 30Y rose 4.75 bps to 5.470%, while NAHB Housing Market Index fell 3 points to 29 (lowest since June 2012).",
-    "US equities rebounded on Oct 19: S&P 500 +0.41% (7,690.73), Nasdaq +1.11% (26,430.89), QQQ +1.21% ($718.36), SOXX +1.73% ($501.93), SMH +1.61% ($548.46), TSM +1.84% ($420.22), MSFT +0.84% ($533.52), and CBOE VIX fell -7.75% to 18.44.",
+    "US equities rebounded on Oct 19: S&P 500 +0.41% (7,690.73), Nasdaq +1.11% (26,430.89), QQQ +1.21% (18.36), SOXX +1.73% (01.93), SMH +1.61% (48.46), TSM +1.84% (20.22), MSFT +0.84% (33.52), and CBOE VIX fell -7.75% to 18.44.",
     "Goldman Sachs Prime Brokerage reported hedge funds sold tech stocks at the fastest pace in at least 10 years over the 5 trading days ended Oct 15, lowering net leverage to a 1-year low of 48.6% while tech still represents 23.5% of Prime holdings (90th percentile).",
-    "NYMEX WTI settled down -0.79% at $98.24/bbl and USO fell -0.59% to $160.81 on Iraq oil export recovery (3.40 mb/d) and CLX26 expiry, but late-night escalation (Israeli PM Netanyahu ordering IDF/Mossad to prepare to overthrow the Iranian regime and Saudi Arabia postponing FII to 2027) drove China INE SC crude night session up +2.34% to 735.60 RMB/bbl.",
-    "Spot gold fell -0.60% to $4,140.52/oz (Asian morning $4,135.69/oz) after touching a record high of $4,183.50/oz, COMEX gold settled at $4,160.30/oz (-0.50%), and GLD closed at $379.69 (-0.61%).",
+    "NYMEX WTI settled down -0.79% at 8.24/bbl and USO fell -0.59% to 60.81 on Iraq oil export recovery (3.40 mb/d) and CLX26 expiry, but late-night escalation (Israeli PM Netanyahu ordering IDF/Mossad to prepare to overthrow the Iranian regime and Saudi Arabia postponing FII to 2027) drove China INE SC crude night session up +2.34% to 735.60 RMB/bbl.",
+    "Spot gold fell -0.60% to ,140.52/oz (Asian morning ,135.69/oz) after touching a record high of ,183.50/oz, COMEX gold settled at ,160.30/oz (-0.50%), and GLD closed at 79.69 (-0.61%).",
     "At the 2026 Financial Street Forum on Oct 19, PBOC Governor Pan Gongsheng announced a non-bank institutional large-redemption liquidity support tool and CSRC Chairman Wu Qing approved the first batch of 18 actively managed ETFs."
   ],
   "action_conclusions": {
     "A": "A. 今天没有应立即建立的新仓位。",
-    "B": "B. 今天仅应挂条件的候选：idea_20261016_02 多 IH2611 / 空 IM2611（若此前未建仓，待今日 09:30 开盘后中证 1000 受外盘科技带动反抽、使 50/1000 现货比价回踩 0.4150–0.4170 且 IM2611 年化贴水差 ≤ 8.0% 时按 5手:3手挂单，止损 < 0.4050）；idea_20261017_01 原油看涨价差（待今日 CLX26 交割出清、今晚 21:30 美股开盘确认 WTI 12月合约 CLZ26 企稳 ≥ $98.50 时挂单买入 USO Dec 2026 $160/$178 Call Spread 且要求净权利金 ≤ $5.80/股，或今日 09:00 内盘 SC 守稳 725 元、FU2612 守稳 5,550 元时轻仓配置多 FU2612 / 空 L2701）；idea_20261016_04 黄金看涨价差（趁 GLD 回落至 $379.69，今晚 21:30 美股开盘挂单询价 GLD 2027年1月 $380/$410 Call Spread，要求净权利金 ≤ $8.00/股）。",
+    "B": "B. 今天仅应挂条件的候选：idea_20261016_02 多 IH2611 / 空 IM2611（若此前未建仓，待今日 09:30 开盘后中证 1000 受外盘科技带动反抽、使 50/1000 现货比价回踩 0.4150–0.4170 且 IM2611 年化贴水差 ≤ 8.0% 时按 5手:3手挂单，止损 < 0.4050）；idea_20261017_01 原油看涨价差（待今日 CLX26 交割出清、今晚 21:30 美股开盘确认 WTI 12月合约 CLZ26 企稳 ≥ 8.50 时挂单买入 USO Dec 2026 60/78 Call Spread 且要求净权利金 ≤ .80/股，或今日 09:00 内盘 SC 守稳 725 元、FU2612 守稳 5,550 元时轻仓配置多 FU2612 / 空 L2701）；idea_20261016_04 黄金看涨价差（趁 GLD 回落至 79.69，今晚 21:30 美股开盘挂单询价 GLD 2027年1月 80/10 Call Spread，要求净权利金 ≤ .00/股）。",
     "C": "C. 今天继续观察：若此前已按条件建仓则继续持有 idea_20261016_01（多 50% TSM + 50% MSFT / 空 SOXX，今晚 21:30 观察比价站稳 0.8400 的加仓窗口）、idea_20261016_02（多 IH2611 / 空 IM2611）与 idea_20261016_03（桐昆股份 601233.SH）；今日 09:00 中国 10 月 LPR 报价、10:00 国新办工信部前三季度发布会及首批 18 只主动 ETF 发行进展；内盘纯碱（SA）去库相对焦煤（JM）创两月新低的黑链强弱分化及天然橡胶（RU/NR）保税区七连降正套机会。",
-    "D": "D. 今天必须回避或若此前已建仓则有条件退出：严禁在今日（2026-10-20）正式到期交割的 NYMEX WTI 11月合约（CLX26）上保留任何敞口或新开仓；在美债 10Y 收益率跃升至 5.140% 且现货金回落至 $4,135–$4,140 的背景下，严禁追高单边无保护的贵金属期货及 A 股黄金/白银矿企股（中金黄金 600489.SH、昨日跌超 5% 的盛达资源 000603.SZ）；严禁趁隔夜美股存储反弹追高 Q3 单季净利环比骤降 35%–49% 的 A 股存储模组股（江波龙 301308.SZ）；若此前已按条件建仓且触及止损线（idea_20261016_01 净值回撤达 -4.0% 或 TSM < $407.13、idea_20261016_02 比价 < 0.4050、idea_20261016_03 桐昆股份跌破 18.10 元），则严格执行有条件退出。"
+    "D": "D. 今天必须回避或若此前已建仓则有条件退出：严禁在今日（2026-10-20）正式到期交割的 NYMEX WTI 11月合约（CLX26）上保留任何敞口或新开仓；在美债 10Y 收益率跃升至 5.140% 且现货金回落至 ,135–,140 的背景下，严禁追高单边无保护的贵金属期货及 A 股黄金/白银矿企股（中金黄金 600489.SH、昨日跌超 5% 的盛达资源 000603.SZ）；严禁趁隔夜美股存储反弹追高 Q3 单季净利环比骤降 35%–49% 的 A 股存储模组股（江波龙 301308.SZ）；若此前已按条件建仓且触及止损线（idea_20261016_01 净值回撤达 -4.0% 或 TSM < 07.13、idea_20261016_02 比价 < 0.4050、idea_20261016_03 桐昆股份跌破 18.10 元），则严格执行有条件退出。"
   }
 }
