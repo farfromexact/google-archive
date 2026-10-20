@@ -1,6 +1,6 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-20T08:37:00+08:00",
+  "updated_at": "2026-10-20T08:51:00+08:00",
   "reports": [
     {
       "key": "2026-10-20_morning",
@@ -8,16 +8,16 @@
       "edition": "morning",
       "file_path_md": "reports/2026/10/2026-10-20_morning.md",
       "file_path_json": "reports/2026/10/2026-10-20_morning.json",
-      "generated_at": "2026-10-20T08:37:00+08:00",
-      "data_cutoff": "2026-10-20T08:35:00+08:00",
+      "generated_at": "2026-10-20T08:51:00+08:00",
+      "data_cutoff": "2026-10-20T08:48:00+08:00",
       "prompt_version": "radar_2026-10-12_stock_v1",
       "stock_integration_version": "stock_integration_2026-10-12_v1",
       "commodity_consumer_version": "core_2026-10-17_v1",
-      "headline_summary": "隔夜美股科技超跌反弹（QQQ +1.21%、SOXX +1.73%、VIX回落至18.14），台积电涨1.84%持续跑赢；10Y美债升至5.135%压制金油高位震荡；中国今日9:00迎LPR报价，大盘价值与AI垄断现金流配对领跑。",
+      "headline_summary": "隔夜美债熊陡（10Y升至5.14%）压制美油收98.24美元、现货金回落至4140美元，但以伊升级推升内盘原油夜盘涨2.34%；台积电领涨验证AI现金流配对，金融街新政护航中国大盘价值。",
       "top_ideas": [
-        "idea_20261017_01",
         "idea_20261016_01",
         "idea_20261016_02",
+        "idea_20261017_01",
         "idea_20261016_03",
         "idea_20261016_04"
       ]
