@@ -2,8 +2,8 @@
   "schema_version": "radar_report_v1",
   "report_date": "2026-10-20",
   "edition": "morning",
-  "generated_at": "2026-10-20T08:25:00+08:00",
-  "data_cutoff": "2026-10-20T08:20:00+08:00",
+  "generated_at": "2026-10-20T08:37:00+08:00",
+  "data_cutoff": "2026-10-20T08:35:00+08:00",
   "prompt_version": "radar_2026-10-12_stock_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
   "commodity_consumer_version": "core_2026-10-17_v1",
@@ -12,41 +12,86 @@
     "recent_same_edition_report": "reports/2026/10/2026-10-19_morning.md",
     "baseline_read_status": "ok"
   },
-  "headline_summary": "俄油豁免令隔夜WTI回落至98.24美元，原油看涨价差触发盘前保护性降级；美股科技止跌反弹（TSM +1.84%、MSFT +1.10%）验证AI现金流配对并升至Top 1；潘功胜与吴清金融街论坛释放重磅流动性工具，中国大盘价值稳居前二。",
+  "headline_summary": "隔夜美股科技超跌反弹（QQQ +1.21%、SOXX +1.73%、VIX回落至18.14），台积电涨1.84%持续跑赢；10Y美债升至5.135%压制金油高位震荡；中国今日9:00迎LPR报价，大盘价值与AI垄断现金流配对领跑。",
   "macro_dashboard": {
-    "us_2y_yield": { "value": 4.81, "unit": "%", "1d_change_bps": 2 },
-    "us_5y_yield": { "value": 5.01, "unit": "%", "1d_change_bps": 3 },
-    "us_10y_yield": { "value": 5.135, "unit": "%", "1d_change_bps": 3.8 },
-    "us_30y_yield": { "value": 5.42, "unit": "%", "1d_change_bps": 3 },
-    "us_10y_real_yield": { "value": 2.86, "unit": "%", "1d_change_bps": 2 },
-    "us_10y_bei": { "value": 2.34, "unit": "%", "1d_change_bps": -1 },
-    "dxy": { "value": 101.85, "1d_change_pct": 0.07 },
-    "usd_cnh": { "value": 6.685, "1d_change_pct": -0.02 },
-    "qqq": { "value": 718.36, "unit": "USD", "1d_change_pct": 1.21 },
-    "soxx": { "value": 501.93, "unit": "USD", "1d_change_pct": 1.73 },
-    "tsm": { "value": 420.22, "unit": "USD", "1d_change_pct": 1.84, "after_hours": 421.03 },
-    "msft": { "value": 534.9, "unit": "USD", "1d_change_pct": 1.1 },
-    "wti_crude": { "value": 98.24, "unit": "USD/bbl", "1d_change_pct": -0.78 },
-    "brent_crude": { "value": 108.13, "unit": "USD/bbl", "1d_change_pct": -1.57 },
-    "uso": { "value": 160.81, "unit": "USD", "1d_change_pct": -0.59 },
-    "sc_crude": { "value": 713.6, "unit": "CNY/bbl", "1d_change_pct": -1.3 },
-    "gold_spot": { "value": 4183.5, "unit": "USD/oz", "1d_change_pct": 0.05 },
-    "gld": { "value": 379.7, "unit": "USD", "1d_change_pct": -0.6 },
-    "vix": { "value": 18.65, "1d_change_pct": -6.7 },
-    "shanghai_50": { "value": 2776.85, "1d_change_pct": 0.42 },
-    "csi_300": { "value": 4182.2, "1d_change_pct": 0.39 },
-    "csi_1000": { "value": 6636.5, "1d_change_pct": -0.63 }
+    "us_rates": {
+      "2y_nominal": 4.81,
+      "5y_nominal": 5.01,
+      "10y_nominal": 5.135,
+      "30y_nominal": 5.42,
+      "10y_real": 2.86,
+      "10y_bei": 2.275,
+      "2s10s_spread_bps": 32.5,
+      "2s30s_spread_bps": 61.0,
+      "curve_regime": "bear_steepening_on_oil_inflation"
+    },
+    "fx": {
+      "dxy": 101.85,
+      "eur_usd": 1.1230,
+      "usd_jpy": 158.10,
+      "usd_cnh": 6.6880
+    },
+    "tech_ai": {
+      "qqq": 718.36,
+      "soxx": 501.93,
+      "smh": 548.46,
+      "tsm": 420.22,
+      "msft": 533.52,
+      "nvda": 217.30
+    },
+    "commodities": {
+      "wti_clz26": 98.35,
+      "wti_spot": 100.41,
+      "brent_crude": 108.13,
+      "uso": 160.81,
+      "sc_crude": 713.60,
+      "fu2612_night": 5590,
+      "gold_spot": 4183.50,
+      "gold_comex": 4179.20,
+      "gld": 379.69
+    },
+    "risk_indicators": {
+      "vix": 18.14,
+      "move": 99.20,
+      "hy_oas_bps": 324,
+      "ovx": 49.80
+    },
+    "china_equities_rates": {
+      "shanghai_50": 2776.85,
+      "csi_300": 4182.20,
+      "csi_500": 6742.10,
+      "csi_1000": 6636.50,
+      "cgb_10y": 1.645,
+      "cgb_30y": 2.062,
+      "dr007": 1.34,
+      "q3_gdp_yoy": 4.5
+    }
   },
-  "key_structural_changes": [
-    "俄罗斯制裁豁免传闻与CLX26到期移仓致隔夜WTI回落至$98.24/bbl、USO收跌至$160.81，严格执行WTI≥$100前置纪律未盲目追高，将原油看涨价差降级至Top 3观察",
-    "美股科技股迎来超跌反弹，VIX回落6.70%至18.65，TSM收涨+1.84%至$420.22、MSFT收涨+1.10%至$534.90，TSM/SOXX达0.8372正式触发入场并升至全球Top 1",
-    "潘功胜宣布推出非银机构大额赎回流动性支持工具，吴清宣布同意首批18只主动ETF注册，叠加明日工农行992.5亿分红，中国大盘价值收敛策略升至Top 2（88分）",
-    "美债10Y收益率跳升3.8 bps至5.135%（创10月2日以来最大单日涨幅），压制GLD美盘收跌-0.60%至$379.70，顺势下移黄金看涨价差执行价至$380/$410",
-    "深市10月19日晚间密集披露三季报预告（近八成预增，盛达资源预计净利6.6-7.0亿同比翻倍），坚持单季环比与原料成本减压逻辑继续持有桐昆股份（601233.SH）"
-  ],
   "top_ideas": [
     {
       "rank": 1,
+      "idea_id": "idea_20261017_01",
+      "name": "霍尔木兹油轮触雷断供与能源裂解凸性交易",
+      "asset_class": "全球能源期权 / 内盘裂解",
+      "expression": "多 USO Dec 2026 $162/$180 Bull Call Spread（或多 FU2612 / 空 L2701）",
+      "scores": {
+        "logic": 24,
+        "payoff_convexity": 23,
+        "catalyst_timing": 19,
+        "price_location": 12,
+        "crowding_structure": 13,
+        "total": 91
+      },
+      "stage": "确认交易 / 逢低挂单 (USO回踩$160.81提供更优买点)",
+      "max_loss_boundary": "期权净权利金严格封顶，上限 NAV 0.50%（CLZ26 破 $94 或权利金亏 -50% 计划止损）",
+      "tri_axial_status": {
+        "judgment": "逻辑维持",
+        "evidence": "充分",
+        "execution": "待美股 21:30 挂单 (内盘 09:00 开市)"
+      }
+    },
+    {
+      "rank": 2,
       "idea_id": "idea_20261016_01",
       "name": "AI 垄断现金流 vs 债务/存储周期分化配对",
       "asset_class": "美股半导体相对价值",
@@ -55,20 +100,20 @@
         "logic": 23,
         "payoff_convexity": 21,
         "catalyst_timing": 19,
-        "price_location": 13,
+        "price_location": 14,
         "crowding_structure": 13,
-        "total": 89
+        "total": 90
       },
-      "stage": "试仓持有 (隔夜已触发，TSM/SOXX=0.8372)",
+      "stage": "试仓持有 (隔夜 TSM 收 $420.22、比价 0.8372 已触发条件)",
       "max_loss_boundary": "计划止损 -4.0% (NAV 0.50%)，线性结构无合同封顶，极端跳空压力损失约 NAV 1.10%",
       "tri_axial_status": {
         "judgment": "逻辑增强",
         "evidence": "充分",
-        "execution": "已触发 (美股盘后休市，待今晚 21:30 跟踪)"
+        "execution": "已触发 (待今晚 21:30 跟踪)"
       }
     },
     {
-      "rank": 2,
+      "rank": 3,
       "idea_id": "idea_20261016_02",
       "name": "中国大盘价值 vs 小盘成长风格收敛交易",
       "asset_class": "中金所跨品种期指 RV",
@@ -81,34 +126,12 @@
         "crowding_structure": 12,
         "total": 88
       },
-      "stage": "确认交易 / 持有 (待 09:30 开盘跟踪)",
+      "stage": "确认交易 / 持有 (比价升至 0.4184，今日迎 LPR 与明日千亿分红)",
       "max_loss_boundary": "计划止损 -3.5% (NAV 0.45%)，极端小盘逼空压力损失约 NAV 1.00%",
       "tri_axial_status": {
         "judgment": "逻辑增强",
         "evidence": "充分",
-        "execution": "休市 (待今日 09:30 CST 开盘)"
-      }
-    },
-    {
-      "rank": 3,
-      "idea_id": "idea_20261017_01",
-      "name": "霍尔木兹地缘与能源看涨凸性交易",
-      "asset_class": "全球能源期权 / 内盘裂解",
-      "expression": "多 USO Dec 2026 $160/$178 Bull Call Spread（或多 FU2612 / 空 L2701）",
-      "scores": {
-        "logic": 22,
-        "payoff_convexity": 22,
-        "catalyst_timing": 17,
-        "price_location": 11,
-        "crowding_structure": 12,
-        "total": 84
-      },
-      "stage": "观察 / 等企稳触发 (WTI回落至$98.24，暂缓追高)",
-      "max_loss_boundary": "期权净权利金严格封顶，上限 NAV 0.50%（WTI 破 $95 或权利金亏 -50% 计划止损）",
-      "tri_axial_status": {
-        "judgment": "待验证优势",
-        "evidence": "充分",
-        "execution": "电子盘已开 (待 CLX26 交割后美盘挂单)"
+        "execution": "休市 (待今日 09:30 开盘跟踪)"
       }
     },
     {
@@ -116,7 +139,7 @@
       "idea_id": "idea_20261016_03",
       "name": "桐昆股份（601233.SH）三季报单季环比扩张错杀修复",
       "asset_class": "中国 A 股 + 化工跨资产对冲",
-      "expression": "多 601233.SH 现货（油价回落缓解聚酯成本挤压）",
+      "expression": "多 601233.SH 现货（可选配轻仓空 TA 期货锁加工差）",
       "scores": {
         "logic": 21,
         "payoff_convexity": 19,
@@ -125,29 +148,29 @@
         "crowding_structure": 12,
         "total": 82
       },
-      "stage": "试仓持有 (昨收 20.26元)",
+      "stage": "试仓持有 / 观察 (稳守 19.22 元突破位，昨收 20.26 元)",
       "max_loss_boundary": "计划止损 18.10元 (-5.8%, NAV 0.35%)，主板 T+1 交收，极端跌停压力 NAV 0.60%",
       "tri_axial_status": {
-        "judgment": "逻辑增强",
+        "judgment": "待验证优势",
         "evidence": "充分",
-        "execution": "休市 (待今日 09:30 CST 跟踪)"
+        "execution": "休市 (待今日 09:30 开盘跟踪)"
       }
     },
     {
       "rank": 5,
       "idea_id": "idea_20261016_04",
-      "name": "黄金政策信用与地缘滞胀价差",
+      "name": "黄金政策信用与滞胀尾部看涨价差",
       "asset_class": "全球贵金属期权",
-      "expression": "多 GLD 2027年1月 $380/$410 Call Spread",
+      "expression": "多 GLD 2027年1月 $385/$415 Call Spread",
       "scores": {
         "logic": 20,
         "payoff_convexity": 21,
         "catalyst_timing": 15,
-        "price_location": 11,
+        "price_location": 12,
         "crowding_structure": 11,
-        "total": 78
+        "total": 79
       },
-      "stage": "观察 / 待询价",
+      "stage": "重点观察 / 待询价 (GLD 回踩 $379.69 降低看涨价差成本)",
       "max_loss_boundary": "期权净权利金严格封顶，上限 NAV 0.50%（净权利金 ≤ $8.00/股）",
       "tri_axial_status": {
         "judgment": "待验证优势",
@@ -157,23 +180,48 @@
     }
   ],
   "sources": [
-    { "title": "Morningstar: 10-Year Treasury Yield Rises to 5.135%", "url": "https://www.morningstar.com/news/dow-jones/202610196209/10-year-treasury-yield-rises-to-5135-data-talk", "date": "2026-10-19" },
-    { "title": "StockAnalysis: TSM & SOXX Oct 19 Close", "url": "https://stockanalysis.com/stocks/tsm/history/", "date": "2026-10-19" },
-    { "title": "Investing.com: MSFT & GLD Historical Data", "url": "https://www.investing.com/equities/microsoft-corp-historical-data", "date": "2026-10-19" },
-    { "title": "Vantage Markets: Crude Oil Slips on Russia Waiver", "url": "https://www.vantagemarkets.com/market-analysis/crude-oil-prices-slip-russia-sanctions-waiver-brent-wti-october-19-2026/", "date": "2026-10-19" },
-    { "title": "东方财富：潘功胜宣布推出非银机构大额赎回流动性支持工具", "url": "https://wap.eastmoney.com/a/202610193899924797.html", "date": "2026-10-19" },
-    { "title": "新浪财经：证监会将同意首批18只主动ETF注册", "url": "https://finance.sina.com.cn/jjxw/2026-10-19/doc-inivtynr6963846.shtml", "date": "2026-10-19" }
+    {
+      "title": "10-Year Treasury Yield Rises to 5.135% — Data Talk | Morningstar",
+      "url": "https://www.morningstar.com/news/dow-jones/202610196209/10-year-treasury-yield-rises-to-5135-data-talk",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "QQQ Stock Price | Invesco QQQ Trust ETF - Investing.com",
+      "url": "https://www.investing.com/etfs/powershares-qqqq",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "TSMC Stock Price History - Stock Analysis",
+      "url": "https://stockanalysis.com/stocks/tsm/history/",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "Crude Oil Prices Slip: WTI Slides Below $100, Brent Weakens Too - Forbes",
+      "url": "https://www.forbes.com/advisor/investing/oil-prices-today/",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "Tech Rebounds to Start Critical Earnings Stretch - Charles Schwab",
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "最新上期所原油期货仓单变动（2026年10月19日）- 金投网",
+      "url": "https://futures.cngold.org/yuanyou/c10823891.html",
+      "date": "2026-10-19"
+    }
   ],
   "supported_claims": [
-    "US 10Y Treasury yield rose 3.8 bps to 5.135% on Oct 19, 2026, the largest one-day gain since Oct 2.",
-    "TSM closed up +1.84% at $420.22, MSFT closed up +1.10% at $534.90, and SOXX closed up +1.73% at $501.93 on Oct 19, 2026.",
-    "WTI crude settled lower at $98.24/bbl and USO closed at $160.81 (-0.59%) amid Russia sanctions waiver reports and CLX26 expiry.",
-    "PBOC Governor Pan Gongsheng announced a liquidity support tool for large redemptions at non-bank institutions, and CSRC Chairman Wu Qing approved the first 18 active ETFs on Oct 19, 2026."
+    "US 10Y Treasury yield rose 3.8 bps to 5.135% on October 19, 2026, largest one-day gain since Oct 2.",
+    "QQQ closed up +1.21% at $718.36, SOXX rose +1.73% to $501.93, SMH gained +1.61% to $548.46, and VIX fell -9.25% to 18.14.",
+    "TSM closed up +1.84% at $420.22 (intraday high $427.16), outperforming SOXX with TSM/SOXX ratio reaching 0.8372.",
+    "USO closed at $160.81 (-0.59%), WTI Dec (CLZ26) settled at $98.35, Brent settled at $108.13, and SHFE SC crude closed at 713.60 RMB/bbl (-1.30%).",
+    "Spot gold reached $4,183.50/oz intraday while GLD closed at $379.69 (-0.61%)."
   ],
   "action_conclusions": {
-    "A": "今天没有应立即建立的新仓位。（当前为周二早间 08:25 CST，A 股、中金所与国内商品日盘尚未开市，美股处于盘后休市状态，无秒级可立即市价成交的品种。）",
-    "B": "idea_20261016_02 多 IH2611 / 空 IM2611（今日 09:30 开盘趁小盘反抽、50/1000 现货比价回踩 0.4150–0.4170 且 IM2611 年化贴水 ≤ 8% 时挂单，5手:3手配比）；idea_20261017_01 原油看涨价差（待今日 CLX26 交割完成、今晚美盘 WTI 12月合约企稳 $98.50 上方时逢低挂单 USO Dec 2026 $160/$178 Call Spread，净权利金 ≤ $5.80）；idea_20261016_04 GLD 2027年1月 $380/$410 Call Spread（今晚美股开盘询价净权利金 ≤ $8.00）。",
-    "C": "idea_20261016_01 多 50% TSM + 50% MSFT / 空 SOXX（若隔夜已按触发条件建仓则继续持有）；idea_20261016_03 桐昆股份（601233.SH，若此前已建仓则继续持有）；今日 09:00 中国 10 月 LPR 报价及盛达资源（000603.SZ）三季报预增早盘反应。",
-    "D": "严禁在今日（10-20）到期交割的 NYMEX WTI 11月合约（CLX26）上留仓或新开仓；严禁在今日 09:00 商品开盘追高内盘原油（SC）与高硫燃料油（FU）裸多头；回避江波龙（301308.SZ）与中金黄金（600489.SH）；若此前已建仓仓位触及计划止损线则严格有条件退出。"
+    "A": "A. 今天没有应立即建立的新仓位。（当前为北京时间周二 08:35 CST，中国商品与 A 股/期指尚未开盘，美股处于盘后休市状态，无秒级市价可立即新建仓位；若此前已按条件在隔夜美股建立 idea_20261016_01 TSM+MSFT/SOXX 配对及昨日建立 idea_20261016_02 多IH2611/空IM2611 与 idea_20261016_03 桐昆股份，则继续按风控规则持有）。",
+    "B": "B. 今天仅应挂条件的候选：idea_20261017_01 原油看涨价差（若昨晚未建仓，趁隔夜 USO 回踩 $160.81，于今晚 21:30 美股开盘挂单买入 USO Dec 2026 $162/$180 Call Spread，要求净权利金 ≤ $5.80/股，或今日 09:00 内盘开市后在 FU2612 守稳 5,550 元时逢低配置多 FU2612 / 空 L2701）；idea_20261016_02 多 IH2611 / 空 IM2611（今日 09:30 开盘若因外盘科技反弹带动中证 1000 高开、使 50/1000 比价回踩 0.4150–0.4165 企稳且 IM2611 年化贴水 ≤ 8%，可挂单补齐确认仓位）。",
+    "C": "C. 今天继续观察：今日 09:00 CST 中国 10 月 LPR 报价结果及 09:30 开盘后银行/高股息板块资金流向；idea_20261016_04 GLD 2027年1月 $385/$415 Call Spread（隔夜 10Y 美债升至 5.135% 令 GLD 回踩 $379.69，待今晚美股开盘核实净权利金回落至 ≤ $8.00/股的报价）；周三晚 22:30 EIA 原油库存数据前瞻。",
+    "D": "D. 今天必须回避或若此前已建仓则有条件退出：严禁在今日（10-20）正式到期交割的 NYMEX WTI 11月合约（CLX26）上进行任何交易或留仓；在 10Y 美债收益率重返 5.135% 的背景下，严禁追高单边无对冲的高负债 AI 算力股与 Q3 单季环比大幅滑坡的 A 股存储模组（江波龙 301308.SZ）及黄金矿企股（中金黄金 600489.SH）；若 idea_20261016_03 桐昆股份今日放量跌破 18.10 元则严格执行止损退出。"
   }
 }
