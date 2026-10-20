@@ -3,8 +3,8 @@
   "run_status": "success",
   "report_date": "2026-10-20",
   "edition": "morning",
-  "generated_at": "2026-10-20T08:25:00+08:00",
-  "data_cutoff": "2026-10-20T08:20:00+08:00",
+  "generated_at": "2026-10-20T08:37:00+08:00",
+  "data_cutoff": "2026-10-20T08:35:00+08:00",
   "archive_target": "google_drive",
   "archive_status": "success",
   "ci_status": "pending_or_unverified",
@@ -17,7 +17,7 @@
     "manifests/reports.json"
   ],
   "engine_read_status": {
-    "Global-Cross-Asset-Radar": "ok_via_google_drive",
+    "Global-Cross-Asset-Radar": "ok",
     "China-Options-Engine": "permission_error",
     "China-Commodities-Engine": "permission_error",
     "China-Stock-Engine": "permission_error"
@@ -25,5 +25,7 @@
   "prompt_version": "radar_2026-10-12_stock_v1",
   "commodity_consumer_version": "core_2026-10-17_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "top_ideas_count": 5,
+  "detailed_cards_count": 3,
   "errors": []
 }
