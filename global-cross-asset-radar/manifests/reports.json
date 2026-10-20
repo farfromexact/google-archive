@@ -1,7 +1,26 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-19T20:35:00+08:00",
+  "updated_at": "2026-10-20T08:25:00+08:00",
   "reports": [
+    {
+      "key": "2026-10-20_morning",
+      "report_date": "2026-10-20",
+      "edition": "morning",
+      "file_path_md": "reports/2026/10/2026-10-20_morning.md",
+      "file_path_json": "reports/2026/10/2026-10-20_morning.json",
+      "generated_at": "2026-10-20T08:25:00+08:00",
+      "prompt_version": "radar_2026-10-12_stock_v1",
+      "stock_integration_version": "stock_integration_2026-10-12_v1",
+      "commodity_consumer_version": "core_2026-10-17_v1",
+      "headline_summary": "俄油豁免令隔夜WTI回落至98.24美元，原油看涨价差触发盘前保护性降级；美股科技止跌反弹（TSM +1.84%、MSFT +1.10%）验证AI现金流配对并升至Top 1；潘功胜与吴清金融街论坛释放重磅流动性工具，中国大盘价值稳居前二。",
+      "top_ideas": [
+        "idea_20261016_01",
+        "idea_20261016_02",
+        "idea_20261017_01",
+        "idea_20261016_03",
+        "idea_20261016_04"
+      ]
+    },
     {
       "key": "2026-10-19_evening",
       "report_date": "2026-10-19",
@@ -140,7 +159,7 @@
       ]
     }
   ],
-  "total_reports": 7,
-  "latest_morning": "2026-10-19",
+  "total_reports": 8,
+  "latest_morning": "2026-10-20",
   "latest_evening": "2026-10-19"
 }
