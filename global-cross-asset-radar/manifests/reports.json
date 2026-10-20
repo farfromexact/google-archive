@@ -1,6 +1,6 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-20T08:51:00+08:00",
+  "updated_at": "2026-10-20T20:06:00+08:00",
   "reports": [
     {
       "key": "2026-10-20_morning",
@@ -8,7 +8,7 @@
       "edition": "morning",
       "file_path_md": "reports/2026/10/2026-10-20_morning.md",
       "file_path_json": "reports/2026/10/2026-10-20_morning.json",
-      "generated_at": "2026-10-20T08:51:00+08:00",
+      "generated_at": "2026-10-20T20:06:00+08:00",
       "data_cutoff": "2026-10-20T08:48:00+08:00",
       "prompt_version": "radar_2026-10-12_stock_v1",
       "stock_integration_version": "stock_integration_2026-10-12_v1",
@@ -104,13 +104,10 @@
       "prompt_version": "radar_2026-10-12_stock_v1",
       "generated_at": "2026-10-17T20:35:00+08:00",
       "data_cutoff": "2026-10-17T20:30:00+08:00",
-      "md_path": "reports/2026/10/2026-10-17_evening.md",
-      "json_path": "reports/2026/10/2026-10-17_evening.json",
-      "latest_md_path": "latest/evening.md",
-      "latest_json_path": "latest/evening.json",
-      "status_path": "status/evening_latest.json",
+      "file_path_md": "reports/2026/10/2026-10-17_evening.md",
+      "file_path_json": "reports/2026/10/2026-10-17_evening.json",
       "headline_summary": "霍尔木兹海峡油轮触雷起火引爆周末原油断供恐慌，WTI破百、布油逼近110美元；美股OPEX后VIX飙至19.99，AI高负债信用重定价加剧；中金所2610交割完毕，中国资产聚焦周一三季度GDP与千亿分红。",
-      "top_idea_ids": [
+      "top_ideas": [
         "idea_20261017_01",
         "idea_20261016_01",
         "idea_20261016_02",
@@ -125,13 +122,10 @@
       "prompt_version": "radar_2026-10-12_stock_v1",
       "generated_at": "2026-10-17T10:06:00+08:00",
       "data_cutoff": "2026-10-17T10:03:00+08:00",
-      "md_path": "reports/2026/10/2026-10-17_morning.md",
-      "json_path": "reports/2026/10/2026-10-17_morning.json",
-      "latest_md_path": "latest/morning.md",
-      "latest_json_path": "latest/morning.json",
-      "status_path": "status/morning_latest.json",
+      "file_path_md": "reports/2026/10/2026-10-17_morning.md",
+      "file_path_json": "reports/2026/10/2026-10-17_morning.json",
       "headline_summary": "霍尔木兹油轮再起火叠加美众议院阻击俄油协议推动WTI破101美元、内盘燃油夜盘涨超4%；美股AI债务担忧令费半周挫11.8%、VIX飙至19.99，而做多TSM/MSFT空SOXX配对逆势斩获正Alpha。",
-      "top_idea_ids": [
+      "top_ideas": [
         "idea_20261016_01",
         "idea_20261017_01",
         "idea_20261016_02",
@@ -146,13 +140,10 @@
       "prompt_version": "radar_2026-10-12_stock_v1",
       "generated_at": "2026-10-16T08:42:00+08:00",
       "data_cutoff": "2026-10-16T08:38:00+08:00",
-      "md_path": "reports/2026/10/2026-10-16_morning.md",
-      "json_path": "reports/2026/10/2026-10-16_morning.json",
-      "latest_md_path": "latest/morning.md",
-      "latest_json_path": "latest/morning.json",
-      "status_path": "status/morning_latest.json",
+      "file_path_md": "reports/2026/10/2026-10-16_morning.md",
+      "file_path_json": "reports/2026/10/2026-10-16_morning.json",
       "headline_summary": "全球处于“能源通胀重定价+AI举债去杠杆+避险买长债与黄金”混合状态：美9月CPI/PPI超预期但核心零售停滞，台积电/ASML暴赚难阻芯片抛售；中国PTA/长丝链与大盘价值相对优势居全球前三。",
-      "top_idea_ids": [
+      "top_ideas": [
         "idea_20261016_01",
         "idea_20261016_02",
         "idea_20261016_03",
