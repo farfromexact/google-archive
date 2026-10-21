@@ -1,7 +1,27 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-20T20:06:00+08:00",
+  "updated_at": "2026-10-21T08:42:00+08:00",
   "reports": [
+    {
+      "key": "2026-10-21_morning",
+      "report_date": "2026-10-21",
+      "edition": "morning",
+      "file_path_md": "reports/2026/10/2026-10-21_morning.md",
+      "file_path_json": "reports/2026/10/2026-10-21_morning.json",
+      "generated_at": "2026-10-21T08:42:00+08:00",
+      "data_cutoff": "2026-10-21T08:38:00+08:00",
+      "prompt_version": "radar_2026-10-12_stock_v1",
+      "stock_integration_version": "stock_integration_2026-10-12_v1",
+      "commodity_consumer_version": "core_2026-10-17_v1",
+      "headline_summary": "美股道指创52495点新高、科技分化中台积电领跑（$425.26），内盘原油夜盘重挫4.47%促使能源价差规避止损，今日工农行992.5亿分红落地与离岸人民币升破6.68，做多中国大盘价值跃升榜首。",
+      "top_ideas": [
+        "idea_20261016_02",
+        "idea_20261016_01",
+        "idea_20261016_03",
+        "idea_20261016_04",
+        "idea_20261021_01"
+      ]
+    },
     {
       "key": "2026-10-20_morning",
       "report_date": "2026-10-20",
@@ -152,7 +172,7 @@
       ]
     }
   ],
-  "total_reports": 8,
-  "latest_morning": "2026-10-20",
+  "total_reports": 9,
+  "latest_morning": "2026-10-21",
   "latest_evening": "2026-10-19"
 }
