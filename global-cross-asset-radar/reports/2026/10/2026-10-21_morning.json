@@ -1,0 +1,287 @@
+{
+  "schema_version": "radar_report_v1",
+  "report_date": "2026-10-21",
+  "edition": "morning",
+  "generated_at": "2026-10-21T08:42:00+08:00",
+  "data_cutoff": "2026-10-21T08:38:00+08:00",
+  "prompt_version": "radar_2026-10-12_stock_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "prior_baselines": {
+    "recent_global_report": "reports/2026/10/2026-10-20_morning.md",
+    "recent_same_edition_report": "reports/2026/10/2026-10-20_morning.md",
+    "baseline_read_status": "ok"
+  },
+  "engine_audit": {
+    "Global-Cross-Asset-Radar": "ok",
+    "China-Options-Engine": "permission_error",
+    "China-Commodities-Engine": "permission_error",
+    "China-Stock-Engine": "permission_error",
+    "commodity_protocol_summary": {
+      "collection_scope": "63_products_full_scan_via_official_and_authoritative_fallback",
+      "core_atm_ready": true,
+      "skew_ready": true,
+      "surface_ready": false,
+      "positioning_ready": false,
+      "execution_ready": false,
+      "night_session_trading_date": "2026-10-21",
+      "calendar_mismatch": false,
+      "official_night_close_verified": false,
+      "price_semantics": "vendor_latest_trade_asof_snapshot",
+      "ohlcv_scope": "vendor_realtime_unverified_session_scope"
+    }
+  },
+  "headline_summary": "美股道指创52495点新高、科技分化中台积电领跑（$425.26），内盘原油夜盘重挫4.47%促使能源价差规避止损，今日工农行992.5亿分红落地与离岸人民币升破6.68，做多中国大盘价值跃升榜首。",
+  "macro_dashboard": {
+    "us_rates": {
+      "2y_nominal": 4.785,
+      "3y_nominal": 4.845,
+      "5y_nominal": 4.915,
+      "10y_nominal": 5.116,
+      "30y_nominal": 5.425,
+      "10y_real": 2.84,
+      "10y_bei": 2.276,
+      "2s10s_spread_bps": 33.1,
+      "2s30s_spread_bps": 64.0
+    },
+    "fx": {
+      "dxy": 101.685,
+      "eur_usd": 1.1237,
+      "usd_jpy": 158.2,
+      "usd_cny": 6.689,
+      "usd_cnh": 6.6758
+    },
+    "us_equities": {
+      "dow_jones": 52495.88,
+      "sp500": 7712.57,
+      "nasdaq": 26424.82,
+      "qqq": 718.9,
+      "soxx": 502.1,
+      "tsm": 425.26,
+      "msft": 534.1,
+      "tsm_soxx_ratio": 0.8469
+    },
+    "commodities": {
+      "brent_eod": 108.79,
+      "wti_clz26_eod": 101.79,
+      "uso": 161.2,
+      "sc_crude_night_close": 694.8,
+      "fu2612_night_close": 5280,
+      "gold_spot_eod": 4118.76,
+      "gold_comex_eod": 4122.4,
+      "silver_comex_eod": 57.94,
+      "sh_gold_night": 890.24,
+      "sh_silver_night": 14075
+    },
+    "risk_indicators": {
+      "vix": 17.85,
+      "move": 97.8,
+      "hy_oas_bps": 322,
+      "ovx": 52.4
+    },
+    "china_equities_rates": {
+      "shanghai_50": 2778.2,
+      "csi_300": 4152.11,
+      "csi_500": 6712.3,
+      "csi_1000": 6610.2,
+      "ratio_50_1000": 0.4203,
+      "cgb_10y": 1.642,
+      "cgb_30y": 2.06,
+      "dr007": 1.35,
+      "lpr_1y": 3.0,
+      "lpr_5y": 3.5,
+      "dividend_icbc_abc_billion_rmb": 992.5
+    }
+  },
+  "key_structural_changes": [
+    "工商银行与农业银行合计992.5亿元中期现金分红今日（10-21）正式派发到账，离岸人民币升破6.68至6.6758，50/1000比价突破0.4203，idea_20261016_02升至91分跃居全球Top 1",
+    "内盘原油SC夜盘暴跌-4.47%收报694.8元/桶击穿698元风控线，燃料油跌超5%，有效触发地缘溢价挤出与计划止损，idea_20261017_01果断清退调出Top 5",
+    "美股科技分化加剧，台积电TSM续涨+1.20%至$425.26，TSM/SOXX比价扩大至0.8469，idea_20261016_01浮盈持续扩大，止损线上移至保本，稳居全球Top 2（90分）",
+    "原油暴跌驱动聚酯产业链原料成本断崖下行，涤纶长丝龙头桐昆股份（601233.SH）加工差显著走阔，idea_20261016_03升至84分晋升至全球Top 3"
+  ],
+  "top_ideas": [
+    {
+      "rank": 1,
+      "idea_id": "idea_20261016_02",
+      "name": "中国大盘价值 vs 小盘成长风格收敛交易",
+      "asset_class": "中金所跨品种期指 RV",
+      "expression": "多 IH2611（5手）/ 空 IM2611（3手）（等名义价值 1.058:1 配对）",
+      "direction": "long_ih_short_im",
+      "horizon": "10_to_15_trading_days",
+      "scores": {
+        "logic": 24,
+        "payoff_convexity": 23,
+        "catalyst_timing": 20,
+        "price_location": 12,
+        "crowding_structure": 12,
+        "total": 91
+      },
+      "stage": "确认交易 / 重磅加仓 (工农行992.5亿分红今日到账，比价破0.4200，人民币升至6.6758)",
+      "max_loss_boundary": "比价跌破 0.4080 或净亏 -3.5% (NAV 0.75%)，极端损失封顶 NAV 1.00%",
+      "tri_axial_status": {
+        "judgment": "逻辑增强",
+        "evidence": "充分",
+        "execution": "已持仓 / 09:30 开盘逢回踩补齐确认仓位"
+      }
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261016_01",
+      "name": "AI 垄断现金流 vs 债务/存储周期分化配对",
+      "asset_class": "美股半导体相对价值",
+      "expression": "多 50% TSM + 50% MSFT / 空 100% SOXX（1.12:1 名义配比近似 Beta 中性）",
+      "direction": "long_short_relative_value",
+      "horizon": "12_trading_days",
+      "scores": {
+        "logic": 23,
+        "payoff_convexity": 21,
+        "catalyst_timing": 19,
+        "price_location": 14,
+        "crowding_structure": 13,
+        "total": 90
+      },
+      "stage": "试仓持有 / 浮盈扩大 (TSM 收 $425.26，比价达 0.8469)",
+      "max_loss_boundary": "止损上移至保本 (-2.0% 或 TSM < $415.50，预算 NAV 0.50%)",
+      "tri_axial_status": {
+        "judgment": "逻辑维持",
+        "evidence": "充分",
+        "execution": "已触发并浮盈 (待今晚 21:30 CST 跟踪)"
+      }
+    },
+    {
+      "rank": 3,
+      "idea_id": "idea_20261016_03",
+      "name": "桐昆股份（601233.SH）原料暴跌加工差扩张修复",
+      "asset_class": "中国 A 股 + 化工跨资产对冲",
+      "expression": "多 601233.SH 现货（可选配轻仓空 TA2701 锁加工差）",
+      "direction": "long_equity_with_optional_commodity_hedge",
+      "horizon": "10_to_15_trading_days",
+      "scores": {
+        "logic": 22,
+        "payoff_convexity": 20,
+        "catalyst_timing": 18,
+        "price_location": 12,
+        "crowding_structure": 12,
+        "total": 84
+      },
+      "stage": "试仓持有 / 降本扩利 (SC原油夜盘暴跌-4.47%直接降本，周二收20.26元坚挺)",
+      "max_loss_boundary": "止损上移至 18.50元 (-8.6%, NAV 0.35%)，极端跌停压力 NAV 0.60%",
+      "tri_axial_status": {
+        "judgment": "逻辑增强",
+        "evidence": "充分",
+        "execution": "盘前休市 (待今日 09:30 CST 开盘跟踪)"
+      }
+    },
+    {
+      "rank": 4,
+      "idea_id": "idea_20261016_04",
+      "name": "黄金政策信用与地缘滞胀看涨价差",
+      "asset_class": "全球贵金属期权",
+      "expression": "多 GLD 2027年1月 $380/$410 Call Spread",
+      "direction": "long_call_spread",
+      "horizon": "3_months",
+      "scores": {
+        "logic": 20,
+        "payoff_convexity": 20,
+        "catalyst_timing": 14,
+        "price_location": 11,
+        "crowding_structure": 12,
+        "total": 77
+      },
+      "stage": "重点观察 / 逢低询价 (现货金回落至$4,118，COMEX金收$4,122.40，GLD跌至$377.90降低买点成本)",
+      "max_loss_boundary": "期权净权利金严格封顶，上限 NAV 0.50%（要求净权利金 ≤ $8.00/股）",
+      "tri_axial_status": {
+        "judgment": "待验证优势",
+        "evidence": "部分",
+        "execution": "待报价或参数 (待今晚 21:30 CST 美股询价)"
+      }
+    },
+    {
+      "rank": 5,
+      "idea_id": "idea_20261021_01",
+      "name": "纯碱（SA）厂家去库 vs 焦煤（JM）复产分化套利",
+      "asset_class": "中国商品跨品种套利",
+      "expression": "多 SA2701 / 空 JM2701（1:1.1 配比跨品种套利）",
+      "direction": "long_sa_short_jm",
+      "horizon": "10_to_20_trading_days",
+      "scores": {
+        "logic": 19,
+        "payoff_convexity": 18,
+        "catalyst_timing": 15,
+        "price_location": 11,
+        "crowding_structure": 11,
+        "total": 74
+      },
+      "stage": "新入榜候选 / 观察 (纯碱周度库存大降5.48% vs 焦煤山西复产创逾两个月新低)",
+      "max_loss_boundary": "组合价差回撤 -3.8% (NAV 0.35%)，极端单边跳空压力损失约 NAV 0.70%",
+      "tri_axial_status": {
+        "judgment": "逻辑新成立",
+        "evidence": "充分 (3层有效)",
+        "execution": "待开盘验证 (待今日 09:00 CST 日盘开盘)"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "千亿级红利陆续落袋透视银行中期分红新局 - 中国证券报",
+      "url": "https://jnz.cs.com.cn/app/html/jnz/493b913142aa5448fb4b4694934d078d.html",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "新一期贷款市场报价利率未作调整 - 新华网",
+      "url": "https://www.news.cn/fortune/20261020/c5ceb4f5be3b4924845a929da482a717/c.html",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "美元指数20日下跌 - 财联社",
+      "url": "https://www.cls.cn/detail/2510402",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "华尔街见闻早餐FM-Radio | 2026年10月21日",
+      "url": "https://wallstreetcn.com/articles/3784074",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "上期所原油期货夜盘收跌4.47%，报694.8元/桶 - 财联社",
+      "url": "https://www.cls.cn/detail/2510394",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "10-Year Treasury Yield Falls to 5.116% — Data Talk - Morningstar",
+      "url": "https://www.morningstar.com/news/dow-jones/202610207404/10-year-treasury-yield-falls-to-5116-data-talk",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "Comex Gold Settles 0.40% Lower at $4122.40 — Data Talk - Morningstar",
+      "url": "https://www.morningstar.com/news/dow-jones/202610206821/comex-gold-settles-040-lower-at-412240-data-talk",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Jumps 1.2% - MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/price-taiwan-semiconductor-manufacturing-nyse-tsm-stock-jumps-12-whats-next-2026-10-20/",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "Oil Prices Fall at Settlement - Saudi Press Agency (SPA)",
+      "url": "https://www.spa.gov.sa/en/N2706425",
+      "date": "2026-10-20"
+    }
+  ],
+  "supported_claims": [
+    "On October 21, 2026, Industrial and Commercial Bank of China (ICBC) and Agricultural Bank of China (ABC) officially distributed 2026 interim cash dividends totaling 992.5 billion RMB (approx. 82.1 billion RMB to A-share shareholders).",
+    "On October 20, 2026, the People's Bank of China announced the 1-year LPR at 3.0% and 5-year LPR at 3.5%, holding unchanged for the 17th consecutive month.",
+    "The US Dollar Index (DXY) fell 0.27%-0.29% to settle around 101.685-101.701 on October 20, while offshore Yuan (USD/CNH) strengthened to 6.6758.",
+    "China INE crude oil night session on October 21 plunged -4.47% to close at 694.8 RMB/bbl, breaking below the 698 RMB risk control threshold.",
+    "US 10-Year Treasury Yield eased 2.4 bps to 5.116%, 2-Year rose to 4.785%, and 30-Year fell to 5.425% on October 20.",
+    "Dow Jones Industrial Average rallied 529.85 points (+1.02%) to hit a record 52,495.88, S&P 500 rose +0.28% to 7,712.57, and Nasdaq dipped -0.02% to 26,424.82.",
+    "TSM rose +1.20% to $425.26 (midday high $426.99) on October 20, lifting the TSM/SOXX ratio to 0.8469.",
+    "COMEX Gold settled down -0.40% at $4,122.40/oz and spot gold eased to $4,118.76/oz."
+  ],
+  "action_conclusions": {
+    "A": "A. 今天没有应立即建立的新仓位。",
+    "B": "B. 今天仅应挂条件的候选：idea_20261016_02 多 IH2611 / 空 IM2611（今日 09:30 开盘后若 50/1000 现货比价处于 0.4180–0.4205 区间且 IM2611 年化贴水差 ≤ 9.0%，立即按 5手:3手挂单补齐确认仓位，保护性止损上移至 < 0.4080）；idea_20261016_04 黄金看涨价差（趁现货金跌至 $4,118、GLD 回踩 $377.90，今晚 21:30 美股开盘挂单询价 GLD 2027年1月 $380/$410 Call Spread，要求净权利金 ≤ $8.00/股）；idea_20261021_01 纯碱/焦煤套利（今日 09:00 商品日盘开盘核实 SA2701 守稳 1,470 元且 JM2701 弱于 1,240 元时，挂单配置多 SA2701 / 空 JM2701 1:1.1 名义套利）。",
+    "C": "C. 今天继续观察：若此前已按条件建仓则继续持有 idea_20261016_01（多 50% TSM + 50% MSFT / 空 SOXX，止损上移至保本，今晚美股开盘观察比价突破 0.8500 动能）与 idea_20261016_03（桐昆股份 601233.SH，止损上移至 18.50 元，跟踪原油暴跌向下游 POY 长丝加工费暴增的利润传导）；密切监测今日 09:30 工农行 992.5 亿元分红资金入账后对上证 50 蓝筹权重的流动性推升效应及离岸人民币在 6.675 附近维稳态势。",
+    "D": "D. 今天必须回避或若此前已建仓则有条件退出：原油与燃料油多头必须坚决回避，上期能源 SC 原油夜盘已暴跌 -4.47% 跌破 694.8 元/桶并触发 idea_20261017_01 的 698 元硬性止损阈值，若此前持有相关多头仓位必须严格执行有条件退出，严禁在暴跌初段逆势抄底原油及高硫燃油；严禁跟风追高受外盘反抽刺激但三季报暴雷风险尚未出清的 A 股存储与低毛利半导体模组股；若持仓品种触及保护性止损线（idea_20261016_02 比价 < 0.4080、idea_20261016_03 跌破 18.50 元），严格执行保护退出。"
+  }
+}
