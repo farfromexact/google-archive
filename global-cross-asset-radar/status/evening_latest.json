@@ -1,25 +1,27 @@
 {
-  "run_status": "success",
-  "report_date": "2026-10-19",
+  "report_date": "2026-10-21",
   "edition": "evening",
-  "generated_at": "2026-10-19T20:35:00+08:00",
-  "archive_status": "archived",
-  "ci_status": "passed",
-  "files_written": [
-    "reports/2026/10/2026-10-19_evening.md",
-    "reports/2026/10/2026-10-19_evening.json",
-    "latest/evening.md",
-    "latest/evening.json",
-    "status/evening_latest.json",
-    "manifests/reports.json"
-  ],
-  "engine_read_status": {
-    "Global-Cross-Asset-Radar": "ok",
-    "China-Options-Engine": "permission_error",
-    "China-Commodities-Engine": "permission_error",
-    "China-Stock-Engine": "permission_error"
-  },
-  "commodity_consumer_version": "core_2026-10-17_v1",
+  "status": "success",
+  "generated_at": "2026-10-21T20:15:00+08:00",
+  "data_cutoff": "2026-10-21T20:10:00+08:00",
+  "prompt_version": "radar_2026-10-12_stock_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
-  "errors": []
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "archive_status": "success",
+  "top_ideas_count": 5,
+  "top_ideas": [
+    "idea_20261016_02",
+    "idea_20261016_01",
+    "idea_20261016_03",
+    "idea_20261016_04",
+    "idea_20261021_01"
+  ],
+  "verification": {
+    "reports_md_written": true,
+    "reports_json_written": true,
+    "latest_md_synced": true,
+    "latest_json_synced": true,
+    "status_synced": true,
+    "manifest_updated": true
+  }
 }
