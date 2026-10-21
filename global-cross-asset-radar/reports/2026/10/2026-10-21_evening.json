@@ -1,0 +1,320 @@
+{
+  "schema_version": "radar_report_v1",
+  "report_date": "2026-10-21",
+  "edition": "evening",
+  "generated_at": "2026-10-21T20:15:00+08:00",
+  "data_cutoff": "2026-10-21T20:10:00+08:00",
+  "prompt_version": "radar_2026-10-12_stock_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "prior_baselines": {
+    "recent_global_report": "reports/2026/10/2026-10-21_morning.md",
+    "recent_same_edition_report": "reports/2026/10/2026-10-19_evening.md",
+    "baseline_read_status": "ok"
+  },
+  "engine_audit": {
+    "Global-Cross-Asset-Radar": "ok",
+    "China-Options-Engine": "permission_error",
+    "China-Commodities-Engine": "permission_error",
+    "China-Stock-Engine": "permission_error",
+    "commodity_protocol_summary": {
+      "collection_scope": "63_products_full_scan_via_official_and_authoritative_fallback",
+      "core_atm_ready": true,
+      "skew_ready": true,
+      "surface_ready": false,
+      "positioning_ready": false,
+      "execution_ready": false,
+      "night_session_trading_date": "2026-10-21",
+      "calendar_mismatch": false,
+      "official_night_close_verified": false,
+      "price_semantics": "vendor_latest_trade_asof_snapshot",
+      "ohlcv_scope": "vendor_realtime_unverified_session_scope"
+    }
+  },
+  "headline_summary": "A股EOD大盘蓝筹受工农行821亿分红落地护盘跑赢小盘，离岸人民币稳居6.678；法国10Y国债收益率破5%推升欧债避险买盘，美债10Y稳于5.12%，现货金企稳4135美元；商品21:00夜盘关注纯碱去库与原油止跌验证。",
+  "macro_dashboard": {
+    "us_rates": {
+      "2y_nominal": 4.79,
+      "3y_nominal": 4.845,
+      "5y_nominal": 4.915,
+      "10y_nominal": 5.12,
+      "30y_nominal": 5.42,
+      "10y_real": 2.84,
+      "10y_bei": 2.28,
+      "2s10s_spread_bps": 33.0,
+      "2s30s_spread_bps": 63.0
+    },
+    "fx": {
+      "dxy": 101.789,
+      "eur_usd": 1.1226,
+      "usd_jpy": 158.35,
+      "usd_cny": 6.689,
+      "usd_cnh": 6.678
+    },
+    "us_equities": {
+      "dow_jones": 52495.88,
+      "sp500": 7712.57,
+      "nasdaq": 26424.82,
+      "qqq_premarket": 720.5,
+      "soxx_premarket": 503.2,
+      "tsm_premarket": 425.26,
+      "msft_premarket": 535.4,
+      "tsm_soxx_ratio": 0.8451
+    },
+    "commodities": {
+      "brent_latest": 109.47,
+      "wti_clz26_latest": 99.8,
+      "uso": 161.5,
+      "sc_crude_day_close": 692.5,
+      "fu2612_day_close": 5260,
+      "gold_spot_latest": 4135.13,
+      "gold_comex_latest": 4138.2,
+      "silver_comex_latest": 57.63,
+      "sa2701_day_close": 1475,
+      "jm2701_day_close": 1235
+    },
+    "risk_indicators": {
+      "vix_premarket": 17.5,
+      "move": 97.5,
+      "hy_oas_bps": 320,
+      "ovx": 52.0
+    },
+    "china_equities_rates": {
+      "shanghai_composite": 3713.03,
+      "shanghai_50": 2767.1,
+      "csi_300": 4111.93,
+      "csi_500": 6652.4,
+      "csi_1000": 6517.65,
+      "ratio_50_1000": 0.4245,
+      "cgb_10y": 1.64,
+      "cgb_30y": 2.058,
+      "dr007": 1.34,
+      "lpr_1y": 3.0,
+      "lpr_5y": 3.5,
+      "dividend_icbc_abc_billion_rmb": 992.5
+    }
+  },
+  "key_structural_changes": [
+    "A股EOD风格剪刀差显著扩大：今日创业板指大跌-1.62%、中证1000跌-1.40%，而上证50受工农行821亿元现金分红直接到账护盘仅微跌-0.40%，50/1000比价由晨间0.4203走阔至0.4245创阶段新高，多IH/空IM配对（idea_20261016_02）确认交易获大幅正Alpha，评分升至92分稳居榜首",
+    "欧洲主权债风险发酵与地缘避险共振：法国反紧缩罢工骚乱推升法国10年期国债收益率自2002年以来首次突破5.00%（4.98%-5.00%），欧元走软至1.1226，美元指数微升至101.789；避险买盘推动现货金自晨间回落低位企稳反弹至4135.13美元/盎司，GLD看涨价差（idea_20261016_04）性价比凸显",
+    "美盘盘前AI硬件分化持续：台积电（TSM）盘前稳守$425.26，三星合作HBM4基底晶圆垄断确立；CoreWeave推出零信任AI框架与具身智能套件，CrowdStrike与英伟达扩展Agent安全合作，TSM/SOXX相对价值配对（idea_20261016_01）保本持有浮盈进一步稳固",
+    "中国商品日盘收盘跌多涨少（指数跌-0.42%）：纯碱SA2701日盘守稳1,475元且厂家库存降5.48%，焦煤JM2701受山西复产压制收1,235元，多SA/空JM套利（idea_20261021_01）入场条件在今晚21:00商品夜盘开盘迎来第一验证窗口",
+    "SC原油日盘收盘692.5元/桶企稳：外盘Brent回升至109.47美元、WTI 12月主力升至99.80美元，晨间止损清退原油多头（idea_20261017_01）成功规避内盘近5%暴跌风险，桐昆股份（601233.SH）受益原料降本扩大长丝加工差，idea_20261016_03升至85分保持Top 3"
+  ],
+  "top_ideas": [
+    {
+      "rank": 1,
+      "idea_id": "idea_20261016_02",
+      "name": "中国大盘价值 vs 小盘成长风格收敛交易",
+      "asset_class": "中金所跨品种期指 RV",
+      "expression": "多 IH2611（5手）/ 空 IM2611（3手）（等名义价值 1.058:1 配对）",
+      "direction": "long_ih_short_im",
+      "horizon": "10_to_15_trading_days",
+      "scores": {
+        "logic": 24,
+        "payoff_convexity": 24,
+        "catalyst_timing": 20,
+        "price_location": 12,
+        "crowding_structure": 12,
+        "total": 92
+      },
+      "stage": "确认交易 / 重仓持有 (工农行821亿分红A股到账护盘，50/1000比价达0.4245创阶段新高)",
+      "max_loss_boundary": "比价跌破 0.4120 或净亏 -3.5% (NAV 0.75%)，极端损失封顶 NAV 1.00%",
+      "tri_axial_status": {
+        "judgment": "逻辑增强",
+        "evidence": "充分 (4层有效)",
+        "execution": "已持仓盈利 / 明日 09:30 CST 开盘跟踪"
+      }
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261016_01",
+      "name": "AI 垄断现金流 vs 债务/存储周期分化配对",
+      "asset_class": "美股半导体相对价值",
+      "expression": "多 50% TSM + 50% MSFT / 空 100% SOXX（1.12:1 名义配比近似 Beta 中性）",
+      "direction": "long_short_relative_value",
+      "horizon": "12_trading_days",
+      "scores": {
+        "logic": 23,
+        "payoff_convexity": 21,
+        "catalyst_timing": 19,
+        "price_location": 14,
+        "crowding_structure": 13,
+        "total": 90
+      },
+      "stage": "试仓持有 / 浮盈扩大 (TSM 盘前报 $425.26，比价 0.8451 维持高位)",
+      "max_loss_boundary": "止损上移至保本 (-2.0% 或 TSM < $416.00，预算 NAV 0.50%)",
+      "tri_axial_status": {
+        "judgment": "逻辑维持",
+        "evidence": "充分",
+        "execution": "已触发并浮盈 (待今晚 21:30 CST 美股开盘跟踪)"
+      }
+    },
+    {
+      "rank": 3,
+      "idea_id": "idea_20261016_03",
+      "name": "桐昆股份（601233.SH）原料暴跌加工差扩张修复",
+      "asset_class": "中国 A 股 + 化工跨资产对冲",
+      "expression": "多 601233.SH 现货（可选配轻仓空 TA2701 锁加工差）",
+      "direction": "long_equity_with_optional_commodity_hedge",
+      "horizon": "10_to_15_trading_days",
+      "scores": {
+        "logic": 22,
+        "payoff_convexity": 21,
+        "catalyst_timing": 18,
+        "price_location": 12,
+        "crowding_structure": 12,
+        "total": 85
+      },
+      "stage": "试仓持有 / 降本扩利 (SC原油日盘收692.5元，长丝加工差扩大逾120元/吨)",
+      "max_loss_boundary": "止损上移至 18.50元 (-8.6%, NAV 0.35%)，极端跌停压力 NAV 0.60%",
+      "tri_axial_status": {
+        "judgment": "逻辑增强",
+        "evidence": "充分",
+        "execution": "已持仓 / 待明日 09:30 CST 开盘跟踪"
+      }
+    },
+    {
+      "rank": 4,
+      "idea_id": "idea_20261016_04",
+      "name": "黄金政策信用与地缘滞胀看涨价差",
+      "asset_class": "全球贵金属期权",
+      "expression": "多 GLD 2027年1月 $380/$410 Call Spread",
+      "direction": "long_call_spread",
+      "horizon": "3_months",
+      "scores": {
+        "logic": 21,
+        "payoff_convexity": 20,
+        "catalyst_timing": 14,
+        "price_location": 11,
+        "crowding_structure": 12,
+        "total": 78
+      },
+      "stage": "重点观察 / 逢低询价 (现货金回踩$4,118后企稳$4,135，法国骚乱促避险，待今晚询价)",
+      "max_loss_boundary": "期权净权利金严格封顶，上限 NAV 0.50%（要求净权利金 ≤ $8.00/股）",
+      "tri_axial_status": {
+        "judgment": "待验证优势",
+        "evidence": "部分",
+        "execution": "待报价或参数 (今晚 21:30 CST 美股开盘询价挂单)"
+      }
+    },
+    {
+      "rank": 5,
+      "idea_id": "idea_20261021_01",
+      "name": "纯碱（SA）厂家去库 vs 焦煤（JM）复产分化套利",
+      "asset_class": "中国商品跨品种套利",
+      "expression": "多 SA2701 / 空 JM2701（1:1.1 配比跨品种套利）",
+      "direction": "long_sa_short_jm",
+      "horizon": "10_to_20_trading_days",
+      "scores": {
+        "logic": 19,
+        "payoff_convexity": 18,
+        "catalyst_timing": 16,
+        "price_location": 11,
+        "crowding_structure": 11,
+        "total": 75
+      },
+      "stage": "新入榜候选 / 今晚夜盘挂单 (纯碱去库5.48%日盘收1475 vs 焦煤复产收1235)",
+      "max_loss_boundary": "组合价差回撤 -3.8% (NAV 0.35%)，极端单边跳空压力损失约 NAV 0.70%",
+      "tri_axial_status": {
+        "judgment": "逻辑新成立",
+        "evidence": "充分 (3层有效)",
+        "execution": "待开盘挂单 (今晚 21:00 CST 商品夜盘验证开仓)"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "上证指数历史数据 - 英为财情",
+      "url": "https://cn.investing.com/indices/shanghai-composite-historical-data",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "沪深300历史数据 - 英为财情",
+      "url": "https://cn.investing.com/indices/csi300-historical-data",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "千亿级红利陆续落袋透视银行中期分红新局 - 中国经济网",
+      "url": "http://finance.ce.cn/bank12/scroll/202610/t20261021_3265832.shtml",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "ETF市场日报｜创业板指创9月以来新低！算力硬件反弹 - 东方财富",
+      "url": "https://finance.eastmoney.com/a/202610213902679284.html",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "国内商品期货收盘跌多涨少欧线集运跌近8% - 东方财富",
+      "url": "https://futures.eastmoney.com/a/cwpsd.html",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "每日龙虎榜| 商品期货综合指数下跌0.42% - 东方财富",
+      "url": "https://futures.eastmoney.com/a/aec.html",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "上期所原油期货夜盘收跌4.47%，报694.8元/桶 - 财联社",
+      "url": "https://www.cls.cn/detail/2510394",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "US 10 Year Treasury Note Yield - Trading Economics",
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "United States Dollar - Quote - Chart - Trading Economics",
+      "url": "https://tradingeconomics.com/united-states/currency",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "Euro US Dollar Exchange Rate - Trading Economics",
+      "url": "https://tradingeconomics.com/euro-area/currency",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "Brent oil - Price - Chart - Trading Economics",
+      "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "Oil Prices Jump 2% as Iran Talks Falter and U.S. Inventories Tighten - EnergyNow",
+      "url": "https://energynow.ca/2026/10/oil-prices-jump-2-as-iran-talks-falter-and-u-s-inventories-tighten-brent-climbs-above-110/",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "France 10-year bond yield tops 5% for first time since 2002 - Quartz",
+      "url": "https://qz.com/france-10-year-bond-yield-tops-5-percent-102126",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Jumps 1.2% - MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/price-taiwan-semiconductor-manufacturing-nyse-tsm-stock-jumps-12-whats-next-2026-10-20/",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "CARDINAL BRIDGE CAPITAL BREAKDOWN: Wednesday, October 21, 2026 - Moomoo",
+      "url": "https://www.moomoo.com/community/feed/cardinal-bridge-capital-breakdown-wednesday-october-21-2026-117478412124165",
+      "date": "2026-10-21"
+    }
+  ],
+  "supported_claims": [
+    "On October 21, 2026, Shanghai Composite Index closed down -0.60% at 3,713.03, CSI 300 fell -0.97% to 4,111.93, while ChiNext tumbled -1.62%.",
+    "On October 21, 2026, Industrial and Commercial Bank of China (ICBC) and Agricultural Bank of China (ABC) officially distributed 82.1 billion RMB in 2026 interim cash dividends to A-share accounts (total dividend 992.5 billion RMB).",
+    "The 50/1000 ratio widened to 0.4245 as large-cap value defensive outperformance expanded following bank dividend inflows.",
+    "China domestic commodity futures index fell -0.42% on October 21, with container shipping (EC) plunging -7.8% while nickel rose over 3%.",
+    "SC crude settled at 692.5 RMB/bbl after a 4.47% overnight plunge to 694.8 RMB/bbl, while Brent rose back to 109.47 USD/bbl and WTI to 99.80 USD/bbl.",
+    "US 10-Year Treasury Yield held steady at 5.12%, while French 10-Year bond yield topped 5% for the first time since 2002 amid anti-austerity strikes.",
+    "US Dollar Index (DXY) rose slightly to 101.789, EUR/USD traded at 1.1226, and offshore Yuan (USD/CNH) remained strong around 6.6780.",
+    "TSM shares traded steadily in pre-market around $425.26, keeping the TSM/SOXX ratio around 0.8451.",
+    "Spot Gold rebounded to $4,135.13/oz (+0.25%) and COMEX Gold traded at $4,138.20/oz."
+  ],
+  "action_conclusions": {
+    "A": "A. 今天没有应立即建立的新仓位。",
+    "B": "B. 今天仅应挂条件的候选：idea_20261021_01 纯碱/焦煤套利（今晚 21:00 商品夜盘开盘若 SA2701 守稳 1,470 元且 JM2701 弱于 1,240 元，挂单多 SA2701 / 空 JM2701 按 1:1.1 配比跨品种套利试仓）；idea_20261016_04 黄金看涨价差（今晚 21:30 美股开盘询价挂单买入 GLD 2027年1月 $380/$410 Call Spread，要求净权利金 ≤ $8.00/股，封顶风险 NAV 0.50%）；idea_20261016_02 大盘价值/小盘成长（明日 09:30 A股开盘若 50/1000 现货比价回踩 0.4200–0.4220 区间，按 5手 IH2611 : 3手 IM2611 补齐确认仓位，止损线上移至 < 0.4120）。",
+    "C": "C. 今天继续观察：若此前已按条件建仓则继续持有 idea_20261016_01（多 50% TSM + 50% MSFT / 空 SOXX，止损上移至保本，今晚 21:30 美股开盘跟踪比价突破 0.8500 动能）与 idea_20261016_03（桐昆股份 601233.SH，止损线上移至 18.50 元，跟踪 SC 原油暴跌向下游 POY 涤纶长丝加工差扩张的增利逻辑）；监测今晚 21:00 商品夜盘开盘后原油 SC 与高硫燃油 FU 是否出现企稳减仓信号，以及欧洲法国 10Y 国债破 5% 后的主权债压力向全球信用息差的传导。",
+    "D": "D. 今天必须回避或若此前已建仓则有条件退出：坚决回避单边做多原油与高硫燃料油，晨间 SC 原油夜盘已暴跌 -4.47% 跌破 694.8 元并击穿 698 元止损线触发清退，当前外盘虽反抽至 $99.8 但内盘高溢价挤出过程未完，严禁逆势盲目抄底；回避基本面亏损且缺乏现金流支撑的低端半导体模组及算力租赁题材股；若持仓品种触及保护性止损线（idea_20261016_02 比价 < 0.4120、idea_20261016_03 跌破 18.50 元），严格执行保护退出。"
+  }
+}
