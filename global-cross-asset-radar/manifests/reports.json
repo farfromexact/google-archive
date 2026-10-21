@@ -1,7 +1,27 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-21T08:42:00+08:00",
+  "updated_at": "2026-10-21T20:15:00+08:00",
   "reports": [
+    {
+      "key": "2026-10-21_evening",
+      "report_date": "2026-10-21",
+      "edition": "evening",
+      "file_path_md": "reports/2026/10/2026-10-21_evening.md",
+      "file_path_json": "reports/2026/10/2026-10-21_evening.json",
+      "generated_at": "2026-10-21T20:15:00+08:00",
+      "data_cutoff": "2026-10-21T20:10:00+08:00",
+      "prompt_version": "radar_2026-10-12_stock_v1",
+      "stock_integration_version": "stock_integration_2026-10-12_v1",
+      "commodity_consumer_version": "core_2026-10-17_v1",
+      "headline_summary": "A股EOD大盘蓝筹受工农行821亿分红落地护盘跑赢小盘，离岸人民币稳居6.678；法国10Y国债收益率破5%推升欧债避险买盘，美债10Y稳于5.12%，现货金企稳4135美元；商品21:00夜盘关注纯碱去库与原油止跌验证。",
+      "top_ideas": [
+        "idea_20261016_02",
+        "idea_20261016_01",
+        "idea_20261016_03",
+        "idea_20261016_04",
+        "idea_20261021_01"
+      ]
+    },
     {
       "key": "2026-10-21_morning",
       "report_date": "2026-10-21",
@@ -172,7 +192,7 @@
       ]
     }
   ],
-  "total_reports": 9,
+  "total_reports": 10,
   "latest_morning": "2026-10-21",
-  "latest_evening": "2026-10-19"
+  "latest_evening": "2026-10-21"
 }
