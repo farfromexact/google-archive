@@ -1,21 +1,39 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-21T20:15:00+08:00",
+  "updated_at": "2026-10-22T08:25:00+08:00",
   "reports": [
+    {
+      "key": "2026-10-22_morning",
+      "report_date": "2026-10-22",
+      "edition": "morning",
+      "file_path_md": "reports/2026/10/2026-10-22_morning.md",
+      "file_path_json": "reports/2026/10/2026-10-22_morning.json",
+      "generated_at": "2026-10-22T08:25:00+08:00",
+      "data_cutoff": "2026-10-22T08:20:00+08:00",
+      "prompt_version": "radar_2026-10-12_stock_v1",
+      "stock_integration_version": "stock_integration_2026-10-12_v1",
+      "commodity_consumer_version": "core_2026-10-17_v1",
+      "headline_summary": "Meta三季度Capex达349亿美元超经营现金流致FCF转负（-21.2亿），凸显上游代工卖铲人相对优势；法债10Y破5%支撑金价站上4140美元；内盘SC夜盘续跌1.5%至690.3元，今日聚焦纯碱去库套利与桐昆成本验证。",
+      "top_ideas": [
+        "idea_20261016_01",
+        "idea_20261016_03",
+        "idea_20261016_04",
+        "idea_20261021_01"
+      ]
+    },
     {
       "key": "2026-10-21_evening",
       "report_date": "2026-10-21",
       "edition": "evening",
       "file_path_md": "reports/2026/10/2026-10-21_evening.md",
       "file_path_json": "reports/2026/10/2026-10-21_evening.json",
-      "generated_at": "2026-10-21T20:15:00+08:00",
-      "data_cutoff": "2026-10-21T20:10:00+08:00",
+      "generated_at": "2026-10-21T21:45:00+08:00",
+      "data_cutoff": "2026-10-21T21:40:00+08:00",
       "prompt_version": "radar_2026-10-12_stock_v1",
       "stock_integration_version": "stock_integration_2026-10-12_v1",
       "commodity_consumer_version": "core_2026-10-17_v1",
-      "headline_summary": "A股EOD大盘蓝筹受工农行821亿分红落地护盘跑赢小盘，离岸人民币稳居6.678；法国10Y国债收益率破5%推升欧债避险买盘，美债10Y稳于5.12%，现货金企稳4135美元；商品21:00夜盘关注纯碱去库与原油止跌验证。",
+      "headline_summary": "A股EOD小盘逆势收涨中证1000涨0.20%、上证50跌0.68%致50/1000比价跌破0.4052触发止损退出；SC原油日盘反弹至716.5结算700.8修正桐昆降本弹性；美股盘前TSM/SOXX高位配对跃居榜首，严格执行计划止损并防范跳空滑点。",
       "top_ideas": [
-        "idea_20261016_02",
         "idea_20261016_01",
         "idea_20261016_03",
         "idea_20261016_04",
@@ -192,7 +210,7 @@
       ]
     }
   ],
-  "total_reports": 10,
-  "latest_morning": "2026-10-21",
+  "total_reports": 11,
+  "latest_morning": "2026-10-22",
   "latest_evening": "2026-10-21"
 }
