@@ -1,0 +1,256 @@
+{
+  "schema_version": "radar_report_v1",
+  "report_date": "2026-10-22",
+  "edition": "morning",
+  "generated_at": "2026-10-22T08:25:00+08:00",
+  "data_cutoff": "2026-10-22T08:20:00+08:00",
+  "prompt_version": "radar_2026-10-12_stock_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "prior_baselines": {
+    "recent_global_report": "reports/2026/10/2026-10-21_evening.md",
+    "recent_same_edition_report": "reports/2026/10/2026-10-21_morning.md",
+    "baseline_read_status": "ok"
+  },
+  "engine_audit": {
+    "Global-Cross-Asset-Radar": "ok",
+    "China-Options-Engine": "permission_error",
+    "China-Commodities-Engine": "permission_error",
+    "China-Stock-Engine": "permission_error",
+    "commodity_protocol_summary": {
+      "collection_scope": "63_products_full_scan_via_official_and_authoritative_fallback",
+      "core_atm_ready": true,
+      "skew_ready": true,
+      "surface_ready": false,
+      "positioning_ready": false,
+      "execution_ready": false,
+      "night_session_trading_date": "2026-10-22",
+      "calendar_mismatch": false,
+      "official_night_close_verified": false,
+      "price_semantics": "vendor_latest_trade_asof_snapshot",
+      "ohlcv_scope": "vendor_realtime_unverified_session_scope"
+    }
+  },
+  "headline_summary": "Meta三季度Capex达349亿美元超经营现金流致FCF转负（-21.2亿），凸显上游代工卖铲人相对优势；法债10Y破5%支撑金价站上4140美元；内盘SC夜盘续跌1.5%至690.3元，今日聚焦纯碱去库套利与桐昆成本验证。",
+  "macro_dashboard": {
+    "us_rates": {
+      "2y_nominal": 4.823,
+      "10y_nominal": 5.145,
+      "30y_nominal": 5.437,
+      "10y_real": 2.85,
+      "10y_bei": 2.295,
+      "2s10s_spread_bps": 32.2,
+      "2s30s_spread_bps": 61.4,
+      "france_10y_oat": 5.0,
+      "germany_10y_bund": 3.43
+    },
+    "fx": {
+      "dxy": 101.78,
+      "eur_usd": 1.1223,
+      "usd_cnh_below": 6.68
+    },
+    "us_equities": {
+      "dow_jones": 52856.09,
+      "sp500": 7757.17,
+      "nasdaq": 26702.86,
+      "sox_index": 11505.56,
+      "qqq_change_pct": 1.05,
+      "sox_change_pct": 1.97,
+      "nvda_change_pct": 2.54,
+      "meta_q3_revenue_billion": 64.6,
+      "meta_q3_capex_billion": 34.91,
+      "meta_q3_fcf_billion": -2.12
+    },
+    "commodities": {
+      "wti_clz26_eod": 97.15,
+      "wti_clz26_asian_morning": 98.12,
+      "brent_bzz26_eod": 108.82,
+      "brent_bzz26_asian_morning": 109.99,
+      "sc_crude_night_close": 690.3,
+      "gold_spot_eod": 4140.82,
+      "gold_comex_eod": 4130.5,
+      "sh_gold_night": 893.0,
+      "sh_silver_night": 14015,
+      "china_methanol_port_inventory_10k_tons": 36.38,
+      "china_soda_ash_sep_operating_rate_pct": 72.81
+    },
+    "china_equities_rates": {
+      "shanghai_composite": 3713.03,
+      "shanghai_50": 2747.05,
+      "csi_300": 4111.93,
+      "csi_1000": 6780.26,
+      "chinext": 2694.71,
+      "ratio_50_1000": 0.4052
+    }
+  },
+  "key_structural_changes": [
+    "Meta 2026Q3资本开支飙升80%至349.1亿美元，自2012年来首次超越当季经营现金流（327.9亿美元）导致自由现金流转负（-21.2亿美元），全年Capex指引下限上调至1350-1450亿美元；英伟达签署2790亿美元供应链扩产承诺；周三费半指数反弹+1.97%，idea_20261016_01微调至88分稳居Top 1",
+    "原油经历美拟出借31.5万桶取暖油储备及法国锁定每月近30万吨中东柴油供应（压制昨夜WTI收跌0.68%至97.15美元、内盘SC夜盘收跌1.50%至690.3元/桶）与今晨美撤离驻沙特非紧急雇员（刺激亚盘WTI反抽1%至98.12美元）的双向拉锯；SC夜盘回落改善桐昆股份（601233.SH）长丝即期加工差，idea_20261016_03评82分居Top 2",
+    "法国10年期国债收益率自2002年来首度触及5.00%（法德利差逼近160bp），叠加美国向中东增派第三艘航母及1万名士兵，推动现货黄金收涨+0.38%至4140.82美元/盎司、COMEX金收4130.50美元、沪金夜盘涨0.29%至893元/克，idea_20261016_04升至79分居Top 3",
+    "9月中国纯碱企业开工率环比大降7.04%至72.81%而周三夜盘焦煤续跌1.92%，多SA2701/空JM2701套利（idea_20261021_01）升至76分居Top 4；中共中央、国务院发文推动硬科技攻关与国企研发免责，宁德时代连夜回应现金流与存货问题，维持多IH/空IM（idea_20261016_02）止损清退状态"
+  ],
+  "top_ideas": [
+    {
+      "rank": 1,
+      "idea_id": "idea_20261016_01",
+      "name": "AI 垄断现金流 vs 远端 Capex/周期分化配对",
+      "asset_class": "美股半导体相对价值主题配对",
+      "expression": "多 50% TSM + 50% MSFT / 空 100% SOXX（1.12:1 名义配比）",
+      "direction": "long_short_relative_value",
+      "horizon": "10_to_12_trading_days",
+      "scores": {
+        "logic": 24,
+        "payoff_convexity": 21,
+        "catalyst_timing": 19,
+        "price_location": 12,
+        "crowding_structure": 12,
+        "total": 88
+      },
+      "stage": "试仓跟踪 (研究有效 / 信号已满足 / 计划跟踪持有 / 实际持仓未核实)",
+      "max_loss_boundary": "计划止损净值回撤 -2.0% 或 TSM < $416.00 (预算 NAV 0.50%)；非保证限损，隔夜跳空与双腿异步滑点极端压力损失约 NAV 1.10%",
+      "tri_axial_status": {
+        "judgment": "逻辑增强",
+        "evidence": "充分 (4层独立因子)",
+        "execution": "待今晚 21:30 CST 美股常规时段跟踪"
+      }
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261016_03",
+      "name": "桐昆股份（601233.SH）长丝成本松动与估值修复",
+      "asset_class": "中国 A 股 + 化工跨资产对冲",
+      "expression": "多 601233.SH 现货（可选配轻仓空 TA2701 锁加工差）",
+      "direction": "long_equity_with_optional_commodity_hedge",
+      "horizon": "10_to_15_trading_days",
+      "scores": {
+        "logic": 21,
+        "payoff_convexity": 20,
+        "catalyst_timing": 17,
+        "price_location": 12,
+        "crowding_structure": 12,
+        "total": 82
+      },
+      "stage": "试仓跟踪 (研究有效 / 信号已满足 / 计划持有观察 / 实际持仓未核实)",
+      "max_loss_boundary": "计划止损日线收盘跌破 18.50元 (预算 NAV 0.35%)；T+1 制度下极端跌停跳空压力损失约 NAV 0.60%",
+      "tri_axial_status": {
+        "judgment": "逻辑维持",
+        "evidence": "充分 (3层有效)",
+        "execution": "待今日 09:30 CST A 股开盘跟踪"
+      }
+    },
+    {
+      "rank": 3,
+      "idea_id": "idea_20261016_04",
+      "name": "黄金主权信用与地缘尾部有限风险看涨价差",
+      "asset_class": "全球贵金属期权",
+      "expression": "多 GLD 2027年1月 $380/$410 Call Spread",
+      "direction": "long_call_spread",
+      "horizon": "3_months",
+      "scores": {
+        "logic": 21,
+        "payoff_convexity": 20,
+        "catalyst_timing": 15,
+        "price_location": 11,
+        "crowding_structure": 12,
+        "total": 79
+      },
+      "stage": "条件待询价 (研究有效 / 权利金信号待核实 / 计划条件挂单 / 实际持仓未核实)",
+      "max_loss_boundary": "仅当净权利金 ≤ $8.00/股时成交，合同最大亏损严格封顶于已付净权利金 (预算 NAV 0.50%)",
+      "tri_axial_status": {
+        "judgment": "逻辑增强",
+        "evidence": "部分 (缺场内期权实时隐波盘口)",
+        "execution": "待今晚 21:30 CST 美股开盘询价"
+      }
+    },
+    {
+      "rank": 4,
+      "idea_id": "idea_20261021_01",
+      "name": "纯碱（SA）检修降负去库 vs 焦煤（JM）复产分化套利",
+      "asset_class": "中国商品跨品种套利",
+      "expression": "多 SA2701 / 空 JM2701（1:1.1 名义配比）",
+      "direction": "long_sa_short_jm",
+      "horizon": "10_to_20_trading_days",
+      "scores": {
+        "logic": 20,
+        "payoff_convexity": 18,
+        "catalyst_timing": 16,
+        "price_location": 11,
+        "crowding_structure": 11,
+        "total": 76
+      },
+      "stage": "条件挂单 (研究有效 / 信号已满足 / 计划条件挂单 / 实际持仓未核实)",
+      "max_loss_boundary": "组合价差计划止损 -3.8% (预算 NAV 0.35%)；跨品种非完全锁死，极端双边跳空压力损失约 NAV 0.70%",
+      "tri_axial_status": {
+        "judgment": "逻辑增强",
+        "evidence": "充分 (商品3层有效)",
+        "execution": "待今日 09:00 CST 商品日盘开盘验证"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meta Reports Third Quarter 2026 Results (Form 8-K Exhibit 99.1) - SEC.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "Meta Q3 2026 Earnings: Equipment Purchases Top Operating Cash, First Since 2012 - StockTitan",
+      "url": "https://www.stocktitan.net/articles/meta-q3-2026-earnings-results",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout - NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "华尔街见闻早餐FM-Radio | 2026年10月22日 - 华尔街见闻",
+      "url": "https://wallstreetcn.com/articles/3784141",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "S&P 500 Rises 0.58% to 7757.17 — Data Talk - Morningstar",
+      "url": "https://www.morningstar.com/news/dow-jones/2026102110114/sp-500-rises-058-to-775717-data-talk",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "10-Year Treasury Yield Rises to 5.145% & 2-Year Rises to 4.823% — Data Talk - Morningstar",
+      "url": "https://www.morningstar.com/news/dow-jones/202610218222/10-year-treasury-yield-rises-to-5145-data-talk",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "Comex Gold Settles 0.20% Higher at $4130.50 — Data Talk - Morningstar",
+      "url": "https://www.morningstar.com/news/dow-jones/202610217675/comex-gold-settles-020-higher-at-413050-data-talk",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "上期所原油期货夜盘收跌1.5%，报690.3元/桶；沪金主力合约收涨0.29% - 财联社",
+      "url": "https://www.cls.cn/detail/2511586",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "国际油价21日涨跌不一 纽约油价跌0.68%收于97.15美元 - 证券时报",
+      "url": "https://www.stcn.com/article/detail/4232235.html",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "2026年10月22日金十期货早餐 & 东方财富期货早餐",
+      "url": "https://emwap.eastmoney.com/a/202610213902956364.html",
+      "date": "2026-10-22"
+    }
+  ],
+  "supported_claims": [
+    "Meta Platforms reported Q3 2026 revenue of $64.60 billion (+26% YoY), while capital expenditures including finance leases reached $34.91 billion (+80% YoY), exceeding operating cash flow ($32.79 billion) for the first time since mid-2012 and turning free cash flow negative (-$2.12 billion); full-year 2026 capex guidance was narrowed upward to $135-$145 billion and a new non-voting Class C stock was approved.",
+    "On October 21, 2026, S&P 500 rose +0.58% (+44.60 pts) to 7,757.17, Dow Jones rose +0.69% (+360.21 pts) to 52,856.09, Nasdaq rose +1.05% (+278.04 pts) to 26,702.86, and Philadelphia Semiconductor Index (SOX) rose +1.97% to 11,505.56.",
+    "US 2-Year Treasury yield rose 3.8 bps to 4.823%, 10-Year yield rose to 5.145% (late-day 5.1253%), and 30-Year yield rose to 5.437%, while France 10-Year government bond yield reached 5.00% (highest since 2002).",
+    "WTI December crude settled down -0.68% (-$0.67) at $97.15/bbl on Oct 21 as the US announced lending up to 315,000 bbl of heating oil reserves and France secured ~300,000 tons/month of Middle East diesel, before rebounding +1.0% to $98.12/bbl in Oct 22 Asian trading after the US ordered non-emergency embassy staff to leave Saudi Arabia.",
+    "China INE SC crude night session (ended Oct 22 02:30 CST) closed down -1.50% at 690.3 RMB/bbl; SHFE Gold night session rose +0.29% to 893.00 RMB/g and COMEX Gold settled +0.20% higher at $4,130.50/oz (spot gold $4,140.82/oz).",
+    "China September 2026 soda ash (SA) enterprise operating rate fell 7.04 percentage points MoM to 72.81%, and China methanol port inventory declined 3,400 tons to 363,800 tons as of Oct 21."
+  ],
+  "action_conclusions": {
+    "A": "A. 今天没有应立即建立的新仓位。",
+    "B": "B. 今天仅应挂条件的候选：idea_20261021_01 纯碱/焦煤跨品种套利（待今日 09:00 商品日盘开盘后 15–30 分钟核实郑商所 SA2701 守稳 1,470 元上方且大商所 JM2701 受制于 1,240 元下方、烧碱跌势未引发纯碱恐慌抛售时，按 1:1.1 名义配比挂单试仓，组合计划止损 -3.8%）；idea_20261016_04 黄金看涨期权价差（待今晚 21:30 美股开盘询价 GLD 2027年1月 $380/$410 Call Spread，仅在盘口净权利金支出 ≤ $8.00/股时挂单建仓，合同最大亏损封顶于净权利金）。",
+    "C": "C. 今天继续观察：若此前已按条件建仓则继续跟踪持有 idea_20261016_01（多 50% TSM + 50% MSFT / 空 100% SOXX，今晚 21:30 美股开盘重点观察市场对 Meta 单季 Capex $34.91B 致 FCF 转负与英伟达 $279B 供应链扩产的分化定价，严格执行 -2.0% 或 TSM < $416.00 计划退出规则并防范跳空滑点）与 idea_20261016_03（桐昆股份 601233.SH，今日 09:30 开盘观察内盘 SC 原油夜盘跌至 690.3 元/桶后的长丝即期加工差修复与产销率，计划止损 18.50 元）；同时观察宁德时代（300750.SZ）就现金流与存货回应后的创业板企稳情况及三星电机 MLCC 交期延至 52 周对被动元件板块的传导。",
+    "D": "D. 今天必须回避或若此前已建仓则有条件退出：继续回避并执行退出 idea_20261016_02（多 IH2611 / 空 IM2611，因昨日 50/1000 现货比价跌至 0.4052 击穿 0.4080 止损线，且今日中共中央、国务院发文推动硬科技攻关与国企研发容错机制有利于科创小盘修复，若此前曾按条件建仓且未退出则今日 09:30 开盘严格执行计划退出，不开新仓）；坚决回避单边裸做多或裸做空原油（SC/WTI）及烧碱（SH）期货，规避美国释储与中东撤侨双向消息撕裂带来的跳空穿仓风险。"
+  }
+}
