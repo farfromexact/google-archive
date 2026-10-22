@@ -2,19 +2,25 @@
   "report_date": "2026-10-21",
   "edition": "evening",
   "status": "success",
-  "generated_at": "2026-10-21T20:15:00+08:00",
-  "data_cutoff": "2026-10-21T20:10:00+08:00",
+  "generated_at": "2026-10-21T21:45:00+08:00",
+  "data_cutoff": "2026-10-21T21:40:00+08:00",
   "prompt_version": "radar_2026-10-12_stock_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
   "commodity_consumer_version": "core_2026-10-17_v1",
   "archive_status": "success",
-  "top_ideas_count": 5,
+  "audit_revision": "quotes_corrected_and_stop_loss_enforced",
+  "top_ideas_count": 4,
   "top_ideas": [
-    "idea_20261016_02",
     "idea_20261016_01",
     "idea_20261016_03",
     "idea_20261016_04",
     "idea_20261021_01"
+  ],
+  "exited_ideas": [
+    {
+      "idea_id": "idea_20261016_02",
+      "reason": "Ratio 50/1000 dropped to 0.4052, triggered planned stop-loss threshold 0.4120/0.4080"
+    }
   ],
   "verification": {
     "reports_md_written": true,
