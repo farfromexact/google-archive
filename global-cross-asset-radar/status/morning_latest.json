@@ -1,16 +1,16 @@
 {
   "schema_version": "radar_status_v1",
   "run_status": "success",
-  "report_date": "2026-10-22",
+  "report_date": "2026-10-21",
   "edition": "morning",
-  "generated_at": "2026-10-22T08:25:00+08:00",
-  "data_cutoff": "2026-10-22T08:20:00+08:00",
+  "generated_at": "2026-10-21T08:42:00+08:00",
+  "data_cutoff": "2026-10-21T08:38:00+08:00",
   "archive_target": "google_drive",
   "archive_status": "success",
   "ci_status": "pending_or_unverified",
   "files_written": [
-    "reports/2026/10/2026-10-22_morning.md",
-    "reports/2026/10/2026-10-22_morning.json",
+    "reports/2026/10/2026-10-21_morning.md",
+    "reports/2026/10/2026-10-21_morning.json",
     "latest/morning.md",
     "latest/morning.json",
     "status/morning_latest.json",
@@ -25,7 +25,7 @@
   "prompt_version": "radar_2026-10-12_stock_v1",
   "commodity_consumer_version": "core_2026-10-17_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
-  "top_ideas_count": 4,
+  "top_ideas_count": 5,
   "detailed_cards_count": 3,
   "errors": []
 }
