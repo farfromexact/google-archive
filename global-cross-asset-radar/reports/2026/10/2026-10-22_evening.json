@@ -1,0 +1,274 @@
+{
+  "schema_version": "radar_report_v1",
+  "report_date": "2026-10-22",
+  "edition": "evening",
+  "generated_at": "2026-10-22T19:50:00+08:00",
+  "data_cutoff": "2026-10-22T19:45:00+08:00",
+  "prompt_version": "radar_2026-10-12_stock_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "temporal_context_note": "本次执行时点对应北京时间2026-10-22 19:50（美东时间2026-10-22 07:50 EDT）。中国10-22日盘EOD已完整收盘（创业板大跌-4.37%、中证1000跌-2.98%、上证50抗跌收2714点）；欧洲盘法国10Y触及5.142%且也门胡塞袭击沙特推升布油跳涨4%至$113；美股盘前AI承压纳指期货重挫。接下来的交易窗口为今晚21:00中国商品夜盘及21:30美股开盘。",
+  "prior_baselines": {
+    "recent_global_report": "reports/2026/10/2026-10-22_morning.md",
+    "recent_same_edition_report": "reports/2026/10/2026-10-21_evening.md",
+    "baseline_read_status": "ok"
+  },
+  "engine_audit": {
+    "Global-Cross-Asset-Radar": "ok",
+    "China-Options-Engine": "permission_error",
+    "China-Commodities-Engine": "permission_error",
+    "China-Stock-Engine": "permission_error",
+    "commodity_protocol_summary": {
+      "collection_scope": "63_products_full_scan_via_official_and_authoritative_fallback",
+      "core_atm_ready": true,
+      "skew_ready": true,
+      "surface_ready": false,
+      "positioning_ready": false,
+      "execution_ready": false,
+      "night_session_trading_date": "2026-10-23",
+      "calendar_mismatch": false,
+      "official_night_close_verified": false,
+      "price_semantics": "vendor_latest_trade_asof_snapshot",
+      "ohlcv_scope": "vendor_realtime_unverified_session_scope"
+    }
+  },
+  "headline_summary": "沙特油田遭胡塞袭击推升布油跳涨4%逼近$113，能源通胀重燃压制现货金跌至$4041；美股纳指重挫-2.6%而道指微涨展现极致分化；A股小盘与创业板大跌（-4.37%），大盘价值防御凸显；商品21:00夜盘关注原油高开与能化成本传导。",
+  "macro_dashboard": {
+    "us_rates": {
+      "2y_nominal": 4.72,
+      "3y_nominal": 4.785,
+      "5y_nominal": 4.85,
+      "10y_nominal": 4.982,
+      "30y_nominal": 5.32,
+      "10y_real": 2.72,
+      "10y_bei": 2.26,
+      "2s10s_spread_bps": 26.2,
+      "2s30s_spread_bps": 60.0
+    },
+    "fx": {
+      "dxy": 101.633,
+      "eur_usd": 1.1219,
+      "usd_jpy": 156.578,
+      "usd_cny": 6.685,
+      "usd_cnh": 6.672
+    },
+    "us_equities": {
+      "dow_jones": 52867.98,
+      "sp500": 7663.43,
+      "nasdaq": 26008.86,
+      "russell_2000": 2784.03,
+      "qqq_premarket": 706.7,
+      "soxx_premarket": 488.5,
+      "tsm_premarket": 419.8,
+      "msft_premarket": 531.2,
+      "tsm_soxx_ratio": 0.8594
+    },
+    "commodities": {
+      "brent_latest": 113.17,
+      "wti_clz26_latest": 100.2,
+      "uso": 166.4,
+      "sc_crude_day_close": 716.5,
+      "sc_crude_day_settlement": 700.8,
+      "fu2612_day_close": 5310,
+      "gold_spot_latest": 4041.39,
+      "gold_comex_settle": 4060.4,
+      "silver_comex_settle": 55.8,
+      "sa2701_day_close": 1476,
+      "jm2701_day_close": 1228
+    },
+    "risk_indicators": {
+      "vix_premarket": 19.85,
+      "move": 102.5,
+      "hy_oas_bps": 329,
+      "ovx": 58.5
+    },
+    "china_equities_rates": {
+      "shanghai_composite": 3658.03,
+      "shanghai_50": 2714.2,
+      "csi_300": 4036.3,
+      "csi_500": 6465.1,
+      "csi_1000": 6578.27,
+      "ratio_50_1000": 0.4126,
+      "cgb_10y": 1.635,
+      "cgb_30y": 2.052,
+      "dr007": 1.35,
+      "lpr_1y": 3.0,
+      "lpr_5y": 3.5
+    }
+  },
+  "key_structural_changes": [
+    "沙特石油设施遭胡塞武装致命袭击，布伦特原油暴涨4%突破$113：也门胡塞武装针对沙特境内石油目标发动袭击引发严重供给中断恐慌，布伦特原油跳涨4%至$113.17/bbl创五个月新高，WTI升破$100至$100.20/bbl；原油看涨价差（idea_20261017_01）大幅受益，今晚21:00商品夜盘内盘原油SC及高硫燃油FU面临大幅高开冲击",
+    "能源通胀担忧与高利率预期重创黄金，现货金大跌2.4%破位至$4041：尽管地缘风险升级，但原油暴涨引发市场对美联储更高更久利率预期的再定价，避险属性被实际利率预期压制，现货金自4135暴跌至$4,041.39/oz创两个月新低，COMEX结算报$4,060.40；GLD看涨价差（idea_20261016_04）调降至68分移入观察池",
+    "美股科技股遭遇7月以来最惨重抛售，纳指跌2.6%但道指与小盘微涨：AI资本开支焦虑与高利率担忧引发科技权重股无差别踩踏，纳斯达克暴跌-2.6%（26,008点），标普跌-1.2%（7,663点），但道指微涨+0.02%（52,867点）、罗素2000微涨+0.1%；多TSM+MSFT/空SOXX配对比价走高至0.8594，逆势斩获超额Alpha，维持Top 1",
+    "美债10Y收益率避险回落跌破5%至4.982%，法德利差走阔至174bp：法国10年期国债收益率冲高至5.142%（收5.082%创2002年来新高），欧洲避险资金大举涌入德债与美债避险，推动美债10Y跌破5.00%关口至4.982%，欧洲高收益CDS攀升至329bp",
+    "A股EOD小盘与成长全线破位，大盘价值防御重现：10-22 A股出现普跌调整，创业板指大跌-4.37%、中证1000大跌-2.98%（6,578点），上证综指失守3700收3,658点（-1.48%）；上证50跌-1.20%展现极强防御性，50/1000比价由0.4052低位回升至0.4126，前期止损后今日继续空仓观望"
+  ],
+  "top_ideas": [
+    {
+      "rank": 1,
+      "idea_id": "idea_20261016_01",
+      "name": "AI 垄断现金流 vs 债务/存储周期分化配对",
+      "asset_class": "美股半导体相对价值",
+      "expression": "多 50% TSM + 50% MSFT / 空 100% SOXX（1.12:1 名义配比近似 Beta 中性）",
+      "direction": "long_short_relative_value",
+      "horizon": "10_to_12_trading_days",
+      "scores": {
+        "logic": 24,
+        "payoff_convexity": 22,
+        "catalyst_timing": 20,
+        "price_location": 13,
+        "crowding_structure": 12,
+        "total": 91
+      },
+      "stage": "试仓持有 / 浮盈扩大 (TSM/SOXX 比价达 0.8594 创阶段新高)",
+      "max_loss_boundary": "跟踪止损设定在保本位（TSM < $416.00 且 SOXX 反抽 > $515.00），防范开盘跳空与双腿异步滑点，预估风险上限 NAV 0.20%",
+      "tri_axial_status": {
+        "judgment": "逻辑强化",
+        "evidence": "充分 (3层有效)",
+        "execution": "已持仓 / 今晚 21:30 CST 美股开盘跟踪"
+      }
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261017_01",
+      "name": "霍尔木兹地缘升级与沙特遇袭原油断供看涨",
+      "asset_class": "全球能源与原油期权",
+      "expression": "多 USO Dec 2026 $165/$180 Call Spread 或多 FU2612 / 空 L2701",
+      "direction": "long_energy_convexity",
+      "horizon": "5_to_10_trading_days",
+      "scores": {
+        "logic": 24,
+        "payoff_convexity": 23,
+        "catalyst_timing": 19,
+        "price_location": 11,
+        "crowding_structure": 11,
+        "total": 88
+      },
+      "stage": "确认交易 / 重大催化兑现 (沙特遇袭推升布油破 $113，内盘夜盘面临跳空)",
+      "max_loss_boundary": "USO Call Spread 净权利金封顶损失 NAV 0.50%；商品内盘严禁追高裸多头",
+      "tri_axial_status": {
+        "judgment": "逻辑暴发",
+        "evidence": "充分 (4层有效)",
+        "execution": "待今晚 21:00 夜盘与 21:30 美股开盘询价"
+      }
+    },
+    {
+      "rank": 3,
+      "idea_id": "idea_20261021_01",
+      "name": "纯碱去库 vs 焦煤复产跨品种套利",
+      "asset_class": "中国商品黑色与建材跨品种套利",
+      "expression": "多 SA2701 / 空 JM2701（1:1.1 跨品种名义配比）",
+      "direction": "long_sa_short_jm",
+      "horizon": "10_to_15_trading_days",
+      "scores": {
+        "logic": 20,
+        "payoff_convexity": 18,
+        "catalyst_timing": 16,
+        "price_location": 12,
+        "crowding_structure": 11,
+        "total": 77
+      },
+      "stage": "挂单验证 / 待夜盘触发 (SA2701日盘收1476元，JM2701收1228元)",
+      "max_loss_boundary": "单边止损设为 SA 跌破 1450 或 JM 涨破 1260，风险预算 NAV 0.35%",
+      "tri_axial_status": {
+        "judgment": "逻辑维持",
+        "evidence": "充分 (3层有效)",
+        "execution": "今晚 21:00 CST 商品夜盘开盘挂单"
+      }
+    },
+    {
+      "rank": 4,
+      "idea_id": "idea_20261016_03",
+      "name": "桐昆股份（601233.SH）现货防御与长丝加工差修复",
+      "asset_class": "A股长丝龙头 + 能化成本穿透",
+      "expression": "多 桐昆股份（601233.SH）现货（可选配轻空 TA2701）",
+      "direction": "long_equity_with_cost_hedge",
+      "horizon": "10_to_15_trading_days",
+      "scores": {
+        "logic": 19,
+        "payoff_convexity": 18,
+        "catalyst_timing": 15,
+        "price_location": 11,
+        "crowding_structure": 11,
+        "total": 74
+      },
+      "stage": "试仓持有 / 成本承压 (原油暴涨使长丝降本逻辑短线受阻)",
+      "max_loss_boundary": "收盘跌破 18.50 元无条件止损退出，严格执行计划纪律",
+      "tri_axial_status": {
+        "judgment": "逻辑承压",
+        "evidence": "部分 (2.5层有效)",
+        "execution": "已持仓 / 明日 09:30 CST 跟踪"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "Associated Press US Stocks Oct 22",
+      "url": "https://www.ktvb.com/article/syndication/associatedpress/how-major-us-stock-indexes-fared-thursday-10222026/616-3621d35d-9d06-4d7d-8bb9-a68020f97558",
+      "date": "2026-10-22"
+    },
+    {
+      "name": "RecoupRev Gold Falls on Oct 22",
+      "url": "https://recouprev.com/article/gold-price-falls-two-month-low-october-22-2026-xauusd",
+      "date": "2026-10-22"
+    },
+    {
+      "name": "Morningstar 10Y Yield Falls Under 5%",
+      "url": "https://www.morningstar.com/news/dow-jones/2026102211987/us-10-year-treasury-yield-falls-under-5-as-french-turmoil-fuels-flight-for-safety-3rd-update",
+      "date": "2026-10-22"
+    },
+    {
+      "name": "Rigzone Oil Surges 4% After Deadly Saudi Attacks",
+      "url": "https://www.rigzone.com/news/wire/oil_surges_4_after_deadly_saudi_attacks-22-oct-2026-184912-article/",
+      "date": "2026-10-22"
+    },
+    {
+      "name": "Nation Thailand Brent Rises 4%",
+      "url": "https://www.nationthailand.com/news/world/40072637",
+      "date": "2026-10-22"
+    },
+    {
+      "name": "东方财富 A股 10-22 大盘分析",
+      "url": "https://stock.eastmoney.com/a/cdpfx.html",
+      "date": "2026-10-22"
+    },
+    {
+      "name": "英为财情 沪深300历史数据",
+      "url": "https://cn.investing.com/indices/csi300-historical-data",
+      "date": "2026-10-22"
+    },
+    {
+      "name": "英为财情 中证1000历史数据",
+      "url": "https://cn.investing.com/indices/csi1000-historical-data",
+      "date": "2026-10-22"
+    },
+    {
+      "name": "Trading Economics DXY",
+      "url": "https://tradingeconomics.com/united-states/currency",
+      "date": "2026-10-22"
+    },
+    {
+      "name": "Trading Economics EUR/USD",
+      "url": "https://tradingeconomics.com/euro-area/currency",
+      "date": "2026-10-22"
+    },
+    {
+      "name": "Trading Economics USD/JPY",
+      "url": "https://tradingeconomics.com/japan/currency",
+      "date": "2026-10-22"
+    }
+  ],
+  "supported_claims": [
+    "美股标普500在10月22日收跌1.2%至7,663.43点，纳指跌2.6%至26,008.86点，道指微涨至52,867.98点",
+    "也门胡塞武装袭击沙特石油目标推升布伦特原油大涨4%至$113.17/bbl",
+    "现货金在10月22日大跌2.4%至$4,041.39/oz创两个月新低，COMEX结算报$4,060.40/oz",
+    "美国10年期国债收益率因欧洲避险涌入跌破5%至4.982%，法国10Y触及5.142%收5.082%",
+    "A股10月22日创业板指大跌4.37%、中证1000跌2.98%收6,578.27点，上证指数跌1.48%收3,658.03点，大盘价值防御凸显"
+  ],
+  "action_conclusions": {
+    "immediate_new": "今天没有应立即建立的新仓位。",
+    "conditional": "idea_20261017_01 原油看涨价差（今晚 21:30 美股开盘待 USO 回调询价买入 Dec 2026 $165/$180 Call Spread，净权利金 ≤ $5.80）；idea_20261021_01 纯碱/焦煤套利（今晚 21:00 商品夜盘若 SA2701 站稳 1,470 且 JM2701 承压于 1,235，挂单多 SA / 空 JM 按 1:1.1 试仓 NAV 0.35%）。",
+    "observe": "继续观察 idea_20261016_01（多 TSM+MSFT / 空 SOXX，执行保本跟踪止损，跟踪美股开盘科技抛售中代工龙头的相对抗跌性）；跟踪 idea_20261016_03（桐昆股份，关注原油暴涨对聚酯链加工差的短期压制，止损线 18.50 元）；跟踪今晚 21:00 商品夜盘 SC 及燃料油跳空高开后的抛压与法德利差走势。",
+    "avoid_exit": "重点回避单边追高开盘跳涨的内盘原油（SC）与燃料油（FU）裸多头；回避高负债 AI 算力及中金黄金等金矿股；多 IH/空 IM（idea_20261016_02）昨日已止损退场，今日小盘暴跌使 50/1000 比价反弹，但当前处于趋势破位期，严禁盲目抄底抢反弹。"
+  }
+}
