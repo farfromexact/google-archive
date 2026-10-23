@@ -1,0 +1,260 @@
+{
+  "schema_version": "radar_report_v1",
+  "report_date": "2026-10-23",
+  "edition": "evening",
+  "generated_at": "2026-10-23T20:15:00+08:00",
+  "data_cutoff": "2026-10-23T20:10:00+08:00",
+  "prompt_version": "radar_2026-10-12_stock_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "temporal_context_note": "本次执行时点对应北京时间2026-10-23 20:15（美东时间2026-10-23 08:15 EDT）。周五中国A股EOD已完整收盘（创业板指放量暴涨+4.16%、上证收涨+0.89%重回3690点）；布伦特原油冲上$114创五个月新高，现货金承压测试$4020支撑；美债10Y因避险跌至4.952%。今晚为周五夜盘，中国商品期货21:00夜盘按官方交易日历将归属下周一（trading_date=2026-10-26），美股21:30开市迎来周五交易。",
+  "prior_baselines": {
+    "recent_global_report": "reports/2026/10/2026-10-23_morning.md",
+    "recent_same_edition_report": "reports/2026/10/2026-10-22_evening.md",
+    "baseline_read_status": "ok"
+  },
+  "engine_audit": {
+    "Global-Cross-Asset-Radar": "ok",
+    "China-Options-Engine": "permission_error",
+    "China-Commodities-Engine": "permission_error",
+    "China-Stock-Engine": "permission_error",
+    "commodity_protocol_summary": {
+      "collection_scope": "63_products_full_scan_via_official_and_authoritative_fallback",
+      "core_atm_ready": true,
+      "skew_ready": true,
+      "surface_ready": false,
+      "positioning_ready": false,
+      "execution_ready": false,
+      "night_session_trading_date": "2026-10-26",
+      "calendar_mismatch": false,
+      "official_night_close_verified": false,
+      "price_semantics": "vendor_latest_trade_asof_snapshot",
+      "ohlcv_scope": "vendor_realtime_unverified_session_scope"
+    }
+  },
+  "headline_summary": "公募巨头自购催化A股放量大反弹（创业板暴涨+4.16%、上证收报3690点），大盘与成长全面共振；地缘断供推升布油触及$114新高，能源通胀压制现货金下探$4023；美债10Y跌破5%至4.952%；今晚商品周五夜盘（归属10-26）重点跟踪原油溢价与纯碱/焦煤套利。",
+  "macro_dashboard": {
+    "us_rates": {
+      "2y_nominal": 4.635,
+      "3y_nominal": 4.71,
+      "5y_nominal": 4.78,
+      "10y_nominal": 4.952,
+      "30y_nominal": 5.286,
+      "10y_real": 2.68,
+      "10y_bei": 2.27,
+      "2s10s_spread_bps": 31.7,
+      "2s30s_spread_bps": 65.1
+    },
+    "fx": {
+      "dxy": 101.61,
+      "eur_usd": 1.1203,
+      "usd_jpy": 156.93,
+      "usd_cny": 6.7195,
+      "usd_cnh": 6.6725
+    },
+    "us_equities": {
+      "dow_jones": 52867.98,
+      "sp500": 7663.43,
+      "nasdaq": 26008.86,
+      "russell_2000": 2784.03,
+      "qqq_premarket": 709.2,
+      "soxx_premarket": 492.1,
+      "tsm_premarket": 421.5,
+      "msft_premarket": 533.8,
+      "tsm_soxx_ratio": 0.8565
+    },
+    "commodities": {
+      "brent_latest": 113.8,
+      "wti_clz26_latest": 101.1,
+      "uso": 167.2,
+      "sc_crude_day_close": 724.8,
+      "sc_crude_day_settlement": 718.5,
+      "fu2612_day_close": 5420,
+      "gold_spot_latest": 4023.98,
+      "gold_comex_settle": 4045.2,
+      "silver_comex_settle": 55.4,
+      "sa2701_day_close": 1488,
+      "jm2701_day_close": 1222
+    },
+    "risk_indicators": {
+      "vix_premarket": 19.4,
+      "move": 100.2,
+      "hy_oas_bps": 328,
+      "ovx": 59.2
+    },
+    "china_equities_rates": {
+      "shanghai_composite": 3690.48,
+      "shanghai_50": 2736.8,
+      "csi_300": 4078.5,
+      "csi_500": 6588.2,
+      "csi_1000": 6808.5,
+      "chi_next": 2576.9,
+      "ratio_50_1000": 0.402,
+      "cgb_10y": 1.63,
+      "cgb_30y": 2.048,
+      "dr007": 1.34,
+      "lpr_1y": 3.0,
+      "lpr_5y": 3.5
+    }
+  },
+  "key_structural_changes": [
+    "A股周五放量超跌大反弹，公募自购催化创业板暴涨4.16%：易方达、广发、华夏等头部公募基金集体披露自购自旗权益产品公告，叠加国家广播电视总局政策刺激，A股展开强劲修复。上证综指大涨+0.89%收复3,690.48点，创业板指狂飙+4.16%，中证1000大涨超3.5%；大盘与成长全线回暖，两市个股呈现普涨格局",
+    "沙特地缘冲突升级推升布伦特原油冲上$114新高：胡塞武装袭击沙特阿美设施后续持续发酵，地缘断供风险主导能源盘面，布伦特原油周五盘中触及$114.00/bbl创五个月新高，WTI稳守$101上方；原油看涨凸性策略（idea_20261017_01）大幅兑现Alpha，今晚商品周五夜盘（归属10-26）内盘SC原油将继续反映外盘地缘溢价",
+    "能源通胀担忧加剧压制黄金，现货金下探$4023测试整数支撑：油价冲破$114引发强烈的二次通胀担忧，市场对美联储降息预期进一步推迟，高实际利率环境压制无息资产，现货金跌至$4,023.98/oz，COMEX结算跌破$4,050关口；黄金策略维持空仓观望",
+    "美债10Y收益率避险跌至4.952%，创一年多来最大单日下行：科技股震荡与法国政局动荡导致欧洲信用风险扩散，资金疯狂涌入避险美债，推动美债10Y收益率下行近20bp跌破5%关口报4.952%，收益率曲线大幅牛平",
+    "商品纯碱与焦煤强弱剪刀差扩大，套利策略（idea_20261021_01）迎来显著收益：SA2701日盘放量收涨至1,488元/吨，焦煤JM2701受制于山西复产供给走低至1,222元/吨，SA-JM价差从晨间248元大幅扩大至266元，多SA/空JM套利策略评分升至82分"
+  ],
+  "top_ideas": [
+    {
+      "rank": 1,
+      "idea_id": "idea_20261017_01",
+      "name": "沙特油田遭袭地缘断供与原油看涨凸性",
+      "asset_class": "全球能源与原油期权",
+      "expression": "多 USO Dec 2026 $165/$180 Call Spread 或多 FU2612 / 空 L2701",
+      "direction": "long_energy_convexity",
+      "horizon": "5_to_10_trading_days",
+      "scores": {
+        "logic": 25,
+        "payoff_convexity": 24,
+        "catalyst_timing": 20,
+        "price_location": 11,
+        "crowding_structure": 12,
+        "total": 92
+      },
+      "stage": "确认交易 / 重大浮盈 (布油触及 $114，USO 盘前涨至 $167.20)",
+      "max_loss_boundary": "USO Call Spread 净权利金锁定最大损失 NAV 0.50%；商品内盘严禁追高裸多头",
+      "tri_axial_status": {
+        "judgment": "逻辑暴发",
+        "evidence": "充分 (4层有效)",
+        "execution": "已持仓 / 今晚 21:00 周五夜盘与 21:30 美股跟踪"
+      }
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261016_01",
+      "name": "AI 垄断现金流 vs 债务/存储周期分化配对",
+      "asset_class": "美股半导体相对价值",
+      "expression": "多 50% TSM + 50% MSFT / 空 100% SOXX（1.12:1 名义配比近似 Beta 中性）",
+      "direction": "long_short_relative_value",
+      "horizon": "10_to_12_trading_days",
+      "scores": {
+        "logic": 24,
+        "payoff_convexity": 22,
+        "catalyst_timing": 19,
+        "price_location": 13,
+        "crowding_structure": 12,
+        "total": 90
+      },
+      "stage": "试仓持有 / 浮盈扩大 (TSM/SOXX 比价报 0.8565 稳居高位)",
+      "max_loss_boundary": "严格保本跟踪止损（TSM < $416.00 且 SOXX > $515.00），防范双腿异步滑点，预估风险上限 NAV 0.20%",
+      "tri_axial_status": {
+        "judgment": "逻辑维持",
+        "evidence": "充分 (3层有效)",
+        "execution": "已持仓 / 今晚 21:30 CST 美股开盘跟踪"
+      }
+    },
+    {
+      "rank": 3,
+      "idea_id": "idea_20261021_01",
+      "name": "纯碱去库坚挺 vs 焦煤复产承压跨品种套利",
+      "asset_class": "中国商品黑色与建材跨品种套利",
+      "expression": "多 SA2701 / 空 JM2701（1:1.1 跨品种名义配比）",
+      "direction": "long_sa_short_jm",
+      "horizon": "10_to_15_trading_days",
+      "scores": {
+        "logic": 21,
+        "payoff_convexity": 20,
+        "catalyst_timing": 18,
+        "price_location": 12,
+        "crowding_structure": 11,
+        "total": 82
+      },
+      "stage": "确认交易 / 利润扩大 (SA收1488元，JM收1222元，价差扩大至266元)",
+      "max_loss_boundary": "计划止损设定在价差回撤至 240 元下方，单腿止损 SA < 1450 或 JM > 1250",
+      "tri_axial_status": {
+        "judgment": "逻辑强化",
+        "evidence": "充分 (3层有效)",
+        "execution": "已持仓盈利 / 今晚 21:00 CST 周五夜盘跟踪"
+      }
+    },
+    {
+      "rank": 4,
+      "idea_id": "idea_20261016_03",
+      "name": "桐昆股份（601233.SH）现货跟随反弹与长丝加工差博弈",
+      "asset_class": "A股长丝龙头 + 能化成本穿透",
+      "expression": "多 桐昆股份（601233.SH）现货（可选配轻空 TA2701）",
+      "direction": "long_equity_with_cost_hedge",
+      "horizon": "10_to_15_trading_days",
+      "scores": {
+        "logic": 19,
+        "payoff_convexity": 18,
+        "catalyst_timing": 16,
+        "price_location": 12,
+        "crowding_structure": 11,
+        "total": 76
+      },
+      "stage": "试仓持有 / 跟随大盘反弹收报 20.25 元",
+      "max_loss_boundary": "严格执行 18.50 元计划止损线，防范原油冲高对长丝吨毛利的滞后挤压",
+      "tri_axial_status": {
+        "judgment": "逻辑震荡",
+        "evidence": "部分 (2.5层有效)",
+        "execution": "已持仓 / 下周一 09:30 CST 跟踪"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "新浪财经 A股 10-23 收盘",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908s5rw.html",
+      "date": "2026-10-23"
+    },
+    {
+      "name": "中国新闻网 A股周五放量大涨创业板涨逾4%",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-23/10719891.shtml",
+      "date": "2026-10-23"
+    },
+    {
+      "name": "英为财情 上证指数历史数据",
+      "url": "https://cn.investing.com/indices/shanghai-composite-historical-data",
+      "date": "2026-10-23"
+    },
+    {
+      "name": "IranWire Brent Reaches $114 New Record",
+      "url": "https://iranwire.com/en/news/159232-new-record-in-oil-prices-brent-reaches-114/",
+      "date": "2026-10-23"
+    },
+    {
+      "name": "247WallSt 10-Year Yield Falls Below 5%",
+      "url": "https://247wallst.com/investing/2026/10/23/the-10-year-yield-just-fell-below-5-as-investors-fled-ai-stocks/",
+      "date": "2026-10-23"
+    },
+    {
+      "name": "ATFX Gold Tests $4000 Support as Oil Surges",
+      "url": "https://www.atfx.com/en/analysis/market-news/20261023-daily-market-highlight",
+      "date": "2026-10-23"
+    },
+    {
+      "name": "Morningstar 10Y Treasury Yield Falls to 4.952%",
+      "url": "https://www.morningstar.com/news/dow-jones/2026102210244/10-year-treasury-yield-falls-to-4952-data-talk",
+      "date": "2026-10-23"
+    },
+    {
+      "name": "Fox News US-Iran War and Oil Prices",
+      "url": "https://www.foxnews.com/live-news/us-iran-war-israel-netanyahu-oil-prices-10-23-26",
+      "date": "2026-10-23"
+    }
+  ],
+  "supported_claims": [
+    "A股10月23日放量大涨，上证指数涨0.89%报3690.48点，创业板指暴涨4.16%",
+    "胡塞袭击沙特推升布伦特原油冲上$114/bbl创阶段新高，WTI升破$101/bbl",
+    "现货金在10月23日重挫至$4023.98/oz，测试$4000关口支撑",
+    "美国10年期国债收益率避险大幅下行至4.952%，重回5%下方",
+    "纯碱SA2701日盘涨至1488元，焦煤JM2701收1222元，价差扩大至266元"
+  ],
+  "action_conclusions": {
+    "immediate_new": "今天没有应立即建立的新仓位。",
+    "conditional": "idea_20261017_01 原油看涨期权（今晚 21:30 美股开盘若 USO 遇阻小幅回踩，询价挂单买入 Dec 2026 $165/$180 Call Spread，净权利金 ≤ $5.80）；idea_20261021_01 纯碱/焦煤套利（若此前未建仓，今晚 21:00 周五夜盘开盘 SA2701 站稳 1,480 且 JM2701 承压 1,225 时挂单多 SA / 空 JM 按 1:1.1 试仓 NAV 0.35%）。",
+    "observe": "继续持有 idea_20261016_01（多 TSM+MSFT / 空 SOXX，执行保本跟踪止损，跟踪今晚 21:30 美股开盘科技板块情绪）；继续持有 idea_20261021_01（纯碱/焦煤多头套利，跟踪夜盘价差向 280-300 元目标迈进）；继续持有 idea_20261016_03（桐昆股份，收报 20.25 元跟随反弹，严格执行 18.50 元计划止损）；跟踪今晚周五商品夜盘（归属10-26）内盘 SC 原油开盘溢价动向与外盘 $114 油价博弈。",
+    "avoid_exit": "坚决回避单边追高大幅跳涨的内盘原油（SC）与燃料油（FU）裸多头；坚决回避受利率预期打压破位的黄金单边抄底；回避高负债 AI 算力与存储概念股；多 IH/空 IM（idea_20261016_02）前序已止损出局，今日虽小盘大涨但比价仍处低位，维持空仓观望绝不逆势操作。"
+  }
+}
