@@ -1,0 +1,220 @@
+{
+  "schema_version": "radar_report_v1",
+  "report_date": "2026-10-23",
+  "edition": "morning",
+  "generated_at": "2026-10-23T08:42:00+08:00",
+  "data_cutoff": "2026-10-23T08:38:00+08:00",
+  "prompt_version": "radar_2026-10-12_stock_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "prior_baselines": {
+    "recent_global_report": "reports/2026/10/2026-10-22_morning.md",
+    "recent_same_edition_report": "reports/2026/10/2026-10-22_morning.md",
+    "baseline_read_status": "ok"
+  },
+  "engine_audit": {
+    "Global-Cross-Asset-Radar": "ok",
+    "China-Options-Engine": "permission_error",
+    "China-Commodities-Engine": "permission_error",
+    "China-Stock-Engine": "permission_error",
+    "commodity_protocol_summary": {
+      "collection_scope": "63_products_full_scan_via_official_and_authoritative_fallback",
+      "core_atm_ready": true,
+      "skew_ready": true,
+      "surface_ready": false,
+      "positioning_ready": false,
+      "execution_ready": false,
+      "night_session_trading_date": "2026-10-23",
+      "calendar_mismatch": false,
+      "official_night_close_verified": false,
+      "price_semantics": "vendor_latest_trade_asof_snapshot",
+      "ohlcv_scope": "vendor_realtime_unverified_session_scope"
+    }
+  },
+  "headline_summary": "Meta总租赁与采购承诺飙至8100亿美元引发AI融资恐慌，纳指重挫2.6%、费半暴跌6.72%，避险买盘压低10Y美债破5%至4.952%；胡塞袭击沙特阿美推升布油涨4%至113.17美元；易方达等公募巨头集体自购护盘今日A股。",
+  "macro_dashboard": {
+    "us_rates": {
+      "2y_nominal": 4.635,
+      "10y_nominal": 4.952,
+      "30y_nominal": 5.286,
+      "2s10s_spread_bps": 31.7,
+      "2s30s_spread_bps": 65.1,
+      "us_initial_jobless_claims": 194000
+    },
+    "fx_and_macro": {
+      "japan_sep_cpi_above_pct": 2.0,
+      "bok_base_rate_pct": 3.0
+    },
+    "us_equities": {
+      "dow_jones": 52867.98,
+      "sp500": 7663.43,
+      "nasdaq": 26008.86,
+      "russell_2000": 2784.03,
+      "sox_index": 10731.98,
+      "rsp_equal_weight_change_pct": 0.73,
+      "sox_change_pct": -6.72,
+      "meta_change_pct": -6.98,
+      "meta_total_commitments_billion": 810.0,
+      "vix": 19.03,
+      "vix9d": 18.86
+    },
+    "commodities": {
+      "brent_bzz26_eod": 113.17,
+      "wti_clz26_eod": 99.47,
+      "sc_crude_night_close": 713.2,
+      "gold_comex_eod": 4042.8,
+      "silver_comex_eod": 54.58,
+      "sh_gold_night": 870.0,
+      "sh_silver_night": 13297,
+      "china_soda_ash_sep_operating_rate_pct": 72.81
+    },
+    "china_equities_rates": {
+      "shanghai_composite": 3658.03,
+      "shenzhen_component": 11357.32,
+      "csi_300": 4036.3,
+      "csi_1000": 6578.27,
+      "chinext": 2576.9,
+      "ih2612_close": 2717.6,
+      "if2612_close": 4047.6,
+      "ic2612_close": 6735.0,
+      "im2612_close": 6471.6,
+      "ftse_a50_night": 12935,
+      "hsi_futures_night": 23133
+    }
+  },
+  "key_structural_changes": [
+    "Meta 2026Q3 10-Q揭露未启动租赁与不可取消合同承诺总额飙升至8100-8250亿美元（2027年到期达1214.1亿美元超账面现金），引发美股AI融资恐慌，周四费半指数（SOX）暴跌-6.72%（30只成份股全跌，LRCX跌-11.76%）、纳指跌-2.60%，但等权标普RSP逆势涨+0.73%；idea_20261016_01因空头腿SOXX暴跌贡献显著正超额收益，升至89分并启动TP1分批锁盈评估",
+    "胡塞武装袭击沙特国防部与沙特阿美原油设施，推动12月布油暴涨+4.00%结算于113.17美元/桶、WTI涨+2.39%至99.47美元/桶、内盘SC夜盘收涨+1.60%至713.2元/桶，触发桐昆股份（601233.SH）预设的705元/桶油价反转阈值，严格兑现可证伪纪律将idea_20261016_03降级至72分移出主榜",
+    "法债动荡与美股科技大跌激发美债史诗级避险买盘，10Y美债收益率暴跌19.3bp破5%至4.952%、2Y跌至4.635%，但黄金受跨资产追加保证金抛售拖累逆势下跌（COMEX金跌-2.12%至4042.80美元，沪金夜盘跌-1.88%至870元/克，沪银跌-3.86%），idea_20261016_04调降至75分并下调目标权利金上限至7.20美元/股",
+    "周四A股创业板指跌-4.37%后，易方达、华夏、富国、汇添富、摩根等公募巨头集体宣布自购，媒体澄清AI龙头无连锁强平，深南电路（Q3净利+94%）与大族激光（Q3净利+137%）业绩爆发，恒指夜盘涨+0.78%高水198点"
+  ],
+  "top_ideas": [
+    {
+      "rank": 1,
+      "idea_id": "idea_20261016_01",
+      "name": "AI 垄断现金流 vs 远端 Capex/周期分化配对",
+      "asset_class": "美股相对价值主题配对",
+      "expression": "多 50% TSM + 50% MSFT / 空 100% SOXX（1.12:1 名义配比）",
+      "direction": "long_short_relative_value",
+      "horizon": "8_to_10_trading_days",
+      "scores": {
+        "logic": 24,
+        "payoff_convexity": 21,
+        "catalyst_timing": 19,
+        "price_location": 13,
+        "crowding_structure": 12,
+        "total": 89
+      },
+      "stage": "浮盈锁盈评估 (研究有效 / 信号已兑现 / 计划上移保护线并逢高减半兑现TP1 / 实际持仓未核实)",
+      "max_loss_boundary": "计划保护线上移至锁定 +2.0% 净收益 (预算 NAV 0.25%-0.50%)；非保证限损，防范周五半导体超跌逼空反抽",
+      "tri_axial_status": {
+        "judgment": "逻辑兑现",
+        "evidence": "充分 (4层独立因子)",
+        "execution": "待今晚 21:30 CST 美股常规时段逢高分批锁盈评估"
+      }
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261021_01",
+      "name": "纯碱（SA）检修降负去库 vs 焦煤（JM）复产分化套利",
+      "asset_class": "中国商品跨品种套利",
+      "expression": "多 SA2701（郑商所，20吨/手）/ 空 JM2701（大商所，60吨/手）（1:1.1 名义配比）",
+      "direction": "long_sa_short_jm",
+      "horizon": "10_to_20_trading_days",
+      "scores": {
+        "logic": 20,
+        "payoff_convexity": 18,
+        "catalyst_timing": 16,
+        "price_location": 12,
+        "crowding_structure": 11,
+        "total": 77
+      },
+      "stage": "条件挂单 (研究有效 / 信号已满足 / 计划今日09:00日盘条件挂单 / 实际持仓未核实)",
+      "max_loss_boundary": "计划止损组合价差回撤 -3.8% (预算 NAV 0.35%)；跨所跨品种套利极端双边反向跳空压力损失约 NAV 0.70%",
+      "tri_axial_status": {
+        "judgment": "逻辑维持",
+        "evidence": "充分 (商品3层有效证据)",
+        "execution": "待今日 09:00 CST 商品日盘核实未受烧碱破位传染后挂单"
+      }
+    },
+    {
+      "rank": 3,
+      "idea_id": "idea_20261016_04",
+      "name": "黄金主权信用与地缘尾部有限风险看涨价差",
+      "asset_class": "全球贵金属期权",
+      "expression": "多 GLD 2027年1月 $380/$410 Call Spread（或 $375/$405 Call Spread）",
+      "direction": "long_call_spread_limited_risk",
+      "horizon": "3_months",
+      "scores": {
+        "logic": 21,
+        "payoff_convexity": 20,
+        "catalyst_timing": 15,
+        "price_location": 9,
+        "crowding_structure": 10,
+        "total": 75
+      },
+      "stage": "待企稳询价 (研究有效 / 信号待确认$4,020支撑与期权盘口 / 计划条件挂单 / 实际持仓未核实)",
+      "max_loss_boundary": "仅在现货金守稳 $4,020/oz 且净权利金 ≤ $7.20/股时建仓，合同最大亏损封顶于净权利金 (预算 NAV 0.40%)",
+      "tri_axial_status": {
+        "judgment": "逻辑维持 (10Y美债破5%改善利率端，短线受追保抛售错杀)",
+        "evidence": "部分 (待核实期权盘口与$4,020支撑)",
+        "execution": "待今晚 21:30 CST 美股开盘询价"
+      }
+    }
+  ],
+  "action_summary": {
+    "A_immediate_entry": "A. 今天没有应立即建立的新仓位。",
+    "B_conditional_orders": "B. 今天仅应挂条件的候选：idea_20261021_01 纯碱/焦煤跨品种套利（待今日 09:00 商品日盘开盘后 15–30 分钟核实郑商所 SA2701 未受烧碱破位传染且守稳 1,465–1,470 元上方、大商所 JM2701 受制于 1,240 元下方时，按 1:1.1 名义配比挂单试仓，组合计划止损 -3.8%）；idea_20261016_04 黄金看涨期权价差（待今晚 21:30 美股开盘确认现货黄金在跨资产追保抛售后守稳 $4,020/oz 支撑，且 GLD 2027年1月 $380/$410 Call Spread 盘口净权利金 ≤ $7.20/股时逢低挂单，合同最大亏损封顶于净权利金）。",
+    "C_continue_watching": "C. 今天继续观察：若此前已按条件建仓 idea_20261016_01（多 50% TSM + 50% MSFT / 空 100% SOXX），鉴于周四美股费半指数暴跌 -6.72% 使空头腿大幅获利并触及 TP1 区间，计划今晚 21:30 美股开盘后逢高减平 50% 仓位锁定利润，并将剩余仓位计划退出保护线上移至 +2.0%（未建仓者严禁在 SOX 暴跌后追空）；今日 09:30 A 股开盘重点观察易方达、华夏、富国、汇添富、摩根等公募巨头集体自购及深南电路（002916.SZ，Q3净利+94%）、大族激光（002008.SZ，Q3净利+137%）能否带动市场在 3,650 点企稳。",
+    "D_avoid_or_conditional_exit": "D. 今天必须回避或若此前已建仓则有条件退出：因隔夜胡塞武装袭击沙特阿美推升布伦特原油大涨 +4.00% 至 $113.17/bbl、内盘 SC 原油夜盘涨至 713.2 元/桶（突破预设的 705 元反转阈值），严格按可证伪纪律将桐昆股份（idea_20261016_03，601233.SH）调出主榜，若此前已按条件建仓则今日 09:30 开盘逢高减仓或必须配空 TA2701 对冲成本风险（跌破 18.50 元严格止损）；同时坚决回避在下周一（10-26）即将到期的上期所/上期能源 2611 期权合约及裸多/裸空原油与白银期货过周末。"
+  },
+  "supported_claims": [
+    "US 10Y Treasury yield fell to 4.952% and 2Y yield fell to 4.635% on Oct 22, 2026 on flight to safety",
+    "Nasdaq Composite fell 2.60% to 26,008.86 and SOX plunged 6.72% to 10,731.98 on Oct 22, 2026 as Meta 10-Q showed ~$810B in total lease and purchase commitments",
+    "Dec Brent crude settled up 4.00% at $113.17/bbl and Dec WTI settled up 2.39% at $99.47/bbl after Houthi attacks on Saudi Aramco facilities; INE SC crude night session closed up 1.60% at 713.2 RMB/bbl",
+    "COMEX Gold settled down 2.12% at $4,042.80/oz and SHFE Gold night session fell 1.88% to 870 RMB/g",
+    "Major Chinese mutual funds (E Fund, ChinaAMC, Fullgoal, CUAM, Morgan) announced collective self-purchases; Shennan Circuits Q3 net profit +94% YoY and Han's Laser Q3 net profit +137% YoY"
+  ],
+  "sources": [
+    {
+      "title": "Morningstar 10Y Treasury Yield 4.952%",
+      "url": "https://www.morningstar.com/news/dow-jones/2026102210244/10-year-treasury-yield-falls-to-4952-data-talk",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Morningstar 2Y Treasury Yield 4.635%",
+      "url": "https://www.morningstar.com/news/dow-jones/2026102210243/2-year-treasury-yield-falls-to-4635-data-talk",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Morningstar COMEX Gold $4042.80",
+      "url": "https://www.morningstar.com/news/dow-jones/202610229578/comex-gold-settles-212-lower-at-404280-data-talk",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "CappNotes Closing Look Thursday Oct 22, 2026",
+      "url": "https://cappnotes.substack.com/p/closing-look-thursday-october-22",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "StockTitan Nasdaq & Meta $810B Commitments Analysis",
+      "url": "https://www.stocktitan.net/articles/why-is-nasdaq-down-today-october-22-2026-ai-chip-stocks",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "华尔街见闻早餐 2026-10-23",
+      "url": "https://m.sohu.com/a/1091450957_130887",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "财联社 原油与金银夜盘收盘 2026-10-23",
+      "url": "https://www.cls.cn/detail/2512850",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "金十期货早餐 2026-10-23",
+      "url": "https://xnews.jin10.com/details/233199",
+      "date": "2026-10-23"
+    }
+  ]
+}
