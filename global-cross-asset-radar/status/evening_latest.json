@@ -1,29 +1,29 @@
 {
-  "report_date": "2026-10-22",
+  "report_date": "2026-10-23",
   "edition": "evening",
   "status": "success",
-  "generated_at": "2026-10-22T19:50:00+08:00",
-  "data_cutoff": "2026-10-22T19:45:00+08:00",
+  "generated_at": "2026-10-23T20:15:00+08:00",
+  "data_cutoff": "2026-10-23T20:10:00+08:00",
   "prompt_version": "radar_2026-10-12_stock_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
   "commodity_consumer_version": "core_2026-10-17_v1",
   "archive_status": "success",
-  "audit_revision": "saudi_attacks_oil_spike_and_tech_rout_incorporated",
+  "audit_revision": "ashare_friday_rebound_oil_spike_to_114_gold_test_4000",
   "top_ideas_count": 4,
   "top_ideas": [
-    "idea_20261016_01",
     "idea_20261017_01",
+    "idea_20261016_01",
     "idea_20261021_01",
     "idea_20261016_03"
   ],
   "exited_ideas": [
     {
       "idea_id": "idea_20261016_02",
-      "reason": "Exited on 2026-10-21 stop-loss trigger (50/1000 ratio hit 0.4052). Kept in observation on 10-22 despite passive rebound."
+      "reason": "Exited on 2026-10-21 stop-loss trigger (50/1000 ratio hit 0.4052). Kept in observation despite Friday rebound."
     },
     {
       "idea_id": "idea_20261016_04",
-      "reason": "Gold plunged 2.4% to $4041 on higher-for-longer rate fears sparked by oil rally, moved out of Top 5 to observation."
+      "reason": "Gold plunged towards $4023 on oil-driven inflation/rate fears, removed from Top 5 to observation."
     }
   ],
   "verification": {
