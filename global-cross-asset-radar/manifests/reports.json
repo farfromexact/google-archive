@@ -1,15 +1,53 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-21T21:45:00+08:00",
+  "updated_at": "2026-10-22T19:50:00+08:00",
   "reports": [
+    {
+      "key": "2026-10-22_evening",
+      "report_date": "2026-10-22",
+      "edition": "evening",
+      "file_path_md": "reports/2026/10/2026-10-22_evening.md",
+      "file_path_json": "reports/2026/10/2026-10-22_evening.json",
+      "generated_at": "2026-10-22T19:50:00+08:00",
+      "data_cutoff": "2026-10-22T19:45:00+08:00",
+      "prompt_version": "radar_2026-10-12_stock_v1",
+      "stock_integration_version": "stock_integration_2026-10-12_v1",
+      "commodity_consumer_version": "core_2026-10-17_v1",
+      "headline_summary": "沙特油田遭胡塞袭击推升布油跳涨4%逼近$113，能源通胀重燃压制现货金跌至$4041；美股纳指重挫-2.6%而道指微涨展现极致分化；A股小盘与创业板大跌（-4.37%），大盘价值防御凸显；商品21:00夜盘关注原油高开与能化成本传导。",
+      "top_ideas": [
+        "idea_20261016_01",
+        "idea_20261017_01",
+        "idea_20261021_01",
+        "idea_20261016_03"
+      ]
+    },
+    {
+      "key": "2026-10-22_morning",
+      "report_date": "2026-10-22",
+      "edition": "morning",
+      "file_path_md": "reports/2026/10/2026-10-22_morning.md",
+      "file_path_json": "reports/2026/10/2026-10-22_morning.json",
+      "generated_at": "2026-10-22T08:25:00+08:00",
+      "data_cutoff": "2026-10-22T08:20:00+08:00",
+      "prompt_version": "radar_2026-10-12_stock_v1",
+      "stock_integration_version": "stock_integration_2026-10-12_v1",
+      "commodity_consumer_version": "core_2026-10-17_v1",
+      "headline_summary": "Meta三季度Capex达349亿美元超经营现金流致FCF转负（-21.2亿），凸显上游代工卖铲人相对优势；法债10Y破5%支撑金价站上4140美元；内盘SC夜盘续跌1.5%至690.3元，今日聚焦纯碱去库套利与桐昆成本验证。",
+      "top_ideas": [
+        "idea_20261016_01",
+        "idea_20261016_03",
+        "idea_20261016_04",
+        "idea_20261021_01"
+      ]
+    },
     {
       "key": "2026-10-21_evening",
       "report_date": "2026-10-21",
       "edition": "evening",
       "file_path_md": "reports/2026/10/2026-10-21_evening.md",
       "file_path_json": "reports/2026/10/2026-10-21_evening.json",
-      "generated_at": "2026-10-21T20:15:00+08:00",
-      "data_cutoff": "2026-10-21T20:10:00+08:00",
+      "generated_at": "2026-10-21T21:45:00+08:00",
+      "data_cutoff": "2026-10-21T21:40:00+08:00",
       "prompt_version": "radar_2026-10-12_stock_v1",
       "stock_integration_version": "stock_integration_2026-10-12_v1",
       "commodity_consumer_version": "core_2026-10-17_v1",
@@ -191,7 +229,7 @@
       ]
     }
   ],
-  "total_reports": 10,
-  "latest_morning": "2026-10-21",
-  "latest_evening": "2026-10-21"
+  "total_reports": 12,
+  "latest_morning": "2026-10-22",
+  "latest_evening": "2026-10-22"
 }
