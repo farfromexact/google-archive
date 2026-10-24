@@ -1,37 +1,32 @@
 {
-  "report_date": "2026-10-23",
+  "schema_version": "radar_status_v1",
+  "run_status": "success",
+  "report_date": "2026-10-24",
   "edition": "evening",
-  "status": "success",
-  "generated_at": "2026-10-23T20:15:00+08:00",
-  "data_cutoff": "2026-10-23T20:10:00+08:00",
-  "prompt_version": "radar_2026-10-12_stock_v1",
-  "stock_integration_version": "stock_integration_2026-10-12_v1",
-  "commodity_consumer_version": "core_2026-10-17_v1",
+  "generated_at": "2026-10-24T20:30:00+08:00",
+  "data_cutoff": "2026-10-24T20:25:00+08:00",
+  "archive_target": "google_drive",
   "archive_status": "success",
-  "audit_revision": "ashare_friday_rebound_oil_spike_to_114_gold_test_4000",
-  "top_ideas_count": 4,
-  "top_ideas": [
-    "idea_20261017_01",
-    "idea_20261016_01",
-    "idea_20261021_01",
-    "idea_20261016_03"
+  "ci_status": "passed",
+  "market_session": "weekend_closed",
+  "files_written": [
+    "reports/2026/10/2026-10-24_evening.md",
+    "reports/2026/10/2026-10-24_evening.json",
+    "latest/evening.md",
+    "latest/evening.json",
+    "status/evening_latest.json",
+    "manifests/reports.json"
   ],
-  "exited_ideas": [
-    {
-      "idea_id": "idea_20261016_02",
-      "reason": "Exited on 2026-10-21 stop-loss trigger (50/1000 ratio hit 0.4052). Kept in observation despite Friday rebound."
-    },
-    {
-      "idea_id": "idea_20261016_04",
-      "reason": "Gold plunged towards $4023 on oil-driven inflation/rate fears, removed from Top 5 to observation."
-    }
-  ],
-  "verification": {
-    "reports_md_written": true,
-    "reports_json_written": true,
-    "latest_md_synced": true,
-    "latest_json_synced": true,
-    "status_synced": true,
-    "manifest_updated": true
-  }
+  "engine_read_status": {
+    "Global-Cross-Asset-Radar": "ok",
+    "China-Options-Engine": "permission_error",
+    "China-Commodities-Engine": "permission_error",
+    "China-Stock-Engine": "permission_error"
+  },
+  "prompt_version": "radar_2026-10-12_stock_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "top_ideas_count": 5,
+  "detailed_cards_count": 3,
+  "errors": []
 }
