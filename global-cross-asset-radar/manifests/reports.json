@@ -1,43 +1,40 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-23T20:15:00+08:00",
+  "updated_at": "2026-10-24T08:25:00+08:00",
   "reports": [
     {
-      "key": "2026-10-23_evening",
-      "report_date": "2026-10-23",
-      "edition": "evening",
-      "file_path_md": "reports/2026/10/2026-10-23_evening.md",
-      "file_path_json": "reports/2026/10/2026-10-23_evening.json",
-      "generated_at": "2026-10-23T20:15:00+08:00",
-      "data_cutoff": "2026-10-23T20:10:00+08:00",
+      "key": "2026-10-24_morning",
+      "report_date": "2026-10-24",
+      "edition": "morning",
+      "file_path_md": "reports/2026/10/2026-10-24_morning.md",
+      "file_path_json": "reports/2026/10/2026-10-24_morning.json",
+      "generated_at": "2026-10-24T08:25:00+08:00",
+      "data_cutoff": "2026-10-24T08:20:00+08:00",
       "prompt_version": "radar_2026-10-12_stock_v1",
       "stock_integration_version": "stock_integration_2026-10-12_v1",
       "commodity_consumer_version": "core_2026-10-17_v1",
-      "headline_summary": "公募巨头自购催化A股放量大反弹（创业板暴涨+4.16%、上证收报3690点），大盘与成长全面共振；地缘断供推升布油触及$114新高，能源通胀压制现货金下探$4023；美债10Y跌破5%至4.952%；今晚商品周五夜盘（归属10-26）重点跟踪原油溢价与纯碱/焦煤套利。",
+      "headline_summary": "以军全战线最高戒备推升布油破116美元、WTI破103美元；避险去杠杆压制金价破4000跌至3991美元；美股道指跌超650点，科技低吸抗跌；公募自购助A股周五探底放量大涨，周末严控地缘跳空敞口。",
       "top_ideas": [
-        "idea_20261017_01",
         "idea_20261016_01",
-        "idea_20261021_01",
-        "idea_20261016_03"
+        "idea_20261021_01"
       ]
     },
     {
-      "key": "2026-10-22_evening",
-      "report_date": "2026-10-22",
-      "edition": "evening",
-      "file_path_md": "reports/2026/10/2026-10-22_evening.md",
-      "file_path_json": "reports/2026/10/2026-10-22_evening.json",
-      "generated_at": "2026-10-22T19:50:00+08:00",
-      "data_cutoff": "2026-10-22T19:45:00+08:00",
+      "key": "2026-10-23_morning",
+      "report_date": "2026-10-23",
+      "edition": "morning",
+      "file_path_md": "reports/2026/10/2026-10-23_morning.md",
+      "file_path_json": "reports/2026/10/2026-10-23_morning.json",
+      "generated_at": "2026-10-23T08:42:00+08:00",
+      "data_cutoff": "2026-10-23T08:38:00+08:00",
       "prompt_version": "radar_2026-10-12_stock_v1",
       "stock_integration_version": "stock_integration_2026-10-12_v1",
       "commodity_consumer_version": "core_2026-10-17_v1",
-      "headline_summary": "沙特油田遭胡塞袭击推升布油跳涨4%逼近$113，能源通胀重燃压制现货金跌至$4041；美股纳指重挫-2.6%而道指微涨展现极致分化；A股小盘与创业板大跌（-4.37%），大盘价值防御凸显；商品21:00夜盘关注原油高开与能化成本传导。",
+      "headline_summary": "Meta总租赁与采购承诺飙至8100亿美元引发AI融资恐慌，纳指重挫2.6%、费半暴跌6.72%，避险买盘压低10Y美债破5%至4.952%；胡塞袭击沙特阿美推升布油涨4%至113.17美元；易方达等公募巨头集体自购护盘今日A股。",
       "top_ideas": [
         "idea_20261016_01",
-        "idea_20261017_01",
         "idea_20261021_01",
-        "idea_20261016_03"
+        "idea_20261016_04"
       ]
     },
     {
@@ -249,6 +246,6 @@
     }
   ],
   "total_reports": 13,
-  "latest_morning": "2026-10-22",
-  "latest_evening": "2026-10-23"
+  "latest_morning": "2026-10-24",
+  "latest_evening": "2026-10-21"
 }
