@@ -1,0 +1,178 @@
+{
+  "schema_version": "radar_report_v1",
+  "report_date": "2026-10-24",
+  "edition": "morning",
+  "generated_at": "2026-10-24T08:25:00+08:00",
+  "data_cutoff": "2026-10-24T08:20:00+08:00",
+  "prompt_version": "radar_2026-10-12_stock_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "market_session": "weekend_closed",
+  "prior_baselines": {
+    "recent_global_report": "reports/2026/10/2026-10-23_morning.md",
+    "recent_same_edition_report": "reports/2026/10/2026-10-23_morning.md",
+    "baseline_read_status": "ok"
+  },
+  "engine_audit": {
+    "Global-Cross-Asset-Radar": "ok",
+    "China-Options-Engine": "permission_error",
+    "China-Commodities-Engine": "permission_error",
+    "China-Stock-Engine": "permission_error",
+    "commodity_protocol_summary": {
+      "collection_scope": "63_products_full_scan_via_official_and_authoritative_fallback",
+      "core_atm_ready": true,
+      "skew_ready": true,
+      "surface_ready": false,
+      "positioning_ready": false,
+      "execution_ready": false,
+      "friday_night_session_trading_date": "2026-10-26",
+      "calendar_mismatch": false,
+      "official_night_close_verified": false,
+      "price_semantics": "vendor_latest_trade_asof_snapshot",
+      "ohlcv_scope": "vendor_realtime_unverified_session_scope"
+    }
+  },
+  "headline_summary": "以军全战线最高戒备推升布油破116美元、WTI破103美元；避险去杠杆压制金价破4000跌至3991美元；美股道指跌超650点，科技低吸抗跌；公募自购助A股周五探底放量大涨，周末严控地缘跳空敞口。",
+  "macro_dashboard": {
+    "us_rates": {
+      "2y_nominal": 4.68,
+      "10y_nominal": 4.987,
+      "30y_nominal": 5.314,
+      "2s10s_spread_bps": 30.7,
+      "2s30s_spread_bps": 63.4
+    },
+    "us_equities": {
+      "dow_jones": 52215.16,
+      "sp500": 7623.68,
+      "nasdaq": 25955.34,
+      "sp500_week_change_pct": -0.47,
+      "dow_change_pct": -1.24
+    },
+    "commodities": {
+      "brent_bzz26_eod": 116.72,
+      "wti_clz26_eod": 103.27,
+      "gold_comex_eod": 3991.1,
+      "brent_week_change_pct": 6.24,
+      "gold_week_change_pct": -4.05
+    },
+    "china_equities_rates": {
+      "shanghai_composite": 3690.48,
+      "shenzhen_component": 11673.83,
+      "chinext": 2684.1,
+      "csi_300": 4105.33,
+      "star_50": 1345.51,
+      "catl_300750_change_pct": 7.8
+    }
+  },
+  "key_structural_changes": [
+    "以军总参谋长宣布在所有战线进入最高戒备状态，霍尔木兹海峡地缘危机推升国际原油全线暴涨，周五ICE布伦特原油大涨结算于116.72美元/桶（单周暴涨+6.24%创5个月新高），WTI暴涨+3.80%收103.27美元/桶，沉重打击工业周期股导致周五美股道指重挫-652.82点（-1.24%）",
+    "俄乌确认就赫尔松州奥列什基地区达成停火协议（10月29日起实施）且美俄乌11月将举行三方会谈，削弱东欧避险溢价，叠加跨资产流动性踩踏，COMEX黄金周五大跌收于3991.10美元/盎司（全周跌-4.05%失守4000美元大关），击穿4020美元前置保护线，idea_20261016_04成功避免盲目抄底并调出主榜",
+    "易方达、华夏、富国、汇添富、摩根等公募巨头自购与股票ETF单日净流入超460亿元合力护盘，A股周五探底后放量大涨，创业板指暴涨+4.16%（宁德时代大涨+7.80%），沪指收复3690点，确立政策底与情绪底共振",
+    "美股科技股周五在周四暴跌后显现抗跌韧性（纳指仅跌-0.21%），idea_20261016_01已顺利于周五开盘兑现TP1减半锁盈，剩余仓位锁定+2.0%净收益保护过周末，迎接下周微软与谷歌财报"
+  ],
+  "top_ideas": [
+    {
+      "rank": 1,
+      "idea_id": "idea_20261016_01",
+      "name": "AI 垄断现金流 vs 远端 Capex/周期分化配对",
+      "asset_class": "美股相对价值主题配对",
+      "expression": "多 50% TSM + 50% MSFT / 空 100% SOXX（1.12:1 名义配比）",
+      "direction": "long_short_relative_value",
+      "horizon": "5_to_8_trading_days",
+      "scores": {
+        "logic": 25,
+        "payoff_convexity": 21,
+        "catalyst_timing": 19,
+        "price_location": 13,
+        "crowding_structure": 12,
+        "total": 90
+      },
+      "stage": "TP1兑现/保护锁定 (研究有效 / 信号已兑现 / 周五已平半仓兑现TP1，剩余仓位锁定+2.0%保护线 / 实际持仓未核实)",
+      "max_loss_boundary": "剩余头寸硬性止损锁定于累计 +2.0% 净收益线 (预算 NAV 0.25%)；防范下周一开盘跳空",
+      "tri_axial_status": {
+        "judgment": "逻辑验证",
+        "evidence": "充分 (4层独立因子)",
+        "execution": "周五已减半锁盈，周末持仓跟踪"
+      }
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261021_01",
+      "name": "纯碱（SA）检修降负去库 vs 焦煤（JM）复产分化套利",
+      "asset_class": "中国商品跨品种套利",
+      "expression": "多 SA2701（郑商所，20吨/手）/ 空 JM2701（大商所，60吨/手）（1:1.1 名义配比）",
+      "direction": "long_sa_short_jm",
+      "horizon": "10_to_15_trading_days",
+      "scores": {
+        "logic": 20,
+        "payoff_convexity": 18,
+        "catalyst_timing": 17,
+        "price_location": 12,
+        "crowding_structure": 11,
+        "total": 78
+      },
+      "stage": "条件挂单 (研究有效 / 信号已满足 / 计划下周一10-26日盘09:00开盘挂单 / 实际持仓未核实)",
+      "max_loss_boundary": "计划止损组合价差回撤 -3.8% (预算 NAV 0.35%)；跨所跨品种套利防范跳空风险",
+      "tri_axial_status": {
+        "judgment": "逻辑增强",
+        "evidence": "充分 (商品3层有效证据)",
+        "execution": "待下周一 10-26 09:00 CST 日盘开盘挂单"
+      }
+    }
+  ],
+  "action_summary": {
+    "A_immediate_entry": "A. 今天没有应立即建立的新仓位。（当前为周六早间 08:25 CST，全球正股、期货与期权市场均已休市进入周末，全市场无合法开盘交易窗口。）",
+    "B_conditional_orders": "B. 今天仅应挂条件的候选：idea_20261021_01 纯碱/焦煤跨品种套利（待下周一 10-26 09:00 CST 商品日盘开盘后 15 分钟内，核实郑商所 SA2701 守稳 1,475 元上方且大商所 JM2701 受制于 1,245 元下方、大商所期权保证金优惠生效后，按 1:1.1 名义配比挂单试仓，组合计划止损 -3.8%）。",
+    "C_continue_watching": "C. 今天继续观察：若此前已按条件建仓 idea_20261016_01（多 50% TSM + 50% MSFT / 空 100% SOXX），周五已顺利按规则执行 TP1 减半锁定利润，剩余 50% 仓位以“锁定 +2.0% 净收益”为保护线持仓过周末，重点关注下周二（10-28）盘后微软与谷歌 Q3 财报；密切跟踪中东以军战备进展与俄乌奥列什基停火协议落实情况对布伦特原油（$116.72）与黄金（$3,991.10）的周末发酵。",
+    "D_avoid_or_conditional_exit": "D. 今天必须回避或若此前已建仓则有条件退出：因周五 COMEX 黄金跌破 4,000 美元收报 $3,991.10/oz 且俄乌停火取得进展，击穿了此前设定的 $4,020 守稳前置条件，必须回避黄金抄底接刀；继续回避桐昆股份（601233.SH），严防油价破 $116 对聚酯加工差的挤压；坚决回避在下周一（10-26）即将到期行权的上期所/上期能源 2611 临期虚值期权合约上留仓。"
+  },
+  "supported_claims": [
+    "Brent crude rose 6.24% this week to settle at $116.72/bbl and WTI settled at $103.27/bbl as Israeli army declared maximum alert across all fronts",
+    "COMEX Gold fell 4.05% this week to settle at $3,991.10/oz breaking below $4,000 as Russia and Ukraine reached an Oleshky ceasefire agreement",
+    "Dow Jones dropped 652.82 points (-1.24%) to 52,215.16 and S&P 500 fell to 7,623.68 under oil price pressure",
+    "ChiNext surged 4.16% and CATL gained 7.80% as top mutual funds announced self-purchases and equity ETFs saw >46B RMB net inflows",
+    "US 10Y Treasury yield ended the week at 4.987% and 2Y yield at 4.680%"
+  ],
+  "sources": [
+    {
+      "title": "Morningstar Front Month ICE Brent Rose 6.24% to Settle at $116.72",
+      "url": "https://www.morningstar.com/news/dow-jones/202610237901/front-month-ice-brent-crude-rose-624-this-week-to-settle-at-11672-data-talk",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "Morningstar COMEX Gold Ends the Week 4.05% Lower at $3991.10",
+      "url": "https://www.morningstar.com/news/dow-jones/202610237436/comex-gold-ends-the-week-405-lower-at-399110-data-talk",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "Post-Gazette Wall Street Loses Ground Under Oil Pressure (Dow -652)",
+      "url": "https://www.post-gazette.com/business/money/2026/10/23/stock-market-today-october-23-2026/stories/202610230041",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "Morningstar 10-Year Treasury Yield Falls to 4.987% This Week",
+      "url": "https://www.morningstar.com/news/dow-jones/202610238213/10-year-treasury-yield-falls-to-4987-this-week-data-talk",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "Morningstar 2-Year Treasury Yield Falls to 4.680% This Week",
+      "url": "https://www.morningstar.com/news/dow-jones/202610238208/2-year-treasury-yield-falls-to-4680-this-week-data-talk",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "CappNotes Closing Look Friday October 23, 2026",
+      "url": "https://cappnotes.substack.com/p/closing-look-friday-october-23-2026",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "同花顺财经 A股每日行情复盘 10月23日 (创业板+4.16%)",
+      "url": "http://news.10jqka.com.cn/hotnews_list/",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "东方财富期市聚焦 以军最高戒备与俄乌奥列什基停火协议",
+      "url": "https://futures.eastmoney.com/a/cqsyw.html",
+      "date": "2026-10-23"
+    }
+  ]
+}
