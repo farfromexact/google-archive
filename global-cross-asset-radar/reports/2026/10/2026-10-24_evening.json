@@ -1,0 +1,102 @@
+{
+  "schema_version": "radar_2026-10-12_stock_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "report_id": "2026-10-24_evening",
+  "edition": "evening",
+  "generated_at": "2026-10-24T18:51:00+08:00",
+  "data_cutoff": "2026-10-24T18:45:00+08:00",
+  "is_weekend_or_holiday": true,
+  "market_session_state": {
+    "china_equities_and_index_futures": "CLOSED_WEEKEND (Last EOD: 2026-10-23 15:00 CST; Next Open: 2026-10-26 09:30 CST)",
+    "china_commodities_day_and_night": "CLOSED_WEEKEND (Last Day EOD: 2026-10-23 15:00 CST; Last Night Session Ended: 2026-10-24 02:30 CST belonging to trading_date 2026-10-26; Next Open: 2026-10-26 09:00 CST)",
+    "us_and_europe_markets": "CLOSED_WEEKEND (Last EOD: 2026-10-23 16:00 EDT; Next Electronic Open: 2026-10-26 06:00 CST / 2026-10-25 18:00 EDT)"
+  },
+  "data_sources_audit": {
+    "previous_report_baseline": "2026-10-24_morning",
+    "google_drive_write_status": "success",
+    "china_options_engine": "permission_error",
+    "china_commodities_engine": "permission_error",
+    "china_stock_engine": "permission_error"
+  },
+  "one_sentence_conclusion": "海湾地缘升级推升布油破116美元创四年新高，叠加美债10Y重返5.00%压制美股；而A股放量1.97万亿暴力深V反包，贵金属高位剧震（沪银跌超5%）。周末全球休市，聚焦下周一跳空与期权波动率错价。",
+  "top_opportunities": [
+    {
+      "rank": 1,
+      "idea_id": "IDEA-20261024-01",
+      "asset": "INE SC2612 Crude Oil / Bull Call Spread",
+      "direction": "LONG",
+      "horizon": "1-3W",
+      "edge_status": "STRONG",
+      "evidence_layers": 4,
+      "execution_ready": false,
+      "score_breakdown": { "logic": 21, "odds_convexity": 19, "catalyst": 17, "price_curve_vol": 12, "crowding_tech": 9, "total": 78 },
+      "entry_zone": "740.0-746.0 CNY/bbl (strictly no chasing above 762.0)",
+      "invalidation_stop": "718.0 CNY/bbl",
+      "targets": ["775.0 CNY/bbl", "805.0 CNY/bbl"],
+      "risk_budget_nav_pct": 0.50,
+      "actual_position_status": "UNVERIFIED"
+    },
+    {
+      "rank": 2,
+      "idea_id": "IDEA-20261024-02",
+      "asset": "CFFEX Long IM2611 / Short IF2611 Spread",
+      "direction": "RELATIVE_VALUE_LONG_SMALL_CAP",
+      "horizon": "1-4W",
+      "edge_status": "MEDIUM_HIGH",
+      "evidence_layers": 4,
+      "execution_ready": false,
+      "score_breakdown": { "logic": 20, "odds_convexity": 18, "catalyst": 15, "price_curve_vol": 12, "crowding_tech": 10, "total": 75 },
+      "entry_zone": "IM2611/IF2611 ratio 1.610-1.625 with A-share half-day volume > 450B CNY",
+      "invalidation_stop": "Ratio < 1.585",
+      "targets": ["Ratio 1.665", "Ratio 1.700"],
+      "risk_budget_nav_pct": 0.75,
+      "actual_position_status": "UNVERIFIED"
+    },
+    {
+      "rank": 3,
+      "idea_id": "IDEA-20261024-03",
+      "asset": "Zijin Mining (601899.SH) & CMOC (603993.SH)",
+      "direction": "LONG_EQUITY_VS_COMMODITY",
+      "horizon": "2-6W",
+      "edge_status": "MEDIUM_HIGH",
+      "evidence_layers": 4,
+      "execution_ready": false,
+      "score_breakdown": { "logic": 20, "odds_convexity": 18, "catalyst": 15, "price_curve_vol": 11, "crowding_tech": 9, "total": 73 },
+      "entry_zone": "Monday 09:30 open gap within -1.0% to +2.5% (no chasing above +4.0%)",
+      "invalidation_stop": "-5.5% from entry average or break below Friday low on high volume",
+      "targets": ["+10.0%", "+16.0%"],
+      "risk_budget_nav_pct": 0.75,
+      "actual_position_status": "UNVERIFIED"
+    },
+    {
+      "rank": 4,
+      "idea_id": "IDEA-20261024-04",
+      "asset": "SHFE Copper CU2612",
+      "direction": "LONG",
+      "horizon": "2-4W",
+      "edge_status": "MEDIUM",
+      "evidence_layers": 3,
+      "execution_ready": false,
+      "score_breakdown": { "logic": 18, "odds_convexity": 17, "catalyst": 15, "price_curve_vol": 11, "crowding_tech": 10, "total": 71 },
+      "actual_position_status": "UNVERIFIED"
+    },
+    {
+      "rank": 5,
+      "idea_id": "IDEA-20261024-05",
+      "asset": "QQQ / SOXX Nov Put Spread",
+      "direction": "LONG_DOWNSIDE_HEDGE",
+      "horizon": "1-2W",
+      "edge_status": "MEDIUM",
+      "evidence_layers": 3,
+      "execution_ready": false,
+      "score_breakdown": { "logic": 18, "odds_convexity": 18, "catalyst": 14, "price_curve_vol": 10, "crowding_tech": 10, "total": 70 },
+      "actual_position_status": "UNVERIFIED"
+    }
+  ],
+  "four_line_action_summary": {
+    "A_immediate_entry": "今天没有应立即建立的新仓位。",
+    "B_conditional_orders": "下周一（10月26日）09:00 关注 SC2612 原油（740-746元/桶不追高区间）与 CU2612 沪铜，09:30 关注多 IM2611 / 空 IF2611 跨品种价差与紫金矿业(601899)/洛阳钼业(603993)分批配置，21:30 关注 QQQ/SOXX 11月 Put Spread 询价。",
+    "C_watchlist": "沪金(AU2612)/沪银(AG2612)在周五剧烈洗盘后的波动率收敛情况、碳酸锂(LC2701)在9.9万元/吨关口的持仓消化、以及10Y美债收益率在5.00%关口的方向选择。",
+    "D_avoid_or_conditional_exit": "坚决回避三季报收官周无业绩支撑的A股高标题材股及高负债算力租赁股；严禁裸卖空原油期权波动率；若此前已建仓贵金属多头且下周一跌破周五夜盘低点（沪金860元/克、沪银13000元/千克），则按计划有条件退出。"
+  }
+}
