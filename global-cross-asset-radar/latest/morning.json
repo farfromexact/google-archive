@@ -1,16 +1,17 @@
 {
   "schema_version": "radar_report_v1",
-  "report_date": "2026-10-24",
+  "report_date": "2026-10-25",
   "edition": "morning",
-  "generated_at": "2026-10-24T08:25:00+08:00",
-  "data_cutoff": "2026-10-24T08:20:00+08:00",
+  "generated_at": "2026-10-25T09:42:00+08:00",
+  "data_cutoff": "2026-10-25T09:38:00+08:00",
   "prompt_version": "radar_2026-10-12_stock_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
   "commodity_consumer_version": "core_2026-10-17_v1",
   "market_session": "weekend_closed",
+  "temporal_context_note": "本次执行时点对应北京时间2026-10-25 09:42（周日晨间｜美东时间2026-10-24 21:42 EDT）。全球主要场内市场处于周末休市状态；欧洲于今日凌晨正式切换冬令时。周六晚胡塞武装宣布袭击沙特利雅得与达曼机场，泰克资源Highland Valley铜矿1,277名工人周六正式启动罢工，央行于金融街论坛宣布拟设非银流动性支持工具并将于周一开展7000亿MLF操作。",
   "prior_baselines": {
-    "recent_global_report": "reports/2026/10/2026-10-23_morning.md",
-    "recent_same_edition_report": "reports/2026/10/2026-10-23_morning.md",
+    "recent_global_report": "reports/2026/10/2026-10-24_evening.md",
+    "recent_same_edition_report": "reports/2026/10/2026-10-24_morning.md",
     "baseline_read_status": "ok"
   },
   "engine_audit": {
@@ -32,43 +33,84 @@
       "ohlcv_scope": "vendor_realtime_unverified_session_scope"
     }
   },
-  "headline_summary": "以军全战线最高戒备推升布油破116美元、WTI破103美元；避险去杠杆压制金价破4000跌至3991美元；美股道指跌超650点，科技低吸抗跌；公募自购助A股周五探底放量大涨，周末严控地缘跳空敞口。",
+  "headline_summary": "胡塞武装宣布袭击沙特利雅得与达曼机场、阿美管道受损推升布油收于116.72美元（SC夜盘涨3.82%至744.4元）；泰克资源Highland Valley铜矿1,277名工人周六正式罢工强化铜矿端扰动；央行拟设非银流动性支持工具叠加10-26开展7000亿MLF支撑A股，周日休市严禁虚构盘中报价，全面聚焦周一跳空风控。",
   "macro_dashboard": {
     "us_rates": {
       "2y_nominal": 4.68,
+      "5y_nominal": 4.82,
       "10y_nominal": 4.987,
+      "10y_treasury_h15": 5.00,
       "30y_nominal": 5.314,
+      "10y_real": 2.76,
+      "10y_bei": 2.24,
       "2s10s_spread_bps": 30.7,
       "2s30s_spread_bps": 63.4
+    },
+    "fx": {
+      "dxy": 101.81,
+      "eur_usd": 1.1204,
+      "usd_jpy": 156.87,
+      "usd_cnh": 6.6691,
+      "usd_cny": 6.6695,
+      "cny_fixing": 6.7180
     },
     "us_equities": {
       "dow_jones": 52215.16,
       "sp500": 7623.68,
       "nasdaq": 25955.34,
-      "sp500_week_change_pct": -0.47,
-      "dow_change_pct": -1.24
+      "qqq": 704.40,
+      "soxx": 478.20,
+      "smh": 527.20,
+      "tsm": 421.50,
+      "msft": 533.80,
+      "nvda": 210.96,
+      "mu": 877.55,
+      "soxx_pcr": 2.34,
+      "soxx_iv30": 46.8
     },
     "commodities": {
       "brent_bzz26_eod": 116.72,
       "wti_clz26_eod": 103.27,
-      "gold_comex_eod": 3991.1,
-      "brent_week_change_pct": 6.24,
-      "gold_week_change_pct": -4.05
+      "uso": 169.85,
+      "sc2612_night_close": 744.4,
+      "fu2612_day_close": 5838,
+      "sa2701_day_close": 1488,
+      "jm2701_day_close": 1222,
+      "gold_comex_eod": 3991.10,
+      "gold_spot_eod": 3993.96,
+      "au2612_night_close": 862.00,
+      "ag2612_night_close": 13116,
+      "comex_copper": 6.476,
+      "cu2612_night_close": 78650,
+      "lc2701_settle": 99080
+    },
+    "risk_indicators": {
+      "vix": 19.45,
+      "ovx": 55.64,
+      "move_range": "99-102",
+      "hy_oas_bps": 325
     },
     "china_equities_rates": {
       "shanghai_composite": 3690.48,
       "shenzhen_component": 11673.83,
-      "chinext": 2684.1,
-      "csi_300": 4105.33,
+      "chinext": 2684.10,
       "star_50": 1345.51,
-      "catl_300750_change_pct": 7.8
+      "sse_50": 2757.68,
+      "csi_300": 4105.33,
+      "csi_500": 6814.44,
+      "csi_1000": 6808.50,
+      "turnover_trillion_rmb": 1.97,
+      "ih2611_basis": -20.9,
+      "if2611_basis": -25.11,
+      "ic2611_basis": -32.4,
+      "im2611_basis": -58.5
     }
   },
   "key_structural_changes": [
-    "以军总参谋长宣布在所有战线进入最高戒备状态，霍尔木兹海峡地缘危机推升国际原油全线暴涨，周五ICE布伦特原油大涨结算于116.72美元/桶（单周暴涨+6.24%创5个月新高），WTI暴涨+3.80%收103.27美元/桶，沉重打击工业周期股导致周五美股道指重挫-652.82点（-1.24%）",
-    "俄乌确认就赫尔松州奥列什基地区达成停火协议（10月29日起实施）且美俄乌11月将举行三方会谈，削弱东欧避险溢价，叠加跨资产流动性踩踏，COMEX黄金周五大跌收于3991.10美元/盎司（全周跌-4.05%失守4000美元大关），击穿4020美元前置保护线，idea_20261016_04成功避免盲目抄底并调出主榜",
-    "易方达、华夏、富国、汇添富、摩根等公募巨头自购与股票ETF单日净流入超460亿元合力护盘，A股周五探底后放量大涨，创业板指暴涨+4.16%（宁德时代大涨+7.80%），沪指收复3690点，确立政策底与情绪底共振",
-    "美股科技股周五在周四暴跌后显现抗跌韧性（纳指仅跌-0.21%），idea_20261016_01已顺利于周五开盘兑现TP1减半锁盈，剩余仓位锁定+2.0%净收益保护过周末，迎接下周微软与谷歌财报"
+    "中东地缘冲突周六晚进一步升级：胡塞武装正式宣布将沙特利雅得哈立德国王机场与达曼机场列为军事打击目标并发动袭击，美使馆加速撤离，强化原油看涨凸性策略（idea_20261017_01，升至87分Rank 2）",
+    "加拿大泰克资源（Teck Resources）Highland Valley铜矿1,277名工人于美东周六正式启动罢工，矿端扰动由预期变为事实，叠加紫金矿业（前三季净利575.26亿+51.93%）与洛阳钼业（净利240.20亿+68.21%）三季报原件，idea_20261024_01升至78分",
+    "2026金融街论坛周末释放重磅政策：央行宣布拟设非银机构大额赎回流动性支持工具并扩大SLF适用范围，且将于周一（10-26）开展7,000亿元MLF操作；结合碳酸锂LC2701跌破10万让利与宁德时代3.18亿机构零折价大宗买入，新增idea_20261025_01（75分）",
+    "欧洲于今日（10月25日周日）正式切换冬令时，周一（10-26）起欧洲股市开盘推迟至北京时间16:00；桐昆股份（601233.SH）因原油暴涨反转成本下降假设，严格按可证伪规则降级调出Top 5"
   ],
   "top_ideas": [
     {
@@ -76,103 +118,71 @@
       "idea_id": "idea_20261016_01",
       "name": "AI 垄断现金流 vs 远端 Capex/周期分化配对",
       "asset_class": "美股相对价值主题配对",
-      "expression": "多 50% TSM + 50% MSFT / 空 100% SOXX（1.12:1 名义配比）",
+      "expression": "多 50% TSM ($421.50) + 50% MSFT ($533.80) / 空 100% SOXX ($478.20)（1.12:1 名义配比）",
       "direction": "long_short_relative_value",
       "horizon": "5_to_8_trading_days",
-      "scores": {
-        "logic": 25,
-        "payoff_convexity": 21,
-        "catalyst_timing": 19,
-        "price_location": 13,
-        "crowding_structure": 12,
-        "total": 90
-      },
-      "stage": "TP1兑现/保护锁定 (研究有效 / 信号已兑现 / 周五已平半仓兑现TP1，剩余仓位锁定+2.0%保护线 / 实际持仓未核实)",
+      "scores": { "logic": 25, "payoff_convexity": 21, "catalyst_timing": 19, "price_location": 13, "crowding_structure": 12, "total": 90 },
+      "stage": "TP1兑现/保护锁定 (研究有效 / 信号已兑现 / 周五已平半仓兑现TP1，剩余50%仓位锁定+2.0%保护线 / 实际持仓未核实)",
       "max_loss_boundary": "剩余头寸硬性止损锁定于累计 +2.0% 净收益线 (预算 NAV 0.25%)；防范下周一开盘跳空",
-      "tri_axial_status": {
-        "judgment": "逻辑验证",
-        "evidence": "充分 (4层独立因子)",
-        "execution": "周五已减半锁盈，周末持仓跟踪"
-      }
+      "tri_axial_status": { "judgment": "强优势", "evidence": "充分 (4层独立因子)", "execution": "周末休市，剩余半仓锁定+2.0%保护线" }
     },
     {
       "rank": 2,
+      "idea_id": "idea_20261017_01",
+      "name": "中东能源断供与原油看涨凸性策略",
+      "asset_class": "全球能源与衍生品",
+      "expression": "多 USO Dec 2026 $165/$180 Call Spread 或内盘多 SC2612 (740-746元区间不追高) / 多 FU2612 空 L2701",
+      "direction": "long_energy_convexity",
+      "horizon": "5_to_10_trading_days",
+      "scores": { "logic": 24, "payoff_convexity": 21, "catalyst_timing": 19, "price_location": 12, "crowding_structure": 11, "total": 87 },
+      "stage": "条件观察/严禁追高 (研究强优势 / 信号已触发 / 周一06:00及09:00观察跳空，高于762元不追高 / 实际持仓未核实)",
+      "max_loss_boundary": "SC2612计划止损 718.0元/桶 (预算 NAV 0.50%)；USO Call Spread净权利金上限 <= $5.60",
+      "tri_axial_status": { "judgment": "强优势", "evidence": "充分 (商品4层有效)", "execution": "周末休市，周一开盘严守不追高纪律" }
+    },
+    {
+      "rank": 3,
       "idea_id": "idea_20261021_01",
       "name": "纯碱（SA）检修降负去库 vs 焦煤（JM）复产分化套利",
       "asset_class": "中国商品跨品种套利",
-      "expression": "多 SA2701（郑商所，20吨/手）/ 空 JM2701（大商所，60吨/手）（1:1.1 名义配比）",
+      "expression": "多 SA2701（1,488元/吨）/ 空 JM2701（1,222元/吨）（5手:2手名义配比，当前价差266元）",
       "direction": "long_sa_short_jm",
       "horizon": "10_to_15_trading_days",
-      "scores": {
-        "logic": 20,
-        "payoff_convexity": 18,
-        "catalyst_timing": 17,
-        "price_location": 12,
-        "crowding_structure": 11,
-        "total": 78
-      },
-      "stage": "条件挂单 (研究有效 / 信号已满足 / 计划下周一10-26日盘09:00开盘挂单 / 实际持仓未核实)",
-      "max_loss_boundary": "计划止损组合价差回撤 -3.8% (预算 NAV 0.35%)；跨所跨品种套利防范跳空风险",
-      "tri_axial_status": {
-        "judgment": "逻辑增强",
-        "evidence": "充分 (商品3层有效证据)",
-        "execution": "待下周一 10-26 09:00 CST 日盘开盘挂单"
-      }
+      "scores": { "logic": 21, "payoff_convexity": 20, "catalyst_timing": 16, "price_location": 13, "crowding_structure": 12, "total": 82 },
+      "stage": "条件挂单 (研究有效 / 信号已满足 / 计划周一09:00日盘价差稳守255-266元区间挂单 / 实际持仓未核实)",
+      "max_loss_boundary": "价差跌破 230元/吨 或组合回撤 -3.8% 计划止损 (预算 NAV 0.35%)",
+      "tri_axial_status": { "judgment": "中高优势", "evidence": "充分 (商品3层有效)", "execution": "周末休市，周一09:00日盘条件挂单" }
+    },
+    {
+      "rank": 4,
+      "idea_id": "idea_20261024_01",
+      "name": "HVC铜矿罢工落地 + 紫金/洛钼三季报业绩兑现",
+      "asset_class": "A股资源龙头与有色映射",
+      "expression": "多 紫金矿业 (601899.SH) + 洛阳钼业 (603993.SH) 现货组合（或配对多 CU2612）",
+      "direction": "long_equity_commodity_transmission",
+      "horizon": "5_to_15_trading_days",
+      "scores": { "logic": 21, "payoff_convexity": 19, "catalyst_timing": 17, "price_location": 11, "crowding_structure": 10, "total": 78 },
+      "stage": "条件挂单 (研究强优势 / 三季报与周六罢工已落地 / 周一09:30高开<=+2.5%分批吸纳，高于+4.0%不追 / 实际持仓未核实)",
+      "max_loss_boundary": "建仓均价回撤 -5.5% 或放量跌破周五低点计划止损 (预算 NAV 0.50%)",
+      "tri_axial_status": { "judgment": "强优势", "evidence": "较高充分度 (Stock+矿端3层)", "execution": "周末休市，周一09:30集合竞价条件执行" }
+    },
+    {
+      "rank": 5,
+      "idea_id": "idea_20261025_01",
+      "name": "央行非银流动性工具催化 + 电池龙头成本让利修复",
+      "asset_class": "A股成长龙头 / 中金所期指",
+      "expression": "多 宁德时代 (300750.SZ, 237.60元) 或 多 IF2611 (贴水 -25.11点修复)",
+      "direction": "long_policy_and_margin_expansion",
+      "horizon": "3_to_8_trading_days",
+      "scores": { "logic": 20, "payoff_convexity": 18, "catalyst_timing": 16, "price_location": 11, "crowding_structure": 10, "total": 75 },
+      "stage": "条件挂单 (研究中高优势 / 政策与大宗席位已验证 / 周一09:30高开<=+1.5%且站稳分时均线试仓 / 实际持仓未核实)",
+      "max_loss_boundary": "宁德时代跌破 226.00元 (-4.8%) 计划止损 (预算 NAV 0.35%)",
+      "tri_axial_status": { "judgment": "中高优势", "evidence": "较高充分度 (3层因子)", "execution": "周末休市，周一09:30开盘15/30分钟验证执行" }
     }
   ],
   "action_summary": {
-    "A_immediate_entry": "A. 今天没有应立即建立的新仓位。（当前为周六早间 08:25 CST，全球正股、期货与期权市场均已休市进入周末，全市场无合法开盘交易窗口。）",
-    "B_conditional_orders": "B. 今天仅应挂条件的候选：idea_20261021_01 纯碱/焦煤跨品种套利（待下周一 10-26 09:00 CST 商品日盘开盘后 15 分钟内，核实郑商所 SA2701 守稳 1,475 元上方且大商所 JM2701 受制于 1,245 元下方、大商所期权保证金优惠生效后，按 1:1.1 名义配比挂单试仓，组合计划止损 -3.8%）。",
-    "C_continue_watching": "C. 今天继续观察：若此前已按条件建仓 idea_20261016_01（多 50% TSM + 50% MSFT / 空 100% SOXX），周五已顺利按规则执行 TP1 减半锁定利润，剩余 50% 仓位以“锁定 +2.0% 净收益”为保护线持仓过周末，重点关注下周二（10-28）盘后微软与谷歌 Q3 财报；密切跟踪中东以军战备进展与俄乌奥列什基停火协议落实情况对布伦特原油（$116.72）与黄金（$3,991.10）的周末发酵。",
-    "D_avoid_or_conditional_exit": "D. 今天必须回避或若此前已建仓则有条件退出：因周五 COMEX 黄金跌破 4,000 美元收报 $3,991.10/oz 且俄乌停火取得进展，击穿了此前设定的 $4,020 守稳前置条件，必须回避黄金抄底接刀；继续回避桐昆股份（601233.SH），严防油价破 $116 对聚酯加工差的挤压；坚决回避在下周一（10-26）即将到期行权的上期所/上期能源 2611 临期虚值期权合约上留仓。"
-  },
-  "supported_claims": [
-    "Brent crude rose 6.24% this week to settle at $116.72/bbl and WTI settled at $103.27/bbl as Israeli army declared maximum alert across all fronts",
-    "COMEX Gold fell 4.05% this week to settle at $3,991.10/oz breaking below $4,000 as Russia and Ukraine reached an Oleshky ceasefire agreement",
-    "Dow Jones dropped 652.82 points (-1.24%) to 52,215.16 and S&P 500 fell to 7,623.68 under oil price pressure",
-    "ChiNext surged 4.16% and CATL gained 7.80% as top mutual funds announced self-purchases and equity ETFs saw >46B RMB net inflows",
-    "US 10Y Treasury yield ended the week at 4.987% and 2Y yield at 4.680%"
-  ],
-  "sources": [
-    {
-      "title": "Morningstar Front Month ICE Brent Rose 6.24% to Settle at $116.72",
-      "url": "https://www.morningstar.com/news/dow-jones/202610237901/front-month-ice-brent-crude-rose-624-this-week-to-settle-at-11672-data-talk",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "Morningstar COMEX Gold Ends the Week 4.05% Lower at $3991.10",
-      "url": "https://www.morningstar.com/news/dow-jones/202610237436/comex-gold-ends-the-week-405-lower-at-399110-data-talk",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "Post-Gazette Wall Street Loses Ground Under Oil Pressure (Dow -652)",
-      "url": "https://www.post-gazette.com/business/money/2026/10/23/stock-market-today-october-23-2026/stories/202610230041",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "Morningstar 10-Year Treasury Yield Falls to 4.987% This Week",
-      "url": "https://www.morningstar.com/news/dow-jones/202610238213/10-year-treasury-yield-falls-to-4987-this-week-data-talk",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "Morningstar 2-Year Treasury Yield Falls to 4.680% This Week",
-      "url": "https://www.morningstar.com/news/dow-jones/202610238208/2-year-treasury-yield-falls-to-4680-this-week-data-talk",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "CappNotes Closing Look Friday October 23, 2026",
-      "url": "https://cappnotes.substack.com/p/closing-look-friday-october-23-2026",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "同花顺财经 A股每日行情复盘 10月23日 (创业板+4.16%)",
-      "url": "http://news.10jqka.com.cn/hotnews_list/",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "东方财富期市聚焦 以军最高戒备与俄乌奥列什基停火协议",
-      "url": "https://futures.eastmoney.com/a/cqsyw.html",
-      "date": "2026-10-23"
-    }
-  ]
+    "A_immediate_entry": "今天没有应立即建立的新仓位。",
+    "B_conditional_orders": "周日全球休市不报单；待明日周一（10-26）09:00中国商品日盘与09:30 A股/期指开盘后，若 idea_20261021_01（多SA2701/空JM2701）价差稳守255–266元区间、idea_20261024_01（紫金矿业601899.SH / 洛阳钼业603993.SH）高开<=+2.5%、idea_20261025_01（宁德时代300750.SZ / IF2611）高开<=+1.5%且开盘15/30分钟站稳分时均价线，方可按试仓预算（NAV 0.35%–0.50%）分批条件挂单介入。",
+    "C_watchlist": "idea_20261017_01（中东能源断供与原油看涨凸性，跟踪周日胡塞武装袭击利雅得与达曼机场后的反击进展与周一06:00 CME原油电子盘、09:00内盘SC2612跳空幅度，仅在740–746元区间承接，高于762元严禁追涨）以及周一09:00央行7,000亿元MLF操作落地情况。",
+    "D_avoid_or_conditional_exit": "坚决回避单边裸多黄金/白银期货（COMEX金跌破$4,000关口、10Y实际利率2.76%压制未解）、回避明日（10-26）到期行权的上期所/上期能源2611期权末日轮裸卖空，并将原料成本飙升的桐昆股份（601233.SH）调出候选；若此前已按条件建仓 idea_20261016_01（多TSM+MSFT/空SOXX）且周五已完成TP1减半锁盈，剩余50%仓位严格以累计+2.0%净收益保护线作为条件退出边界防范周一美股跳空风险（实际持仓未核实）。"
+  }
 }
