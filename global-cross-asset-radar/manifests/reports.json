@@ -1,7 +1,27 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-24T20:51:00+08:00",
+  "updated_at": "2026-10-25T09:42:00+08:00",
   "reports": [
+    {
+      "key": "2026-10-25_morning",
+      "report_date": "2026-10-25",
+      "edition": "morning",
+      "file_path_md": "reports/2026/10/2026-10-25_morning.md",
+      "file_path_json": "reports/2026/10/2026-10-25_morning.json",
+      "generated_at": "2026-10-25T09:42:00+08:00",
+      "data_cutoff": "2026-10-25T09:38:00+08:00",
+      "prompt_version": "radar_2026-10-12_stock_v1",
+      "stock_integration_version": "stock_integration_2026-10-12_v1",
+      "commodity_consumer_version": "core_2026-10-17_v1",
+      "headline_summary": "胡塞武装宣布袭击沙特利雅得与达曼机场、阿美管道受损推升布油收于116.72美元（SC夜盘涨3.82%至744.4元）；泰克资源Highland Valley铜矿1,277名工人周六正式罢工强化铜矿端扰动；央行拟设非银流动性支持工具叠加10-26开展7000亿MLF支撑A股，周日休市严禁虚构盘中报价，全面聚焦周一跳空风控。",
+      "top_ideas": [
+        "idea_20261016_01",
+        "idea_20261017_01",
+        "idea_20261021_01",
+        "idea_20261024_01",
+        "idea_20261025_01"
+      ]
+    },
     {
       "key": "2026-10-24_evening",
       "report_date": "2026-10-24",
@@ -301,7 +321,7 @@
       ]
     }
   ],
-  "total_reports": 16,
-  "latest_morning": "2026-10-24",
+  "total_reports": 17,
+  "latest_morning": "2026-10-25",
   "latest_evening": "2026-10-24"
 }
