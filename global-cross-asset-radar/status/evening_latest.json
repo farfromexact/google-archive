@@ -3,12 +3,11 @@
   "run_status": "success",
   "report_date": "2026-10-24",
   "edition": "evening",
-  "generated_at": "2026-10-24T20:30:00+08:00",
-  "data_cutoff": "2026-10-24T20:25:00+08:00",
+  "generated_at": "2026-10-24T20:51:00+08:00",
+  "data_cutoff": "2026-10-24T20:45:00+08:00",
   "archive_target": "google_drive",
   "archive_status": "success",
-  "ci_status": "passed",
-  "market_session": "weekend_closed",
+  "ci_status": "pending_or_unverified",
   "files_written": [
     "reports/2026/10/2026-10-24_evening.md",
     "reports/2026/10/2026-10-24_evening.json",
@@ -26,7 +25,7 @@
   "prompt_version": "radar_2026-10-12_stock_v1",
   "commodity_consumer_version": "core_2026-10-17_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
-  "top_ideas_count": 5,
+  "top_ideas_count": 3,
   "detailed_cards_count": 3,
   "errors": []
 }
