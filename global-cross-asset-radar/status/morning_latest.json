@@ -1,17 +1,16 @@
 {
   "schema_version": "radar_status_v1",
   "run_status": "success",
-  "report_date": "2026-10-24",
+  "report_date": "2026-10-25",
   "edition": "morning",
-  "generated_at": "2026-10-24T08:25:00+08:00",
-  "data_cutoff": "2026-10-24T08:20:00+08:00",
+  "generated_at": "2026-10-25T09:42:00+08:00",
+  "data_cutoff": "2026-10-25T09:38:00+08:00",
   "archive_target": "google_drive",
   "archive_status": "success",
   "ci_status": "pending_or_unverified",
-  "market_session": "weekend_closed",
   "files_written": [
-    "reports/2026/10/2026-10-24_morning.md",
-    "reports/2026/10/2026-10-24_morning.json",
+    "reports/2026/10/2026-10-25_morning.md",
+    "reports/2026/10/2026-10-25_morning.json",
     "latest/morning.md",
     "latest/morning.json",
     "status/morning_latest.json",
@@ -26,7 +25,7 @@
   "prompt_version": "radar_2026-10-12_stock_v1",
   "commodity_consumer_version": "core_2026-10-17_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
-  "top_ideas_count": 2,
-  "detailed_cards_count": 2,
+  "top_ideas_count": 5,
+  "detailed_cards_count": 3,
   "errors": []
 }
