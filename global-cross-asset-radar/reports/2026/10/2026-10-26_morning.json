@@ -1,0 +1,58 @@
+{
+  "schema_version": "radar_report_v1",
+  "report_date": "2026-10-26",
+  "edition": "morning",
+  "generated_at": "2026-10-26T07:05:00+08:00",
+  "data_cutoff": "2026-10-26T07:02:00+08:00",
+  "prompt_version": "radar_2026-10-12_stock_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "prior_baselines": {
+    "recent_global_report": "reports/2026/10/2026-10-25_evening.md",
+    "recent_same_edition_report": "reports/2026/10/2026-10-25_morning.md",
+    "baseline_read_status": "ok"
+  },
+  "headline_summary": "周一亚太早盘纳指期货高开0.66%、美油低开0.99%至102.25美元（防空拦截缓解断供恐慌，印证不追高纪律）；工信部发布“十五五”算力网规划叠加AWS算力订满至2028年、央行今日开展7000亿MLF，支撑A股与AI现金流龙头。",
+  "top_ideas": [
+    {
+      "rank": 1,
+      "idea_id": "idea_20261016_01",
+      "name": "AI 垄断现金流 vs 远端 Capex/股权稀释分化配对",
+      "expression": "多 50% TSM ($421.50) + 50% MSFT ($524.51) / 空 100% SOXX ($478.20)",
+      "direction": "long_short_relative_value",
+      "total_score": 90
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261017_01",
+      "name": "中东地缘溢价震荡与原油看涨凸性策略",
+      "expression": "外盘 USO Dec Call Spread / 内盘 SC2612 (732-740元承接) 或多 FU2612 / 空 L2701",
+      "direction": "long_energy_convexity",
+      "total_score": 85
+    },
+    {
+      "rank": 3,
+      "idea_id": "idea_20261021_01",
+      "name": "纯碱检修降负去库 vs 焦煤复产分化套利",
+      "expression": "多 SA2701 (1,488元) / 空 JM2701 (1,222元)",
+      "direction": "long_sa_short_jm",
+      "total_score": 82
+    },
+    {
+      "rank": 4,
+      "idea_id": "idea_20261024_01",
+      "name": "HVC 铜矿罢工+刚果(金)防疫隔离+紫金/洛钼三季报兑现",
+      "expression": "多 60% 紫金矿业 (601899.SH) + 40% 洛阳钼业 (603993.SH)（或多 CU2612）",
+      "direction": "long_equity_commodity_transmission",
+      "total_score": 80
+    },
+    {
+      "rank": 5,
+      "idea_id": "idea_20261025_01",
+      "name": "天齐锂业Q3环比降42%验证让利 + 十五五算力/电池龙头修复",
+      "expression": "多 宁德时代 (300750.SZ, 237.60元) 或 多 IF2611",
+      "direction": "long_policy_and_margin_expansion",
+      "total_score": 75
+    }
+  ]
+}
