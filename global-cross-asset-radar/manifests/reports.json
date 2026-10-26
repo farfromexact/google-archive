@@ -1,13 +1,13 @@
 {
   "schema_version": "radar_manifest_v1",
-  "updated_at": "2026-10-25T19:50:00+08:00",
+  "updated_at": "2026-10-26T07:05:00+08:00",
   "latest_by_edition": {
     "morning": {
-      "report_id": "2026-10-25_morning",
-      "report_date": "2026-10-25",
+      "report_id": "2026-10-26_morning",
+      "report_date": "2026-10-26",
       "edition": "morning",
-      "md_path": "reports/2026/10/2026-10-25_morning.md",
-      "json_path": "reports/2026/10/2026-10-25_morning.json",
+      "md_path": "reports/2026/10/2026-10-26_morning.md",
+      "json_path": "reports/2026/10/2026-10-26_morning.json",
       "archive_status": "success"
     },
     "evening": {
