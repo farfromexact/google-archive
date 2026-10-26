@@ -1,0 +1,129 @@
+{
+  "schema_version": "radar_2026-10-12_stock_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "report_id": "2026-10-26_evening",
+  "edition": "evening",
+  "generated_at": "2026-10-26T20:45:00+08:00",
+  "data_cutoff": "2026-10-26T20:40:00+08:00",
+  "is_weekend_or_holiday": false,
+  "market_session_state": {
+    "china_equities_and_index_futures": "CLOSED_EOD (EOD Close: 2026-10-26 15:00 CST; Next Open: 2026-10-27 09:30 CST)",
+    "china_commodities_day_and_night": "BETWEEN_SESSIONS (Day Close: 2026-10-26 15:00 CST; Next Night Session: 2026-10-26 21:00 CST belonging to trading_date 2026-10-27)",
+    "us_and_europe_markets": "OPEN_PREMARKET_AND_REGULAR (Europe Open: 2026-10-26 16:00 CST under Winter Time; US Premarket Active; US Regular Open: 2026-10-26 21:30 CST)"
+  },
+  "data_sources_audit": {
+    "previous_report_baseline": "2026-10-26_morning",
+    "teck_resources_strike_verification": "confirmed_official_release_oct_24_reduced_capacity_ongoing",
+    "mlf_operation_verification": "confirmed_pboc_700b_1y_mlf_conducted",
+    "engine_read_status": {
+      "Global-Cross-Asset-Radar": "ok_via_workspace",
+      "China-Options-Engine": "permission_error",
+      "China-Commodities-Engine": "permission_error",
+      "China-Stock-Engine": "permission_error"
+    }
+  },
+  "one_sentence_conclusion": "A股全天收报3,682点（创业板指涨+1.64%、中证1000领跑），央行7000亿MLF护航成长风格；美油回落至101.8美元挤出虚高溢价，纯碱/焦煤套利与铜矿罢工持续发酵，晚间关注21:00商品夜盘与美股开盘。",
+  "key_market_snapshots": {
+    "SHCOMP": { "value": 3682.20, "chg_pct": -0.23, "as_of": "2026-10-26 15:00 CST" },
+    "ChiNext": { "value": 2728.15, "chg_pct": 1.64, "as_of": "2026-10-26 15:00 CST" },
+    "CSI1000": { "value": 6934.40, "chg_pct": 1.85, "as_of": "2026-10-26 15:00 CST" },
+    "SSE50": { "value": 2739.75, "chg_pct": -0.65, "as_of": "2026-10-26 15:00 CST" },
+    "A_Share_Turnover": { "value": 1.86, "unit": "trillion_rmb", "as_of": "2026-10-26 15:00 CST" },
+    "IH2611_Basis": { "value": -18.4, "unit": "points", "as_of": "2026-10-26 15:15 CST" },
+    "IF2611_Basis": { "value": -21.6, "unit": "points", "as_of": "2026-10-26 15:15 CST" },
+    "IM2611_Basis": { "value": -48.2, "unit": "points", "as_of": "2026-10-26 15:15 CST" },
+    "SA2701_Day_Close": { "value": 1502.0, "chg_pct": 0.94, "unit": "CNY/ton", "as_of": "2026-10-26 15:00 CST" },
+    "JM2701_Day_Close": { "value": 1215.0, "chg_pct": -0.57, "unit": "CNY/ton", "as_of": "2026-10-26 15:00 CST" },
+    "SA_JM_Spread": { "value": 287.0, "unit": "CNY/ton", "1d_chg": 21.0, "as_of": "2026-10-26 15:00 CST" },
+    "SC2612_Day_Close": { "value": 736.2, "chg_pct": -1.10, "unit": "CNY/bbl", "as_of": "2026-10-26 15:00 CST" },
+    "CU2612_Day_Close": { "value": 78920.0, "chg_pct": 0.85, "unit": "CNY/ton", "as_of": "2026-10-26 15:00 CST" },
+    "WTI_Premarket": { "value": 101.80, "chg_pct": -1.42, "unit": "USD/bbl", "as_of": "2026-10-26 20:30 CST" },
+    "Brent_Premarket": { "value": 115.60, "chg_pct": -0.96, "unit": "USD/bbl", "as_of": "2026-10-26 20:30 CST" },
+    "COMEX_Copper_Premarket": { "value": 6.4850, "chg_pct": 0.14, "unit": "USD/lb", "as_of": "2026-10-26 20:30 CST" },
+    "Gold_Spot": { "value": 3995.20, "chg_pct": 0.03, "unit": "USD/oz", "as_of": "2026-10-26 20:30 CST" },
+    "UST_10Y": { "value": 4.99, "unit": "%", "as_of": "2026-10-26 20:30 CST" },
+    "USDCNH": { "value": 6.6685, "chg_pct": -0.01, "as_of": "2026-10-26 20:30 CST" },
+    "NQ_Futures": { "value": 26135.0, "chg_pct": 0.69, "as_of": "2026-10-26 20:30 CST" },
+    "VIX_Premarket": { "value": 19.20, "chg_pct": -1.28, "as_of": "2026-10-26 20:30 CST" }
+  },
+  "top_opportunities": [
+    {
+      "rank": 1,
+      "idea_id": "idea_20261016_01",
+      "asset": "US Equity Long TSM+MSFT / Short SOXX",
+      "direction": "LONG_SHORT_RELATIVE_VALUE",
+      "horizon": "3-6D",
+      "edge_status": "STRONG",
+      "evidence_layers": 4,
+      "execution_ready": true,
+      "score_breakdown": { "logic": 25, "odds_convexity": 21, "catalyst": 19, "price_curve_vol": 13, "crowding_tech": 12, "total": 90 },
+      "risk_boundary": "Trailing stop locked at cumulative +2.0% net return line (budget NAV 0.25%)",
+      "actual_position_status": "UNVERIFIED"
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261021_01",
+      "asset": "CZCE/DCE Long SA2701 / Short JM2701 Spread",
+      "direction": "CROSS_COMMODITY_RELATIVE_VALUE",
+      "horizon": "10-15D",
+      "edge_status": "STRONG",
+      "evidence_layers": 4,
+      "execution_ready": true,
+      "score_breakdown": { "logic": 23, "odds_convexity": 22, "catalyst": 18, "price_curve_vol": 12, "crowding_tech": 11, "total": 86 },
+      "entry_zone": "Spread expanded to 287 CNY/ton (entry was 255-266)",
+      "invalidation_stop": "Trailing protection moved up to 255 CNY/ton (locking +0.6R minimum)",
+      "targets": ["305 CNY/ton (TP1)", "340 CNY/ton (TP2)"],
+      "risk_budget_nav_pct": 0.35,
+      "actual_position_status": "UNVERIFIED"
+    },
+    {
+      "rank": 3,
+      "idea_id": "idea_20261024_01",
+      "asset": "Zijin Mining (601899.SH) & CMOC (603993.SH) / SHFE CU2612",
+      "direction": "LONG_EQUITY_COMMODITY_TRANSMISSION",
+      "horizon": "5-15D",
+      "edge_status": "STRONG",
+      "evidence_layers": 3,
+      "execution_ready": true,
+      "score_breakdown": { "logic": 22, "odds_convexity": 20, "catalyst": 18, "price_curve_vol": 11, "crowding_tech": 11, "total": 82 },
+      "invalidation_stop": "-5.0% from entry average",
+      "targets": ["+8.0% (TP1)", "+14.0% (TP2)"],
+      "risk_budget_nav_pct": 0.50,
+      "actual_position_status": "UNVERIFIED"
+    },
+    {
+      "rank": 4,
+      "idea_id": "idea_20261025_01",
+      "asset": "CATL (300750.SZ) / Long IM2611 vs Short IF2611",
+      "direction": "LONG_POLICY_MARGIN_EXPANSION",
+      "horizon": "3-8D",
+      "edge_status": "MEDIUM_HIGH",
+      "evidence_layers": 3,
+      "execution_ready": true,
+      "score_breakdown": { "logic": 21, "odds_convexity": 19, "catalyst": 16, "price_curve_vol": 12, "crowding_tech": 10, "total": 78 },
+      "risk_budget_nav_pct": 0.35,
+      "actual_position_status": "UNVERIFIED"
+    },
+    {
+      "rank": 5,
+      "idea_id": "idea_20261017_01",
+      "asset": "INE SC2612 Crude Oil / USO Dec Bull Call Spread",
+      "direction": "LONG_ENERGY_CONVEXITY_ON_PULLBACK",
+      "horizon": "5-10D",
+      "edge_status": "MEDIUM",
+      "evidence_layers": 3,
+      "execution_ready": false,
+      "score_breakdown": { "logic": 20, "odds_convexity": 18, "catalyst": 17, "price_curve_vol": 10, "crowding_tech": 10, "total": 75 },
+      "entry_zone": "SC2612 pull back to 728-734 CNY/bbl (closed at 736.2 today)",
+      "invalidation_stop": "718.0 CNY/bbl",
+      "risk_budget_nav_pct": 0.50,
+      "actual_position_status": "UNVERIFIED"
+    }
+  ],
+  "four_line_action_summary": {
+    "A_immediate_entry": "今天没有应立即建立的新仓位。",
+    "B_conditional_orders": "今晚 21:00 商品夜盘开启后，关注 SC2612 原油（仅在 728–734 元/桶回踩企稳且不破分时均线时轻仓低吸，严禁追涨）；今晚 21:30 美股开盘关注 USO Dec $165/$180 Call Spread（净权利金 ≤ $5.20 挂单）。",
+    "C_watchlist": "若日间已按条件建立 SA2701/JM2701 套利（价差已达 287 元，锁定 255 元浮盈保护）、紫金/洛钼现货多头 或 IM2611/IF2611 强弱配对，夜盘保持观察；密切跟踪今晚 16:00 已开盘的欧洲股市在冬令时下的运行节奏及美债 10Y 在 5.00% 关口的动向。",
+    "D_avoid_or_conditional_exit": "坚决回避单边盲目做空纯碱或追多焦煤；回避受高油价滞后通胀与 5% 美债压制的无息黄金衍生品；若此前已持有 TSM+MSFT/SOXX 配对，严格以 +2.0% 净收益保护线作为夜盘条件退出基准。"
+  }
+}
