@@ -1,0 +1,51 @@
+{
+  "schema_version": "radar_report_v1",
+  "report_date": "2026-10-27",
+  "edition": "evening",
+  "generated_at": "2026-10-27T19:50:00+08:00",
+  "data_cutoff": "2026-10-27T19:45:00+08:00",
+  "prompt_version": "radar_2026-10-12_stock_v1",
+  "stock_integration_version": "stock_integration_2026-10-12_v1",
+  "commodity_consumer_version": "core_2026-10-17_v1",
+  "one_sentence_conclusion": "A股全天放量调整收于3648点（创业板指大跌-3.41%），全市场近5000只个股收跌确认小盘成长流动性退潮；美油回稳至101.8美元，美债10Y在4.98%盘整，晚间聚焦21:00商品夜盘与FOMC决议前美股财报博弈。",
+  "market_snapshots": {
+    "SHCOMP": { "close": 3648.30, "chg_pct": -1.33 },
+    "ChiNext": { "close": 2548.15, "chg_pct": -3.41 },
+    "STAR50": { "close": 1252.28, "chg_pct": -4.81 },
+    "A_Share_Turnover_Trillion": 1.46,
+    "SC2612_Day": { "price": 733.30 },
+    "CU2612_Day": { "price": 78850.0 },
+    "UST_10Y": { "yield": 4.985 },
+    "DXY": { "value": 101.80 },
+    "Gold_Spot": { "price": 3992.50 }
+  },
+  "top_ideas": [
+    {
+      "rank": 1,
+      "idea_id": "idea_20261016_01",
+      "name": "AI 垄断现金流龙头 vs 远端高稀释多空配对",
+      "status": "CANDIDATE_FOR_INDEPENDENT_REVIEW",
+      "actual_position": "UNVERIFIED"
+    },
+    {
+      "rank": 2,
+      "idea_id": "idea_20261024_01",
+      "name": "加拿大 HVC 铜矿罢工持续 + 资源正股配置",
+      "status": "CANDIDATE_FOR_INDEPENDENT_REVIEW",
+      "actual_position": "UNVERIFIED"
+    },
+    {
+      "rank": 3,
+      "idea_id": "idea_20261017_01",
+      "name": "中东地缘溢价震荡与原油看涨凸性表达",
+      "status": "CANDIDATE_FOR_INDEPENDENT_REVIEW",
+      "actual_position": "UNVERIFIED"
+    }
+  ],
+  "action_summary": {
+    "A": "今天没有应立即建立的新仓位。",
+    "B": "今晚 21:00 商品夜盘开启后，仅关注 SC2612 原油在 728–734 元/桶区间的企稳确认；美股关注 TSM/MSFT 相对 SOXX 比价波动。",
+    "C": "继续观察 A 股近 5000 只个股普跌后的情绪底修复节奏；美债 10Y 收益率在 4.98% 关口的压力；欧洲冬令时首周交投流动性。",
+    "D": "坚决回避缺乏业绩支撑、高换手率的 A 股双创题材股；回避单边追多极端地缘原油合约；若此前有建立任何高杠杆权益多头，跌破既定止损位（如 -5%）必须坚决计划退出。"
+  }
+}
