@@ -1,24 +1,24 @@
 {
   "schema_version": "radar_report_v1",
-  "report_date": "2026-10-26",
+  "report_date": "2026-10-27",
   "edition": "morning",
-  "generated_at": "2026-10-26T07:05:00+08:00",
-  "data_cutoff": "2026-10-26T07:02:00+08:00",
+  "generated_at": "2026-10-27T08:35:00+08:00",
+  "data_cutoff": "2026-10-27T08:30:00+08:00",
   "prompt_version": "radar_2026-10-12_stock_v1",
   "stock_integration_version": "stock_integration_2026-10-12_v1",
   "commodity_consumer_version": "core_2026-10-17_v1",
   "prior_baselines": {
-    "recent_global_report": "reports/2026/10/2026-10-25_evening.md",
-    "recent_same_edition_report": "reports/2026/10/2026-10-25_morning.md",
+    "recent_global_report": "reports/2026/10/2026-10-26_evening.md",
+    "recent_same_edition_report": "reports/2026/10/2026-10-26_morning.md",
     "baseline_read_status": "ok"
   },
-  "headline_summary": "周一亚太早盘纳指期货高开0.66%、美油低开0.99%至102.25美元（防空拦截缓解断供恐慌，印证不追高纪律）；工信部发布“十五五”算力网规划叠加AWS算力订满至2028年、央行今日开展7000亿MLF，支撑A股与AI现金流龙头。",
+  "headline_summary": "隔夜欧美股市窄幅收涨、美油稳于101.8美元消化地缘溢价，美债10Y横盘4.98%等待周三美联储决议；内盘SC原油夜盘回踩736元印证不追高纪律，紫金与洛钼业绩发酵带动沪铜夜盘站上79150元；今日9:30迎规上工企利润，聚焦铜与AI相对价值。",
   "top_ideas": [
     {
       "rank": 1,
       "idea_id": "idea_20261016_01",
-      "name": "AI 垄断现金流 vs 远端 Capex/股权稀释分化配对",
-      "expression": "多 50% TSM ($421.50) + 50% MSFT ($524.51) / 空 100% SOXX ($478.20)",
+      "name": "AI 垄断现金流 vs 股权稀释分化配对",
+      "expression": "多 50% TSM ($423.80) + 50% MSFT ($528.20) / 空 100% SOXX ($480.10)",
       "direction": "long_short_relative_value",
       "total_score": 90
     },
@@ -26,7 +26,7 @@
       "rank": 2,
       "idea_id": "idea_20261017_01",
       "name": "中东地缘溢价震荡与原油看涨凸性策略",
-      "expression": "外盘 USO Dec Call Spread / 内盘 SC2612 (732-740元承接) 或多 FU2612 / 空 L2701",
+      "expression": "外盘 USO Dec Call Spread / 内盘 SC2612 (732-738元区间试多) 或多 FU2612 / 空 L2701",
       "direction": "long_energy_convexity",
       "total_score": 85
     },
@@ -34,23 +34,23 @@
       "rank": 3,
       "idea_id": "idea_20261021_01",
       "name": "纯碱检修降负去库 vs 焦煤复产分化套利",
-      "expression": "多 SA2701 (1,488元) / 空 JM2701 (1,222元)",
+      "expression": "多 SA2701 (1,492元) / 空 JM2701 (1,218元)",
       "direction": "long_sa_short_jm",
       "total_score": 82
     },
     {
       "rank": 4,
       "idea_id": "idea_20261024_01",
-      "name": "HVC 铜矿罢工+刚果(金)防疫隔离+紫金/洛钼三季报兑现",
+      "name": "HVC 铜矿罢工持续+紫金/洛钼季报兑现",
       "expression": "多 60% 紫金矿业 (601899.SH) + 40% 洛阳钼业 (603993.SH)（或多 CU2612）",
       "direction": "long_equity_commodity_transmission",
-      "total_score": 80
+      "total_score": 82
     },
     {
       "rank": 5,
       "idea_id": "idea_20261025_01",
-      "name": "天齐锂业Q3环比降42%验证让利 + 十五五算力/电池龙头修复",
-      "expression": "多 宁德时代 (300750.SZ, 237.60元) 或 多 IF2611",
+      "name": "锂盐让利验证+十五五算力网储能电池修复",
+      "expression": "多 宁德时代 (300750.SZ, 239.50元) 或 多 IF2611",
       "direction": "long_policy_and_margin_expansion",
       "total_score": 75
     }
